@@ -1,0 +1,139 @@
+﻿l_english:
+
+cyrene_missions_libya:0 "Libyan Resurgence"
+cyrene_missions_libya_DESCRIPTION:0 "Mission description"
+cyrene_missions_libya_CRITERIA_DESCRIPTION:0 "This mission will be completed when"
+cyrene_missions_libya_BUTTON_TOOLTIP:0 ""
+
+#Missions
+
+cyrene_missions_libya_task_1:0 "The Spoils of Victory"
+cyrene_missions_libya_task_1_DESC:0 ""
+
+cyrene_missions_libya_task_2:0 "Foreign Customs"
+cyrene_missions_libya_task_2_DESC:0 ""
+
+cyrene_missions_libya_task_3:0 "Return to Old Ways"
+cyrene_missions_libya_task_3_DESC:0 ""
+
+cyrene_missions_libya_task_4:0 "The Capital at Barke"
+cyrene_missions_libya_task_4_DESC:0 ""
+
+cyrene_missions_libya_task_5:0 "Recruit Hellenic Advisors"
+cyrene_missions_libya_task_5_DESC:0 ""
+
+cyrene_missions_libya_task_6:0 "Seek Common Ground"
+cyrene_missions_libya_task_6_DESC:0 ""
+
+cyrene_missions_libya_task_7:0 "Hellenic Reconciliation"
+cyrene_missions_libya_task_7_DESC:0 ""
+
+cyrene_missions_libya_task_8:0 "Letters for the Libyan Tongue"
+cyrene_missions_libya_task_8_DESC:0 ""
+
+cyrene_missions_libya_task_9:0 "Kings of Eastern Libya"
+cyrene_missions_libya_task_9_DESC:0 ""
+
+cyrene_missions_libya_task_10:0 "Plunder the Greek Cities"
+cyrene_missions_libya_task_10_DESC:0 ""
+
+cyrene_missions_libya_task_11:0 "Entice Libyan Settlers"
+cyrene_missions_libya_task_11_DESC:0 ""
+
+cyrene_missions_libya_task_12:0 "Approach for Garamantes"
+cyrene_missions_libya_task_12_DESC:0 ""
+
+cyrene_missions_libya_task_13:0 "Camel War Parties"
+cyrene_missions_libya_task_13_DESC:0 ""
+
+cyrene_missions_libya_task_14:0 "Raid the Cities of the West"
+cyrene_missions_libya_task_14_DESC:0 ""
+
+cyrene_missions_libya_task_15:0 "Terror from the Desert"
+cyrene_missions_libya_task_15_DESC:0 ""
+
+
+#Tooltips
+
+
+
+#Modifiers
+
+
+
+#Events
+me_cyr_libya_1_title:0 "$cyrene_missions_libya_task_1$"
+me_cyr_libya_1_desc:0 ""
+me_cyr_libya_1.a:0 ""
+me_cyr_libya_1_tooltip:0 "The mission task '#Y $cyrene_missions_libya_task_1$#!' has now been #G Completed#!!"
+
+me_cyr_libya_2_title:0 "$cyrene_missions_libya_task_2$"
+me_cyr_libya_2_desc:0 ""
+me_cyr_libya_2.a:0 ""
+me_cyr_libya_2_tooltip:0 "The mission task '#Y $cyrene_missions_libya_task_2$#!' has now been #G Completed#!!"
+
+me_cyr_libya_3_title:0 "$cyrene_missions_libya_task_3$"
+me_cyr_libya_3_desc:0 ""
+me_cyr_libya_3.a:0 ""
+me_cyr_libya_3_tooltip:0 "The mission task '#Y $cyrene_missions_libya_task_3$#!' has now been #G Completed#!!"
+
+me_cyr_libya_4_title:0 "$cyrene_missions_libya_task_4$"
+me_cyr_libya_4_desc:0 ""
+me_cyr_libya_4.a:0 ""
+me_cyr_libya_4_tooltip:0 "The mission task '#Y $cyrene_missions_libya_task_4$#!' has now been #G Completed#!!"
+
+me_cyr_libya_5_title:0 "$cyrene_missions_libya_task_5$"
+me_cyr_libya_5_desc:0 ""
+me_cyr_libya_5.a:0 ""
+me_cyr_libya_5_tooltip:0 "The mission task '#Y $cyrene_missions_libya_task_5$#!' has now been #G Completed#!!"
+
+me_cyr_libya_6_title:0 "$cyrene_missions_libya_task_6$"
+me_cyr_libya_6_desc:0 ""
+me_cyr_libya_6.a:0 ""
+me_cyr_libya_6_tooltip:0 "The mission task '#Y $cyrene_missions_libya_task_6$#!' has now been #G Completed#!!"
+
+me_cyr_libya_7_title:0 "$cyrene_missions_libya_task_7$"
+me_cyr_libya_7_desc:0 ""
+me_cyr_libya_7.a:0 ""
+me_cyr_libya_7_tooltip:0 "The mission task '#Y $cyrene_missions_libya_task_7$#!' has now been #G Completed#!!"
+
+me_cyr_libya_8_title:0 "$cyrene_missions_libya_task_8$"
+me_cyr_libya_8_desc:0 ""
+me_cyr_libya_8.a:0 ""
+me_cyr_libya_8_tooltip:0 "The mission task '#Y $cyrene_missions_libya_task_8$#!' has now been #G Completed#!!"
+
+me_cyr_libya_9_title:0 "$cyrene_missions_libya_task_9$"
+me_cyr_libya_9_desc:0 ""
+me_cyr_libya_9.a:0 ""
+me_cyr_libya_9_tooltip:0 "The mission task '#Y $cyrene_missions_libya_task_9$#!' has now been #G Completed#!!"
+
+me_cyr_libya_10_title:0 "$cyrene_missions_libya_task_10$"
+me_cyr_libya_10_desc:0 ""
+me_cyr_libya_10.a:0 ""
+me_cyr_libya_10_tooltip:0 "The mission task '#Y $cyrene_missions_libya_task_10$#!' has now been #G Completed#!!"
+
+me_cyr_libya_11_title:0 "$cyrene_missions_libya_task_11$"
+me_cyr_libya_11_desc:0 ""
+me_cyr_libya_11.a:0 ""
+me_cyr_libya_11_tooltip:0 "The mission task '#Y $cyrene_missions_libya_task_11$#!' has now been #G Completed#!!"
+
+me_cyr_libya_12_title:0 "$cyrene_missions_libya_task_12$"
+me_cyr_libya_12_desc:0 ""
+me_cyr_libya_12.a:0 ""
+me_cyr_libya_12_tooltip:0 "The mission task '#Y $cyrene_missions_libya_task_12$#!' has now been #G Completed#!!"
+
+me_cyr_libya_13_title:0 "$cyrene_missions_libya_task_13$"
+me_cyr_libya_13_desc:0 ""
+me_cyr_libya_13.a:0 ""
+me_cyr_libya_13_tooltip:0 "The mission task '#Y $cyrene_missions_libya_task_13$#!' has now been #G Completed#!!"
+
+me_cyr_libya_14_title:0 "$cyrene_missions_libya_task_14$"
+me_cyr_libya_14_desc:0 ""
+me_cyr_libya_14.a:0 ""
+me_cyr_libya_14_tooltip:0 "The mission task '#Y $cyrene_missions_libya_task_14$#!' has now been #G Completed#!!"
+
+me_cyr_libya_15_title:0 "$cyrene_missions_libya_task_15$"
+me_cyr_libya_15_desc:0 ""
+me_cyr_libya_15.a:0 ""
+me_cyr_libya_15_tooltip:0 "The mission task '#Y $cyrene_missions_libya_task_15$#!' has now been #G Completed#!!"
+

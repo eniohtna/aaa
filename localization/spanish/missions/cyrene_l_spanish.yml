@@ -570,7 +570,7 @@
  cyrene_1_ophellas_task_1:0 "Strike Against Carthage"
  cyrene_1_ophellas_task_1_DESC:0 "In the year 444 AUC (309 BCE) Ophellas's invasion of Carthage was cut short by the betrayal of Agathocles, the tyrant of Syracuse. The death of Ophellas threw Cyrenaica into chaos, but now that the domestic situation is stable again it is time to continue where Ophellas left of."
  cyrene_1_ophellas_task_2:0 "Preparing Supply Lines"
- cyrene_1_ophellas_task_2_DESC:0 "The track through the Lybian desert is arduous. The exhaustion it inflicted on Ophellas's invasion force certainly contributed to the expedition's demise. If we are to follow in his footsteps we should make sure we have the infrastructure to keep our forces in good supply."
+ cyrene_1_ophellas_task_2_DESC:0 "The track through the Libyan desert is arduous. The exhaustion it inflicted on Ophellas's invasion force certainly contributed to the expedition's demise. If we are to follow in his footsteps we should make sure we have the infrastructure to keep our forces in good supply."
  cyrene_1_ophellas_task_3:0 "Recruit Greek Adventurers"
  cyrene_1_ophellas_task_3_DESC:0 "When Ophellas first invaded Carthage he raised an army from the homeland of his wife [GetCharacter('(int32)17').GetFirstName]. [GetCharacter('(int32)17').GetFirstName] has since left Cyrenaica to marry [GetCharacter('(int32)38').GetFullName], but the cities of Greece are still full of adventuring souls who could be convinced to fight for us if we promise them the right to settle in our new conquests."
  cyrene_1_ophellas_task_4:0 "Invasion of Tripolitania"
