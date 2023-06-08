@@ -1196,250 +1196,250 @@ cyrene_1_magas = {
 	}
 
 
-#	cyrene_1_magas_task_22 = {	# Claim on Egypt TODO entire branch
-#
-#		icon = task_expansion
-#		requires = { cyrene_1_magas_task_13 }
-#
-#		bypass = {}
-#
-#		highlight = {}	
-#
-#		allow = {
-#			always = no
-#		}
-#
-#		on_completion = {
-#		}
-#
-#	}
-
-
-#	cyrene_1_magas_task_23 = {	# Secure Local Support
-#
-#		icon = task_diplomatic
-#		requires = { cyrene_1_magas_task_22 }
-#
-#		bypass = {}
-#
-#		highlight = {}	
-#
-#		allow = {
-#		}
-#
-#		on_completion = {
-#		}
-#
-#	}
+	cyrene_1_magas_task_22 = {	# Claim on Egypt TODO entire branch
 
+		icon = task_expansion
+		requires = { cyrene_1_magas_task_13 }
 
-#	cyrene_1_magas_task_24 = {	# Infiltrate the Army TODO entire mission
-#
-#		icon = task_conquest
-#		requires = { cyrene_1_magas_task_23 }
-#		duration = 90
-#
-	# 	# bypass = {}
+		bypass = {}
 
-	# 	highlight = {}	
+		highlight = {}	
 
-	# 	allow = {
-	# 	}
+		allow = {
+			always = no
+		}
 
-	# 	on_completion = {
-	# 		add_military_experience = -10
-	# 		custom_tooltip = TODO
-	# 		hidden_effect = {
-	# 			c:EGY = {
-	# 				save_scope_as = our_overlord
-	# 			}
-	# 			trigger_event = {
-	# 				id = me_subject_independence.145
-	# 			}
-	# 		}
-	# 	}
-	# }
+		on_completion = {
+		}
 
+	}
 
-	# cyrene_1_magas_task_25 = {	# Allies in High Places
 
-	# 	icon = task_political
-	# 	requires = { cyrene_1_magas_task_23 }
+	cyrene_1_magas_task_23 = {	# Secure Local Support
 
-	# 	bypass = {}
+		icon = task_diplomatic
+		requires = { cyrene_1_magas_task_22 }
 
-	# 	highlight = {}	
+		bypass = {}
 
-	# 	allow = {
-	# 	}
+		highlight = {}	
 
-	# 	on_completion = {
-	# 	}
+		allow = {
+		}
 
-	# }
+		on_completion = {
+		}
 
+	}
 
-	# cyrene_1_magas_task_26 = {	# Native Promises
 
-	# 	icon = task_economical
-	# 	requires = { cyrene_1_magas_task_23 }
+	cyrene_1_magas_task_24 = {	# Infiltrate the Army TODO entire mission
 
-	# 	bypass = {}
+		icon = task_conquest
+		requires = { cyrene_1_magas_task_23 }
+		duration = 90
 
-	# 	highlight = {}	
+		# bypass = {}
 
-	# 	allow = {
-	# 	}
+		highlight = {}	
 
-	# 	on_completion = {
-	# 	}
+		allow = {
+		}
 
-	# }
+		on_completion = {
+			add_military_experience = -10
+			custom_tooltip = TODO
+			hidden_effect = {
+				c:EGY = {
+					save_scope_as = our_overlord
+				}
+				trigger_event = {
+					id = me_subject_independence.145
+				}
+			}
+		}
+	}
 
 
-	# cyrene_1_magas_task_27 = {	# The Stilted Heir
+	cyrene_1_magas_task_25 = {	# Allies in High Places
 
-	# 	icon = task_diplomatic
-	# 	requires = { cyrene_1_magas_task_26 cyrene_1_magas_task_32}
-	# 	prevented_by = { cyrene_1_magas_task_28 cyrene_1_magas_task_30}
+		icon = task_political
+		requires = { cyrene_1_magas_task_23 }
 
-	# 	bypass = {
-	# 		OR = {
-	# 			has_completed_mission_task = cyrene_1_magas_task_28
-	# 			has_completed_mission_task = cyrene_1_magas_task_30
-	# 		}
-	# 	}
+		bypass = {}
 
-	# 	highlight = {}	
+		highlight = {}	
 
-	# 	allow = {
-	# 	}
+		allow = {
+		}
 
-	# 	on_completion = {
-	# 	}
+		on_completion = {
+		}
 
-	# }
+	}
 
 
-	# cyrene_1_magas_task_28 = {	# A royal Abduction
+	cyrene_1_magas_task_26 = {	# Native Promises
 
-	# 	icon = task_conquest
-	# 	requires = { cyrene_1_magas_task_26 cyrene_1_magas_task_32}
-	# 	prevented_by = { cyrene_1_magas_task_27 cyrene_1_magas_task_30}
+		icon = task_economical
+		requires = { cyrene_1_magas_task_23 }
 
-	# 	bypass = {
-	# 		OR = {
-	# 			has_completed_mission_task = cyrene_1_magas_task_27
-	# 			has_completed_mission_task = cyrene_1_magas_task_30
-	# 		}
-	# 	}
+		bypass = {}
 
-	# 	highlight = {}	
+		highlight = {}	
 
-	# 	allow = {
-	# 	}
+		allow = {
+		}
 
-	# 	on_completion = {
-	# 	}
+		on_completion = {
+		}
 
-	# }
+	}
 
 
-	# cyrene_1_magas_task_29 = {	# A Puppet King
+	cyrene_1_magas_task_27 = {	# The Stilted Heir
 
-	# 	icon = task_diplomatic
-	# 	requires = { cyrene_1_magas_task_27 cyrene_1_magas_task_28 }
+		icon = task_diplomatic
+		requires = { cyrene_1_magas_task_26 cyrene_1_magas_task_32}
+		prevented_by = { cyrene_1_magas_task_28 cyrene_1_magas_task_30}
 
-	# 	bypass = {}
+		bypass = {
+			OR = {
+				has_completed_mission_task = cyrene_1_magas_task_28
+				has_completed_mission_task = cyrene_1_magas_task_30
+			}
+		}
 
-	# 	highlight = {}	
+		highlight = {}	
 
-	# 	allow = {
-	# 	}
+		allow = {
+		}
 
-	# 	on_completion = {
-	# 	}
+		on_completion = {
+		}
 
-	# }
+	}
 
 
-	# cyrene_1_magas_task_30 = {	# Claim Ptolemy's Legacy
+	cyrene_1_magas_task_28 = {	# A royal Abduction
 
-	# 	icon = task_expansion
-	# 	requires = { cyrene_1_magas_task_26 cyrene_1_magas_task_32}
-	# 	prevented_by = { cyrene_1_magas_task_28 cyrene_1_magas_task_27}
+		icon = task_conquest
+		requires = { cyrene_1_magas_task_26 cyrene_1_magas_task_32}
+		prevented_by = { cyrene_1_magas_task_27 cyrene_1_magas_task_30}
 
-	# 	bypass = {
-	# 		OR = {
-	# 			has_completed_mission_task = cyrene_1_magas_task_28
-	# 			has_completed_mission_task = cyrene_1_magas_task_27
-	# 		}
-	# 	}
+		bypass = {
+			OR = {
+				has_completed_mission_task = cyrene_1_magas_task_27
+				has_completed_mission_task = cyrene_1_magas_task_30
+			}
+		}
 
-	# 	highlight = {}	
+		highlight = {}	
 
-	# 	allow = {
-	# 	}
+		allow = {
+		}
 
-	# 	on_completion = {
-	# 	}
+		on_completion = {
+		}
 
-	# }
+	}
 
 
-	# cyrene_1_magas_task_31 = {	# Usurp the Crown of Egypt
+	cyrene_1_magas_task_29 = {	# A Puppet King
 
-	# 	icon = task_political
-	# 	requires = { cyrene_1_magas_task_30 cyrene_1_magas_task_29 }
-	# 	prevented_by = { cyrene_1_magas_task_21 }
+		icon = task_diplomatic
+		requires = { cyrene_1_magas_task_27 cyrene_1_magas_task_28 }
 
-	# 	highlight = {}	
+		bypass = {}
 
-	# 	allow = {
-	# 	}
+		highlight = {}	
 
-	# 	on_completion = {
-	# 	}
+		allow = {
+		}
 
-	# }
+		on_completion = {
+		}
 
-	# cyrene_1_magas_task_32 = {	# Riots in Alexandria
+	}
 
-	# 	icon = task_conquest
-	# 	requires = { cyrene_1_magas_task_23 }
 
-	# 	bypass = {}
+	cyrene_1_magas_task_30 = {	# Claim Ptolemy's Legacy
 
-	# 	highlight = {}	
+		icon = task_expansion
+		requires = { cyrene_1_magas_task_26 cyrene_1_magas_task_32}
+		prevented_by = { cyrene_1_magas_task_28 cyrene_1_magas_task_27}
 
-	# 	allow = {
-	# 	}
+		bypass = {
+			OR = {
+				has_completed_mission_task = cyrene_1_magas_task_28
+				has_completed_mission_task = cyrene_1_magas_task_27
+			}
+		}
 
-	# 	on_completion = {
-	# 	}
+		highlight = {}	
 
-	# }
+		allow = {
+		}
 
+		on_completion = {
+		}
 
-	# Independence branch final task above 
+	}
 
-	# cyrene_1_magas_task_coup_final = {	# A New Egypt
 
-	# 	icon = task_expansion
-	# 	requires = { cyrene_1_magas_task_31 }
-	# 	final = yes
+	cyrene_1_magas_task_31 = {	# Usurp the Crown of Egypt
 
-	# 	bypass = {}
+		icon = task_political
+		requires = { cyrene_1_magas_task_30 cyrene_1_magas_task_29 }
+		prevented_by = { cyrene_1_magas_task_21 }
 
-	# 	highlight = {}	
+		highlight = {}	
 
-	# 	allow = {
-	# 	}
+		allow = {
+		}
 
-	# 	on_completion = {
-	# 	}
+		on_completion = {
+		}
 
-	# }
+	}
+
+	cyrene_1_magas_task_32 = {	# Riots in Alexandria
+
+		icon = task_conquest
+		requires = { cyrene_1_magas_task_23 }
+
+		bypass = {}
+
+		highlight = {}	
+
+		allow = {
+		}
+
+		on_completion = {
+		}
+
+	}
+
+
+	#Independence branch final task above 
+
+	cyrene_1_magas_task_coup_final = {	# A New Egypt
+
+		icon = task_expansion
+		requires = { cyrene_1_magas_task_31 }
+		final = yes
+
+		bypass = {}
+
+		highlight = {}	
+
+		allow = {
+		}
+
+		on_completion = {
+		}
+
+	}
 
 
 }
