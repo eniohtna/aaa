@@ -58,8 +58,9 @@ cyrene_missions_libya_task_15_DESC:0 ""
 
 
 #Modifiers
-
-
+tifinagh_script:0 "Libu-Tifinagh Script"
+implementing_new_script:0 "Implementing New Script"
+terror_from_the_desert:0 "Terror from the Desert"
 
 #Events
 me_cyr_libya_1_title:0 "$cyrene_missions_libya_task_1$"

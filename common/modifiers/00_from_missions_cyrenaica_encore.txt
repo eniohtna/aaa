@@ -7,3 +7,6 @@ implementing_new_script = {
 	max_research_efficiency = -0.10
 	local_research_points_modifier = -0.10
 }
+terror_from_the_desert = {
+	desert_combat_bonus = 0.1
+}

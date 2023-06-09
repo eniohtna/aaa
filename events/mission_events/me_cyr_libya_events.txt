@@ -195,7 +195,7 @@ me_cyr_libya.14 = { # Raid th Cities of the West
 
     }
 }
-me_cyr_libya.15 = { # Terrr from the Desert
+me_cyr_libya.15 = { # Terror from the Desert
     type = country_event
 
     title = me_cyr_libya_15_title
@@ -205,6 +205,9 @@ me_cyr_libya.15 = { # Terrr from the Desert
     option = {
         name = "me_cyr_libya_15.a"
         custom_tooltip = me_cyr_libya_15_tooltip
-
+        add_country_modifier = {
+            name = terror_from_the_desert
+            days = -1
+        }
     }
 }
