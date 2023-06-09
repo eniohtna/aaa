@@ -1195,7 +1195,8 @@ cyrene_1_magas = {
 
 	}
 
-
+	### Encore - Claim on Egypt ###
+	
 	cyrene_1_magas_task_22 = {	# Claim on Egypt TODO entire branch
 
 		icon = task_expansion

@@ -1,6 +1,6 @@
 ﻿namespace = me_cyr_libya
 
-me_cyr_libya.1 = {
+me_cyr_libya.1 = { # The Spoils of Victory
     type = country_event
 
     title = me_cyr_libya_1_title
@@ -13,7 +13,7 @@ me_cyr_libya.1 = {
 
     }
 }
-me_cyr_libya.2 = {
+me_cyr_libya.2 = { # Foreign Customs
     type = country_event
 
     title = me_cyr_libya_2_title
@@ -26,7 +26,7 @@ me_cyr_libya.2 = {
 
     }
 }
-me_cyr_libya.3 = {
+me_cyr_libya.3 = { # Return to Old Ways
     type = country_event
 
     title = me_cyr_libya_3_title
@@ -39,7 +39,7 @@ me_cyr_libya.3 = {
 
     }
 }
-me_cyr_libya.4 = {
+me_cyr_libya.4 = { # The Capital at Barke
     type = country_event
 
     title = me_cyr_libya_4_title
@@ -52,7 +52,7 @@ me_cyr_libya.4 = {
 
     }
 }
-me_cyr_libya.5 = {
+me_cyr_libya.5 = { # Recruit Hellenic Advisors
     type = country_event
 
     title = me_cyr_libya_5_title
@@ -65,7 +65,7 @@ me_cyr_libya.5 = {
 
     }
 }
-me_cyr_libya.6 = {
+me_cyr_libya.6 = { # Seek Common Ground
     type = country_event
 
     title = me_cyr_libya_6_title
@@ -78,7 +78,7 @@ me_cyr_libya.6 = {
 
     }
 }
-me_cyr_libya.7 = {
+me_cyr_libya.7 = { # Hellenic Reconciliation
     type = country_event
 
     title = me_cyr_libya_7_title
@@ -91,12 +91,12 @@ me_cyr_libya.7 = {
 
     }
 }
-me_cyr_libya.8 = {
+me_cyr_libya.8 = { # Letters for the Libyan Tongue
     type = country_event
 
     title = me_cyr_libya_8_title
     desc = me_cyr_libya_8_desc
-    picture = great_library
+    picture = scribe_tools
 
     option = {
         name = "me_cyr_libya_8.a"
@@ -104,7 +104,7 @@ me_cyr_libya.8 = {
 
     }
 }
-me_cyr_libya.9 = {
+me_cyr_libya.9 = { # Kings of Eastern Libya
     type = country_event
 
     title = me_cyr_libya_9_title
@@ -117,7 +117,7 @@ me_cyr_libya.9 = {
 
     }
 }
-me_cyr_libya.10 = {
+me_cyr_libya.10 = { # Plunder the Greek Cities
     type = country_event
 
     title = me_cyr_libya_10_title
@@ -130,7 +130,7 @@ me_cyr_libya.10 = {
 
     }
 }
-me_cyr_libya.11 = {
+me_cyr_libya.11 = { # Entice Libyan Settlers
     type = country_event
 
     title = me_cyr_libya_11_title
@@ -143,7 +143,7 @@ me_cyr_libya.11 = {
 
     }
 }
-me_cyr_libya.12 = {
+me_cyr_libya.12 = { # Approach for Garamantes
     type = country_event
 
     title = me_cyr_libya_12_title
@@ -156,7 +156,7 @@ me_cyr_libya.12 = {
 
     }
 }
-me_cyr_libya.13 = {
+me_cyr_libya.13 = { # Camel War Parties
     type = country_event
 
     title = me_cyr_libya_13_title
@@ -169,7 +169,7 @@ me_cyr_libya.13 = {
 
     }
 }
-me_cyr_libya.14 = {
+me_cyr_libya.14 = { # Raid th Cities of the West
     type = country_event
 
     title = me_cyr_libya_14_title
@@ -182,7 +182,7 @@ me_cyr_libya.14 = {
 
     }
 }
-me_cyr_libya.15 = {
+me_cyr_libya.15 = { # Terrr from the Desert
     type = country_event
 
     title = me_cyr_libya_15_title

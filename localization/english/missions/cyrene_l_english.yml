@@ -100,7 +100,7 @@
  cyr_magas_01.21.e:0 "Maybe [cyr_marriage_country_scope_5.GetName] will help us?"
  cyr_magas_01.21.f:0 "We don't need any allies after all."
  cyr_magas_01.22.t:0 "A Royal Marriage"
- cyr_magas_01.22.desc:0 "We have been approached by an emissary from the court of [GetCountry('CYR').GetRuler.GetName] in [GetCountry('CYR').GetName]. Thye suggest that we form an alliance against our common rivals in [GetCountry('EGY').GetName]. [GetCountry('CYR').GetName] is an important [GetCountry('EGY').GetAdjective] subject and their independence would be a major blow for [GetCountry('EGY').GetName]. \n\nHowever, to ensure our commitment to the [GetCountry('CYR').GetAdjective] cause, [GetCountry('CYR').GetRuler.GetName] is requesting the hand of [cyr_marriage_princess_scope.GetFullName] in marriage."
+ cyr_magas_01.22.desc:0 "We have been approached by an emissary from the court of [GetCountry('CYR').GetRuler.GetName] in [GetCountry('CYR').GetName]. They suggest that we form an alliance against our common rivals in [GetCountry('EGY').GetName]. [GetCountry('CYR').GetName] is an important [GetCountry('EGY').GetAdjective] subject and their independence would be a major blow for [GetCountry('EGY').GetName]. \n\nHowever, to ensure our commitment to the [GetCountry('CYR').GetAdjective] cause, [GetCountry('CYR').GetRuler.GetName] is requesting the hand of [cyr_marriage_princess_scope.GetFullName] in marriage."
  cyr_magas_01.22.a:0 "An excellent opportunity to weaken [GetCountry('EGY').GetName]."
  cyr_magas_01.22.b:0 "We can't afford to antagonize [GetCountry('EGY').GetName] right now."
  cyr_magas_01.23.t:0 "Royal Marriage with [cyr_royal_marriage_country.GetName]"

@@ -21,8 +21,8 @@
         }
     }
     on_completion = {}
-    cyrene_missions_libya_task_1 = {
-        icon = "task_political"
+    cyrene_missions_libya_task_1 = { # The Spoils of Victory
+        icon = "task_conquest"
         allow = {}
         on_completion = {
             trigger_event = me_cyr_libya.1
@@ -31,8 +31,9 @@
             }
         }
     }
-    cyrene_missions_libya_task_2 = {
-        icon = "task_political"
+    cyrene_missions_libya_task_2 = { # Foreign Customs
+        icon = "task_diplomatic"
+        requires = { cyrene_missions_libya_task_1 }
         allow = {}
         on_completion = {
             trigger_event = me_cyr_libya.2
@@ -41,8 +42,9 @@
             }
         }
     }
-    cyrene_missions_libya_task_3 = {
-        icon = "task_political"
+    cyrene_missions_libya_task_3 = { # Return to Old Ways
+        icon = "task_happiness"
+        requires = { cyrene_missions_libya_task_1 }
         allow = {}
         on_completion = {
             trigger_event = me_cyr_libya.3
@@ -51,8 +53,9 @@
             }
         }
     }
-    cyrene_missions_libya_task_4 = {
-        icon = "task_political"
+    cyrene_missions_libya_task_4 = { # The Capital at Barke
+        icon = "task_economical"
+        requires = { cyrene_missions_libya_task_2 cyrene_missions_libya_task_3 }
         allow = {}
         on_completion = {
             trigger_event = me_cyr_libya.4
@@ -61,8 +64,9 @@
             }
         }
     }
-    cyrene_missions_libya_task_5 = {
-        icon = "task_political"
+    cyrene_missions_libya_task_5 = { # Recruit Hellenic Advisors
+        icon = "task_heracles"
+        requires = { cyrene_missions_libya_task_2 }
         allow = {}
         on_completion = {
             trigger_event = me_cyr_libya.5
@@ -71,8 +75,9 @@
             }
         }
     }
-    cyrene_missions_libya_task_6 = {
-        icon = "task_political"
+    cyrene_missions_libya_task_6 = { # Seek Common Ground
+        icon = "task_apollo"
+        requires = { cyrene_missions_libya_task_5 }
         allow = {}
         on_completion = {
             trigger_event = me_cyr_libya.6
@@ -81,8 +86,9 @@
             }
         }
     }
-    cyrene_missions_libya_task_7 = {
-        icon = "task_political"
+    cyrene_missions_libya_task_7 = { # Hellenic Reconciliation
+        icon = "task_atlas"
+        requires = { cyrene_missions_libya_task_6 }
         allow = {}
         on_completion = {
             trigger_event = me_cyr_libya.7
@@ -91,9 +97,14 @@
             }
         }
     }
-    cyrene_missions_libya_task_8 = {
-        icon = "task_political"
-        allow = {}
+    cyrene_missions_libya_task_8 = { # Letters for the Libyan Tongue
+        icon = "task_diplomatic"
+        requires = { cyrene_missions_libya_task_5 }
+        allow = {
+            any_character = {
+                culture_group = numidian
+            }
+        }
         on_completion = {
             trigger_event = me_cyr_libya.8
             show_as_tooltip = {
@@ -101,8 +112,9 @@
             }
         }
     }
-    cyrene_missions_libya_task_9 = {
+    cyrene_missions_libya_task_9 = { # Kings of Eastern Libya
         icon = "task_political"
+        requires = { cyrene_missions_libya_task_7 cyrene_missions_libya_task_8 }
         allow = {}
         on_completion = {
             trigger_event = me_cyr_libya.9
@@ -111,8 +123,9 @@
             }
         }
     }
-    cyrene_missions_libya_task_10 = {
-        icon = "task_political"
+    cyrene_missions_libya_task_10 = { # Plunder the Greek Cities
+        icon = "task_artemis"
+        requires = { cyrene_missions_libya_task_3 }
         allow = {}
         on_completion = {
             trigger_event = me_cyr_libya.10
@@ -121,8 +134,9 @@
             }
         }
     }
-    cyrene_missions_libya_task_11 = {
-        icon = "task_political"
+    cyrene_missions_libya_task_11 = { # Entice Libyan Settlers
+        icon = "task_calm"
+        requires = { cyrene_missions_libya_task_10 }
         allow = {}
         on_completion = {
             trigger_event = me_cyr_libya.11
@@ -131,8 +145,9 @@
             }
         }
     }
-    cyrene_missions_libya_task_12 = {
-        icon = "task_political"
+    cyrene_missions_libya_task_12 = { # Approach for Garamantes
+        icon = "task_diplomatic"
+        requires = { cyrene_missions_libya_task_11 }
         allow = {}
         on_completion = {
             trigger_event = me_cyr_libya.12
@@ -141,8 +156,9 @@
             }
         }
     }
-    cyrene_missions_libya_task_13 = {
-        icon = "task_political"
+    cyrene_missions_libya_task_13 = { # Camel War Parties
+        icon = "task_battle"
+        requires = { cyrene_missions_libya_task_10 }
         allow = {}
         on_completion = {
             trigger_event = me_cyr_libya.13
@@ -151,8 +167,9 @@
             }
         }
     }
-    cyrene_missions_libya_task_14 = {
-        icon = "task_political"
+    cyrene_missions_libya_task_14 = { # Raid the Cities of the West
+        icon = "task_conquest"
+        requires = { cyrene_missions_libya_task_13 }
         allow = {}
         on_completion = {
             trigger_event = me_cyr_libya.14
@@ -161,8 +178,9 @@
             }
         }
     }
-    cyrene_missions_libya_task_15 = {
-        icon = "task_political"
+    cyrene_missions_libya_task_15 = { # Terror from the Desert
+        icon = "task_expansion"
+        requires = { cyrene_missions_libya_task_14 }
         allow = {}
         on_completion = {
             trigger_event = me_cyr_libya.15
@@ -171,3 +189,4 @@
             }
         }
     }
+}
