@@ -100,9 +100,17 @@ me_cyr_libya.8 = { # Letters for the Libyan Tongue
 
     immediate = {
         any_character = {
-            culture_group = numidian
+            limit = {
+                culture_group = numidian
+                if = {
+                    employer = {
+                        gender_equality = no
+                    }
+                    is_female = no
+                }
+            }
+            save_scope_as = numidian_tifinagh_writer
         }
-        save_scope_as = numidian_tifinagh_writer
     }
     option = {
         name = "me_cyr_libya_8.a"
@@ -115,6 +123,7 @@ me_cyr_libya.8 = { # Letters for the Libyan Tongue
             name = implementing_new_script
             days = 365
         }
+        set_as_minor_character = scope:numidian_tifinagh_writer
     }
 }
 me_cyr_libya.9 = { # Kings of Eastern Libya

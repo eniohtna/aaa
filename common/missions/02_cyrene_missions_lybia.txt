@@ -97,7 +97,34 @@
     cyrene_missions_libya_task_6 = { # Seek Common Ground
         icon = "task_apollo"
         requires = { cyrene_missions_libya_task_5 }
-        allow = {}
+        allow = {
+            OR = {
+                job_holder:office_foreign_minister = {
+                    culture_group = hellenic
+                }
+                job_holder:office_royal_tutor = {
+                    culture_group = hellenic
+                }
+                job_holder:office_marshal = {
+                    culture_group = hellenic
+                }
+                job_holder:office_master_of_the_guard = {
+                   culture_group = hellenic
+                }
+                job_holder:office_high_priest_monarchy = {
+                    culture_group = hellenic
+                }
+                job_holder:office_philosopher = {
+                    culture_group = hellenic
+                }
+                job_holder:office_steward = {
+                    culture_group = hellenic
+                }
+                job_holder:office_physician = {
+                    culture_group = hellenic
+                }                                                       
+            }
+        }
         on_completion = {
             trigger_event = me_cyr_libya.6
             show_as_tooltip = {
