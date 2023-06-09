@@ -67,7 +67,26 @@
     cyrene_missions_libya_task_5 = { # Recruit Hellenic Advisors
         icon = "task_heracles"
         requires = { cyrene_missions_libya_task_2 }
-        allow = {}
+        allow = {
+            any_character = {
+                is_adult = yes
+                is_ruler = no
+                is_primary_heir = no
+                is_pretender = no
+                is_friend = root.current_ruler
+                culture_group = hellenic
+                prisoner = no
+                country = employer
+                is_adult = yes
+                trigger_if = {
+                    limit = {
+                        employer = {
+                            gender_equality = no
+                        }
+                    }
+                    is_female = no
+                }
+            }
         on_completion = {
             trigger_event = me_cyr_libya.5
             show_as_tooltip = {

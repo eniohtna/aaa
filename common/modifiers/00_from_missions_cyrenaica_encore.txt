@@ -1,0 +1,9 @@
+﻿# Libya
+tifinagh_script = {
+	global_pop_assimilation_speed = 0.25
+	happiness_for_same_culture_modifier = 0.05
+}
+implementing_new_script = {
+	max_research_efficiency = -0.10
+	local_research_points_modifier = -0.10
+}

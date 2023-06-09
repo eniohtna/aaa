@@ -98,10 +98,23 @@ me_cyr_libya.8 = { # Letters for the Libyan Tongue
     desc = me_cyr_libya_8_desc
     picture = scribe_tools
 
+    immediate = {
+        any_character = {
+            culture_group = numidian
+        }
+        save_scope_as = numidian_tifinagh_writer
+    }
     option = {
         name = "me_cyr_libya_8.a"
         custom_tooltip = me_cyr_libya_8_tooltip
-
+        add_country_modifier = {
+            name = tifinagh_script
+            days = -1
+        }
+        add_country_modifier = {
+            name = implementing_new_script
+            days = 365
+        }
     }
 }
 me_cyr_libya.9 = { # Kings of Eastern Libya
@@ -109,12 +122,12 @@ me_cyr_libya.9 = { # Kings of Eastern Libya
 
     title = me_cyr_libya_9_title
     desc = me_cyr_libya_9_desc
-    picture = great_library
+    picture = throneroom
 
     option = {
         name = "me_cyr_libya_9.a"
         custom_tooltip = me_cyr_libya_9_tooltip
-
+        change_government = aristocratic_monarchy
     }
 }
 me_cyr_libya.10 = { # Plunder the Greek Cities
