@@ -21,6 +21,7 @@
         }
     }
     on_completion = {}
+
     cyrene_missions_libya_task_1 = { # The Spoils of Victory
         icon = "task_conquest"
         allow = {}
@@ -87,6 +88,7 @@
                     is_female = no
                 }
             }
+        }
         on_completion = {
             trigger_event = me_cyr_libya.5
             show_as_tooltip = {
