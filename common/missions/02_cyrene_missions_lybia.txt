@@ -69,24 +69,10 @@
         icon = "task_heracles"
         requires = { cyrene_missions_libya_task_2 }
         allow = {
-            any_character = {
-                is_adult = yes
-                is_ruler = no
-                is_primary_heir = no
-                is_pretender = no
-                is_friend = root.current_ruler
+            political_influence >= 25
+            any_country_culture = {
                 culture_group = hellenic
-                prisoner = no
-                country = employer
-                is_adult = yes
-                trigger_if = {
-                    limit = {
-                        employer = {
-                            gender_equality = no
-                        }
-                    }
-                    is_female = no
-                }
+                has_pop_type_right = citizen
             }
         }
         on_completion = {
@@ -127,6 +113,13 @@
                 }                                                       
             }
         }
+        bypass = {
+            NOT = {
+                any_character = {
+                    culture_group = hellenic
+                }
+            }
+        }
         on_completion = {
             trigger_event = me_cyr_libya.6
             show_as_tooltip = {
@@ -149,10 +142,14 @@
         icon = "task_diplomatic"
         requires = { cyrene_missions_libya_task_5 }
         allow = {
-            any_character = {
-                culture_group = numidian
+            political_influence >= 25
+            treasury >= 100
+            any_area_province = {
+                owner = root
+                governor_policy = civilization_effort
             }
         }
+        duration = 180
         on_completion = {
             trigger_event = me_cyr_libya.8
             show_as_tooltip = {
@@ -174,7 +171,9 @@
     cyrene_missions_libya_task_10 = { # Plunder the Greek Cities
         icon = "task_artemis"
         requires = { cyrene_missions_libya_task_3 }
-        allow = {}
+        allow = {
+        
+        }
         on_completion = {
             trigger_event = me_cyr_libya.10
             show_as_tooltip = {
