@@ -115,6 +115,7 @@ cyrene_1_magas = {
 				add_zeal = 1
 				add_finesse = 1
 			}
+			trigger_event = { id = cyr_magas_encore.2 }
 		}
 
 	}
@@ -198,6 +199,7 @@ cyrene_1_magas = {
 	        		}
 	        	}
 	        }
+	        trigger_event = { id = cyr_magas_encore.4 }
 		}
 
 	}
@@ -310,6 +312,7 @@ cyrene_1_magas = {
 	        		}
 	        	}	        	
 	        }
+	        trigger_event = { id = cyr_magas_encore.5 }
 		}
 
 	}
