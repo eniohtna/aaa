@@ -133,17 +133,20 @@ me_cyr_libya.800 = { # Letters for the Libyan Tongue: Tifinagh Options
     picture = celtic_chiefs
 
     immediate = {
-        any_character = {
-            limit = {
-                culture_group = numidian
-                if = {
-                    employer = {
-                        gender_equality = no
-                    }
-                    is_female = no
+        hidden_effect = {
+            create_character = {
+                age = 27
+                culture = massylian
+                religion = berber_religion
+                no_stats = yes
+                hidden_effect = {
+                    bad_martial_effect = yes
+                    great_finesse_effect = yes
+                    great_charisma_effect = yes
+                    average_zeal_effect = yes
                 }
+                save_scope_as = numidian_tifinagh_writer
             }
-            save_scope_as = numidian_tifinagh_writer
         }
     }
 
@@ -178,6 +181,15 @@ me_cyr_libya.801 = { # Letters for the Libyan Tongue: Recruit
     title = me_cyr_libya_801_title
     desc = me_cyr_libya_801_desc
     picture = great_work_architect
+    left_portrait = current_ruler
+    right_portrait = scope:numidian_tifinagh_writer
+
+    immediate = {
+        random_character = {
+            limit = { has_high_priest_office_trigger = yes }
+            remove_all_positions = yes
+        }
+    }
 
     option = {
         name = "me_cyr_libya_801.a"
@@ -190,7 +202,8 @@ me_cyr_libya.801 = { # Letters for the Libyan Tongue: Recruit
             name = implementing_new_script
             duration = 365
         }
-        set_as_minor_character = scope:numidian_tifinagh_writer
+        hidden_effect = { set_as_minor_character = scope:numidian_tifinagh_writer }
+        scope:numidian_tifinagh_writer = { give_office = office_high_priest }
     }
 }
 me_cyr_libya.802 = { # Letters for the Libyan Tongue: Befriend
@@ -199,6 +212,8 @@ me_cyr_libya.802 = { # Letters for the Libyan Tongue: Befriend
     title = me_cyr_libya_802_title
     desc = me_cyr_libya_802_desc
     picture = council_country
+    left_portrait = current_ruler
+    right_portrait = scope:numidian_tifinagh_writer
 
     option = {
         name = "me_cyr_libya_802.a"
@@ -211,10 +226,8 @@ me_cyr_libya.802 = { # Letters for the Libyan Tongue: Befriend
             name = implementing_new_script
             duration = 365
         }
-        set_as_minor_character = scope:numidian_tifinagh_writer
-        current_ruler = {
-            add_friend = scope:numidian_tifinagh_writer
-        }
+        hidden_effect = { set_as_minor_character = scope:numidian_tifinagh_writer }
+        current_ruler = { add_friend = scope:numidian_tifinagh_writer }
     }
 }
 me_cyr_libya.803 = { # Letters for the Libyan Tongue: Capture
@@ -223,6 +236,8 @@ me_cyr_libya.803 = { # Letters for the Libyan Tongue: Capture
     title = me_cyr_libya_803_title
     desc = me_cyr_libya_803_desc
     picture = looting
+    left_portrait = current_ruler
+    right_portrait = scope:numidian_tifinagh_writer
 
     option = {
         name = "me_cyr_libya_803.a"
@@ -235,7 +250,8 @@ me_cyr_libya.803 = { # Letters for the Libyan Tongue: Capture
             name = implementing_new_script
             duration = 365
         }
-        set_as_minor_character = scope:numidian_tifinagh_writer
+        hidden_effect = { set_as_minor_character = scope:numidian_tifinagh_writer }
+        imprison = { target = scope:numidian_tifinagh_writer }
     }
 }
 me_cyr_libya.804 = { # Letters for the Libyan Tongue: Greco-Libyan Alphabet
@@ -246,9 +262,16 @@ me_cyr_libya.804 = { # Letters for the Libyan Tongue: Greco-Libyan Alphabet
     picture = greek_philosophers
 
     immediate = {
-        any_character = {
-            limit = {
-                culture = cyrenaican
+        create_character = {
+            age = 35
+            culture = cyrenaican
+            religion = roman_pantheon
+            no_stats = yes
+            hidden_effect = {
+                bad_martial_effect = yes
+                great_finesse_effect = yes
+                great_charisma_effect = yes
+                average_zeal_effect = yes
             }
             save_scope_as = greco_libyan_script_creator
         }
@@ -279,10 +302,8 @@ me_cyr_libya.805 = { # Letters for the Libyan Tongue: The Libu Script
             name = greek_script
             duration = -1
         }
-        set_as_minor_character = scope:greco_libyan_script_creator
-        current_ruler ={
-            add_friend = scope:greco_libyan_script_creator
-        }
+        hidden_effect = { set_as_minor_character = scope:greco_libyan_script_creator }
+        current_ruler = { add_friend = scope:greco_libyan_script_creator }
     }
 }
 me_cyr_libya.806 = { # Letters for the Libyan Tongue: Final
