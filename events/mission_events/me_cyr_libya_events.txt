@@ -202,7 +202,6 @@ me_cyr_libya.801 = { # Letters for the Libyan Tongue: Recruit
             name = implementing_new_script
             duration = 365
         }
-        hidden_effect = { set_as_minor_character = scope:numidian_tifinagh_writer }
         scope:numidian_tifinagh_writer = { give_office = office_high_priest }
     }
 }
