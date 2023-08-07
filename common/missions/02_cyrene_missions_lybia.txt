@@ -200,18 +200,15 @@
         icon = "task_diplomatic"
         requires = { cyrene_missions_libya_task_5 }
         allow = {
-            political_influence >= 25
+            political_influence >= 50
             treasury >= 100
-            any_area_province = {
-                governor_policy = civilization_effort
-            }
         }
         duration = 180
         on_start = {
-            trigger = me_cyr_libya.8
+            trigger_event = me_cyr_libya.8
         }
         on_completion = {
-            trigger_event = me_cyr_libya.805
+            trigger_event = me_cyr_libya.806
             custom_tooltip = libu_script_tt
         }
     }
