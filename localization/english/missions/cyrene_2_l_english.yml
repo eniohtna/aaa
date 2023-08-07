@@ -29,10 +29,10 @@ cyrene_missions_libya_task_7:0 "Hellenic Reconciliation"
 cyrene_missions_libya_task_7_DESC:0 ""
 
 cyrene_missions_libya_task_8:0 "Letters for the Libyan Tongue"
-cyrene_missions_libya_task_8_DESC:0 "The Libyan language has been the mother tongue of the Libu since anyone can remember, but it has never been written in a script before. While we could simply keep the status quo and use the Greek alphabet which remains the dominent script right now, if we #Y recruit#!, #Y befriend#!, #R capture#!, or somehow have an individual of a #Y Numidian#! culture in our nation, we could study and implement a unique variant of the #G Tifinagh#! script used by our cousins across North Africa."
+cyrene_missions_libya_task_8_DESC:0 "The Libyan language has been the mother tongue of the Libu since anyone can remember, but it has never been written in a script before. While we could simply keep the status quo and use the Greek alphabet which remains the dominant script right now, if we #Y recruit#!, #G befriend#!, #R capture#!, or somehow have an individual of a #Y Numidian#! culture in our nation, we could study and implement a unique variant of the #T Tifinagh#! script used by our cousins across North Africa."
 
 cyrene_missions_libya_task_9:0 "Kings of Eastern Libya"
-cyrene_missions_libya_task_9_DESC:0 "#R started as a tribal nation, won against the greeks, took hellenic influences, built on them, and have made it to a full monarchy just now.\n\nthis is the end of a huge path in the tree, possible an end task.#!"
+cyrene_missions_libya_task_9_DESC:0 " #R started as a tribal nation, won against the greeks, took hellenic influences, built on them, and have made it to a full monarchy just now.\n\nthis is the end of a huge path in the tree, possible an end task.#! (@zorgo!)"
 
 cyrene_missions_libya_task_10:0 "Plunder the Greek Cities"
 cyrene_missions_libya_task_10_DESC:0 ""
@@ -54,13 +54,29 @@ cyrene_missions_libya_task_15_DESC:0 ""
 
 
 #Tooltips
-
-
+cyrene_1_lybia_task_2.tt:0 "The [GetCulture('cyrenaican').GetName|Y] culture is #Y Integrated#! or has #Y Rights of Intermarriage#!."
+cyrene_1_libya_task_3.tt:0 "The #Y [GetCulture('cyrenaican').GetName|Y]#! culture has #Y Slave#!@slaves! or #! #Y Tribesmen#!@tribesmen! rights."
+cyrene_1_libya_task_3_B.tt:0 "Any province in the region of #Y [GetProvince('(int32)3352').GetArea.GetRegion.GetName]#! has the #Y Religious Conversion#! or #Y Cultural Assimilation#! governor policy."
+libu_script_tt:0 "Develop a proper #E writing system#! for our #Y Libyan language#!!"
 
 #Modifiers
 tifinagh_script:0 "Libu-Tifinagh Script"
 implementing_new_script:0 "Implementing New Script"
 terror_from_the_desert:0 "Terror from the Desert"
+spoils_of_war:0 "Spoils of War"
+we_be_losers:0 "Looted Land"
+capital_of_libu:0 "Emergent Capital"
+king_of_libu:0 "Kings of Eastern Libya"
+
+#Decisions
+integrate_cyrenaican_navy:0 "Integrate Cyrenaican Navy"
+integrate_cyrenaican_navy_desc:0 "Integrate the old Cyrenaican Navy and reaquire the ships they used against us in the war."
+tifinagh_libu_kings_list:0 "Libu Kings List"
+tifinagh_script_kings_list:0 "Create a Kings List"
+tifinagh_script_kings_list_desc:0 "We have both developped a #Y Tifinagh-Libu script#! as well as a #Y Libu monarchy#!. It's only natural to record our new royal lineage!"
+greek_libu_kings_list:0 "Libu Kings List"
+greek_script_kings_list:0 "Create a Kings List"
+greek_script_kings_list_desc:0 "We have both developped a #Y Greek-Libu script#! as well as a #Y Libu monarchy#!. It's only natural to record our new royal lineage!"
 
 #Events
 me_cyr_libya_1_title:0 "$cyrene_missions_libya_task_1$"
@@ -98,9 +114,41 @@ me_cyr_libya_7_desc:0 ""
 me_cyr_libya_7.a:0 ""
 me_cyr_libya_7_tooltip:0 "The mission task '#Y $cyrene_missions_libya_task_7$#!' has now been #G Completed#!!"
 
-me_cyr_libya_8_title:0 "$cyrene_missions_libya_task_8$"
-me_cyr_libya_8_desc:0 ""
-me_cyr_libya_8.a:0 ""
+me_cyr_libya_8_title:0 "Letters for the Libyan Tongue: Tifinagh or Greek?"
+me_cyr_libya_8_desc:0 "The Libyan language has been the mother tongue of us #E Libu#! since anyone can remember, but it has never been written in a script before. While we could simply keep the status quo and use the #E Greek#! alphabet which remains the dominant script right now, we could also instead seek to develp a script based on the the #E Tifinagh#! alphabet of our #E Numidian#! cousins."
+me_cyr_libya_8.a:0 "Let's make a new, Libu-Tifinagh script."
+me_cyr_libya_8.b:0 "It's easier to adopt a Greco-Libu script."
+
+me_cyr_libya_800_title:0 "Letters for the Libyan Tongue: Recruit, Befriend, or Capture"
+me_cyr_libya_800_desc:0 "We have decided on forging a new #E Tifinagh#! based script, however, we are far from our #E Numidian#! cousins... and so we will have to use other means to 'acquire' a #E Numidian#!. We could #Y recruit#!, #G befriend#!, or #R capture#! one."
+me_cyr_libya_800.a:0 "Money is power, so lets use it."
+me_cyr_libya_800.b:0 "Time to whip out my social skills."
+me_cyr_libya_800.c:0 "Fetch me a Numidian by force!"
+
+me_cyr_libya_801_title:0 "Letters for the Libyan Tongue: Hire a Numidian"
+me_cyr_libya_801_desc:0 "We have found a #E Numidian#! and paid him his dues. He can fluently and beautifully write the #E Tifinagh#! script. All he asks for is a position in our council, and the secrets of #E Tifinagh#! will be unlocked for the #E Libyan#! language."
+me_cyr_libya_801.a:0 "Money talks... er... writes!"
+
+me_cyr_libya_802_title:0 "Letters for the Libyan Tongue: Befriend a Numidian"
+me_cyr_libya_802_desc:0 "Traveling to the lands of the west, we were able to meet and court a #E Numidian#! ruler. They were intrigued by our plight and allowed us to bring home a Numidian scribe who can teach us how to write with #E Tifinagh#! script."
+me_cyr_libya_802.a:0 "Diplomacy rules!"
+
+me_cyr_libya_803_title:0 "Letters for the Libyan Tongue: Capture a Numidian"
+me_cyr_libya_803_desc:0 "Our men raided the homes of a #E Numidian#! village in the middle of the night. They return successfully with their grand prize, a #E Tifinagh#! scribe! He won't talk, but nothing a little torture can't fix."
+me_cyr_libya_803.a:0 "Make sure not to break all his fingers!"
+
+me_cyr_libya_804_title:0 "Letters for the Libyan Tongue: Greco-Libyan Alphabet"
+me_cyr_libya_804_desc:0 "Adopting the #E Greek#! alphabet will be much easier than trying to reach out to the far off #E Numidians#!. Now all that remains is waiting and employing the best #E Greek#! scribes to help create a script suitable for the #E Libu#!."
+me_cyr_libya_804.a:0 "Tell them to work on it #E write#! away!"
+
+me_cyr_libya_805_title:0 "Letters for the Libyan Tongue: The Libu Script"
+me_cyr_libya_805_desc:0 "Success! It was quite easy for the #E Greeks#! to apply their letters to our language. They borrowed some #E Coptic#! letters to fill in the gaps, and voila! The #E Libu#! script can now be taught and used."
+me_cyr_libya_805.a:0 "Excellent! We made the #E write#! choice."
+
+me_cyr_libya_806_title:0 "Letters for the Libyan Tongue: The New Script is Born"
+me_cyr_libya_806_desc:0 "Our efforts have been successful! Now we #E Libu#! have our very own writing system. All the world will soon recognize us as much more than just barbarians, but as civilized and sophisticated people, worthy of sharing the world stage with the other great peoples of the lands."
+me_cyr_libya_806.a:0 "Civilized? Damn #E write#! we are!"
+
 me_cyr_libya_8_tooltip:0 "The mission task '#Y $cyrene_missions_libya_task_8$#!' has now been #G Completed#!!"
 
 me_cyr_libya_9_title:0 "$cyrene_missions_libya_task_9$"
@@ -138,3 +186,11 @@ me_cyr_libya_15_desc:0 ""
 me_cyr_libya_15.a:0 ""
 me_cyr_libya_15_tooltip:0 "The mission task '#Y $cyrene_missions_libya_task_15$#!' has now been #G Completed#!!"
 
+#Encore Edits
+cyr_magas_encore.2.title:0 "Consolidate Hold over Kyrene"
+cyr_magas_encore.2.desc:0 "A tremendously important thing; loyalty. For how can we dream of expanding, if the foundation that we build upon is rotten to its core? Donatives have been given and promises have been made, reminding our bureaucrats of their place - we can now rest assured that we have the full support of those we employ."
+cyr_magas_encore.2.a:0 "Excellent!"
+
+cyr_magas_encore.6.title:0 "$cyrene_1_magas_task_6$"
+cyr_magas_encore.6.desc:0 "$cyrene_1_magas_task_6_DESC$"
+cyr_magas_encore.6.a:0 "We Greeks are superior!"

@@ -10,7 +10,18 @@ me_cyr_libya.1 = { # The Spoils of Victory
     option = {
         name = "me_cyr_libya_1.a"
         custom_tooltip = me_cyr_libya_1_tooltip
-
+        add_treasury = 250
+        add_political_influence = 50
+        add_country_modifier = {
+            name = spoils_of_war
+            duration = 365
+        }
+        p:3360 = {
+            add_province_modifier = {
+                name = we_be_losers
+                duration = 365
+            }
+        }
     }
 }
 me_cyr_libya.2 = { # Foreign Customs
@@ -91,11 +102,34 @@ me_cyr_libya.7 = { # Hellenic Reconciliation
 
     }
 }
-me_cyr_libya.8 = { # Letters for the Libyan Tongue
+### Letters for the Libyan Tongue Event Chain ###
+me_cyr_libya.8 = { # Letters for the Libyan Tongue: Intro
     type = country_event
 
-    title = me_cyr_libya_8_title
+    title = me_cyr_libya_8_tittle
     desc = me_cyr_libya_8_desc
+    picture = scribe_tools
+
+    option = {
+        name = "me_cyr_libya_8.a"
+        trigger_event = {
+            id = me_cyr_libya.800  # Libyan Path
+            duration = { 10 20 }
+        }
+    }
+    option = {
+        name = "me_cyr_libya_8.b"
+        trigger_event = {
+            id = me_cyr_libya.804  # Greek Path
+            duration = { 10 20 }
+        }
+    }
+}
+me_cyr_libya.800 = { # Letters for the Libyan Tongue: Tifinagh Options
+    type = country_event
+
+    title = me_cyr_libya_800_title
+    desc = me_cyr_libya_800_desc
     picture = scribe_tools
 
     immediate = {
@@ -112,8 +146,41 @@ me_cyr_libya.8 = { # Letters for the Libyan Tongue
             save_scope_as = numidian_tifinagh_writer
         }
     }
+
     option = {
-        name = "me_cyr_libya_8.a"
+        name = "me_cyr_libya_800.a" # Recruit
+        add_treasury = -50
+        trigger_event = {
+            id = me_cyr_libya.801
+            duration = { 20 30 }
+        }
+    }
+    option = {
+        name = "me_cyr_libya_800.b" # Befriend
+        add_political_influence = -50
+        trigger_event = {
+            id = me_cyr_libya.802
+            duration = { 20 30 }
+        }
+    }
+    option = {
+        name = "me_cyr_libya_800.c" # Capture
+        add_manpower = -1
+        trigger_event = {
+            id = me_cyr_libya.803
+            duration = { 20 30 }
+        }
+    }
+}
+me_cyr_libya.801 = { # Letters for the Libyan Tongue: Recruit
+    type = country_event
+
+    title = me_cyr_libya_801_title
+    desc = me_cyr_libya_801_desc
+    picture = scribe_tools
+
+    option = {
+        name = "me_cyr_libya_801"
         custom_tooltip = me_cyr_libya_8_tooltip
         add_country_modifier = {
             name = tifinagh_script
@@ -126,6 +193,106 @@ me_cyr_libya.8 = { # Letters for the Libyan Tongue
         set_as_minor_character = scope:numidian_tifinagh_writer
     }
 }
+me_cyr_libya.802 = { # Letters for the Libyan Tongue: Befriend
+    type = country_event
+
+    title = me_cyr_libya_802_title
+    desc = me_cyr_libya_802_desc
+    picture = scribe_tools
+
+    option = {
+        name = "me_cyr_libya_802.a"
+        custom_tooltip = me_cyr_libya_8_tooltip
+        add_country_modifier = {
+            name = tifinagh_script
+            days = -1
+        }
+        add_country_modifier = {
+            name = implementing_new_script
+            days = 365
+        }
+        set_as_minor_character = scope:numidian_tifinagh_writer
+        current_ruler = {
+            add_friend = scope:numidian_tifinagh_writer
+        }
+    }
+}
+me_cyr_libya.803 = { # Letters for the Libyan Tongue: Capture
+    type = country_event
+
+    title = me_cyr_libya_802_title
+    desc = me_cyr_libya_802_desc
+    picture = scribe_tools
+
+    option = {
+        name = "me_cyr_libya_802.a"
+        custom_tooltip = me_cyr_libya_8_tooltip
+        add_country_modifier = {
+            name = tifinagh_script
+            days = -1
+        }
+        add_country_modifier = {
+            name = implementing_new_script
+            days = 365
+        }
+        set_as_minor_character = scope:numidian_tifinagh_writer
+    }
+}
+me_cyr_libya.804 = { # Letters for the Libyan Tongue: Greco-Libyan Alphabet
+    type = country_event
+
+    title = me_cyr_libya_804_title
+    desc = me_cyr_libya_804_desc
+    picture = scribe_tools
+
+    option = {
+        name = "me_cyr_libya_804.a"
+        add_treasury = -25
+        add_political_influence = -25
+    }
+}
+me_cyr_libya.805 = { # Letters for the Libyan Tongue: The Libu Script
+    type = country_event
+
+    title = me_cyr_libya_805_title
+    desc = me_cyr_libya_805_desc
+    picture = scribe_tools
+
+    immediate = {
+        any_character = {
+            limit = {
+                culture = cyrenaican
+            }
+            save_scope_as = greco_libyan_script_creator
+        }
+    }
+
+    option = {
+        name = "me_cyr_libya_804.a"
+        add_country_modifier = {
+            name = greek_alphabet
+            days = -1
+        }
+        set_as_minor_character = scope:greco_libyan_script_creator
+        current_ruler ={
+            add_friend = scope:greco_libyan_script_creator
+        }
+    }
+}
+me_cyr_libya.806 = { # Letters for the Libyan Tongue: Final
+    type = country_event
+
+    title = me_cyr_libya_806_title
+    desc = me_cyr_libya_806_desc
+    picture = scribe_tools
+
+    option = {
+        name = "me_cyr_libya_806.a"
+        custom_tooltip = me_cyr_libya_8_tooltip
+    }
+}
+### Event Chain End ###
+
 me_cyr_libya.9 = { # Kings of Eastern Libya
     type = country_event
 
@@ -137,6 +304,10 @@ me_cyr_libya.9 = { # Kings of Eastern Libya
         name = "me_cyr_libya_9.a"
         custom_tooltip = me_cyr_libya_9_tooltip
         change_government = aristocratic_monarchy
+        add_country_modifier = {
+            name = king_of_libu
+            duration = -1
+        }
     }
 }
 me_cyr_libya.10 = { # Plunder the Greek Cities
@@ -191,7 +362,7 @@ me_cyr_libya.13 = { # Camel War Parties
 
     }
 }
-me_cyr_libya.14 = { # Raid th Cities of the West
+me_cyr_libya.14 = { # Raid the Cities of the West
     type = country_event
 
     title = me_cyr_libya_14_title

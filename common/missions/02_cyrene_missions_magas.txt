@@ -353,10 +353,11 @@ cyrene_1_magas = {
 						governor_policy = cultural_assimilation  
 					} 
 				}
-			}		
+			}
 		}
 
 		on_completion = {
+			trigger_event = cyr_magas_encore.6
 			while = {
 				count = 6
 				region:cyrenaica_region = {

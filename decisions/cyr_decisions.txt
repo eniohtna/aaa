@@ -624,5 +624,82 @@
 			base = 1
 		}
 	}
+
+	### Libu Decisions ###
+	integrate_cyrenaican_navy = {
+		potential = {
+			primary_culture = libyan
+			war = no
+			NOT = {
+				has_variable = cyr_integrates_navy
+			}
+		}
+		allow = {
+			treasury >= 150
+		}
+		effect = {
+			set_variable = cyr_integrates_navy
+	    	create_unit = {
+	            sub_unit = liburnian
+				location = 2574
+				navy = yes
+				add_subunit = liburnian
+				add_subunit = liburnian
+				add_subunit = liburnian
+				add_subunit = liburnian
+				add_subunit = trireme
+				add_subunit = trireme
+				add_subunit = trireme
+				add_subunit = tetrere
+			}
+			add_treasury = -150
+		}
+	}
+	tifinagh_script_kings_list = {
+		potential = {
+			has_country_modifier = tifinagh_script
+			government = aristocratic_monarchy
+		}
+		allow = {
+			legitimacy >= 80
+			treasury >= 50
+			current_ruler = {
+				popularity >= 70
+			}
+		}
+		effect = {
+			create_country_treasure = {
+				key = "tifinagh_libu_kings_list"
+				icon = "old_script_1"
+				modifier = {
+					local_research_points_modifier = 0.1
+					local_pop_conversion_speed = 0.1
+				}
+			}
+		}
+	}
+	greek_script_kings_list = {
+		potential = {
+			has_country_modifier = greek_script
+			government = aristocratic_monarchy
+		}
+		allow = {
+			legitimacy >= 80
+			treasury >= 50
+			current_ruler = {
+				popularity >= 70
+			}
+		}
+		effect = {
+			create_country_treasure = {
+				key = "greek_libu_kings_list"
+				icon = "old_script_2"
+				modifier = {
+					local_population_happiness = 0.1
+					local_pop_assimilation_speed = 0.1
+				}
+			}
+		}
+	}
 }
 

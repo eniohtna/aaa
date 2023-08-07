@@ -1,12 +1,44 @@
 ﻿# Libya
 tifinagh_script = {
-	global_pop_assimilation_speed = 0.25
-	happiness_for_same_culture_modifier = 0.05
+	global_pop_assimilation_speed = 0.15
+	happiness_for_same_culture_modifier = 0.10
 }
 implementing_new_script = {
 	max_research_efficiency = -0.10
 	local_research_points_modifier = -0.10
 }
+greek_script = {
+	research_points_modifier = 0.15
+	happiness_for_wrong_culture_group_modifier = 0.10
+}
 terror_from_the_desert = {
 	desert_combat_bonus = 0.1
+}
+spoils_of_war = {
+	global_monthly_food_modifier = 0.15
+	global_tax_modifier = 0.25
+}
+we_be_losers = {
+	local_tax_modifier = -0.1
+	local_monthly_food_modifier = -0.1
+	local_monthly_civilization = -0.05
+}
+capital_of_libu = {
+	local_monthly_civilization = 0.05
+	local_citizen_happyness = 0.05
+	local_citizen_output = 0.05
+	local_migration_attraction = 30
+	local_migration_speed_modifier = 0.05
+	local_pop_assimilation_speed_modifier = 0.05
+	local_population_capacity_modifier = 0.1
+	local_population_growth = 10
+}
+king_of_libu = {
+	monthly_legitimacy = 0.03
+	monthly_corruption = -0.03
+	global_manpower_modifier = 0.05
+	land_morale_modifier = 0.05
+	ruler_popularity_gain = 0.03
+	happiness_for_wrong_culture_group_modifier = 0.08
+	happiness_for_same_culture_modifier = 0.1
 }

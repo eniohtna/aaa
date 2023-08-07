@@ -1807,3 +1807,67 @@ cyr_magas_encore.5 = { # Pacify the Raiders
         }
     }
 }
+
+cyr_magas_encore.6 = { # Greek Dominance
+    type = country_event
+    title = cyr_magas_encore.6.title
+    desc = cyr_magas_encore.6.desc
+    picture = greeks_marching
+
+    option = {      
+        name = cyr_magas_encore.6.a
+        show_as_tooltip = {
+            while = {
+                count = 6
+                region:cyrenaica_region = {
+                    random_region_province = {
+                        limit = {
+                            owner = root
+                            any_pops_in_province = {
+                                pop_culture = libyan
+                                NOT = { pop_type = tribesmen }
+                                NOT = { pop_type = slaves }                             
+                            }
+                        }
+                        random_pops_in_province = {
+                            limit = {
+                                pop_culture = libyan
+                                NOT = { pop_type = tribesmen }
+                                NOT = { pop_type = slaves }
+                            } 
+                            set_pop_culture = cyrenaican
+                        }
+                    }   
+                }           
+            }
+            if = {
+                limit = {
+                    p:5992 = {
+                        has_province_modifier = generic_barbarian_spawn_place
+                    }
+                }
+                p:5992 = {
+                    remove_province_modifier = generic_barbarian_spawn_place
+                    add_province_modifier = {
+                        name = major_barbarian_spawn_place
+                        duration = -1
+                    }
+                }
+            }
+            if = {
+                limit = {
+                    p:5993 = {
+                        has_province_modifier = generic_barbarian_spawn_place
+                    }
+                }
+                p:5993 = {
+                    remove_province_modifier = generic_barbarian_spawn_place
+                    add_province_modifier = {
+                        name = major_barbarian_spawn_place
+                        duration = -1
+                    }
+                }
+            }
+        }
+    }
+}

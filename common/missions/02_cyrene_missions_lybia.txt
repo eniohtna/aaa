@@ -24,29 +24,73 @@
 
     cyrene_missions_libya_task_1 = { # The Spoils of Victory
         icon = "task_conquest"
-        allow = {}
+        allow = {
+            war = no
+        }
         on_completion = {
             trigger_event = me_cyr_libya.1
             show_as_tooltip = {
-
+                add_treasury = 250
+                add_political_influence = 50
+                add_country_modifier = {
+                    name = spoils_of_war
+                    duration = 365
+                }
+                p:3360 = {
+                    add_province_modifier = {
+                        name = we_be_losers
+                        duration = 365
+                    }
+                }
             }
         }
     }
     cyrene_missions_libya_task_2 = { # Foreign Customs
         icon = "task_diplomatic"
         requires = { cyrene_missions_libya_task_1 }
-        allow = {}
+        allow = {
+            custom_tooltip = {
+                text = cyrene_1_lybia_task_2.tt
+                any_country_culture = {
+                    is_culture = cyrenaican
+                    OR = {
+                        is_integrated = yes
+                        has_country_culture_modifier = right_of_marriage
+                    }
+                }
+            }
+        }
         on_completion = {
             trigger_event = me_cyr_libya.2
             show_as_tooltip = {
-
             }
         }
     }
     cyrene_missions_libya_task_3 = { # Return to Old Ways
         icon = "task_happiness"
         requires = { cyrene_missions_libya_task_1 }
-        allow = {}
+        allow = {
+            custom_tooltip = {
+                text = cyrene_1_libya_task_3.tt
+                any_country_culture = {
+                    is_culture = cyrenaican
+                    OR = {
+                        has_pop_type_right = slaves
+                        has_pop_type_right = tribesmen
+                    }
+                }
+            }
+            custom_tooltip = {
+                text = cyrene_1_libya_task_3_B.tt
+                any_owned_province = {
+                    is_in_region = cyrenaica_region
+                    OR = {
+                        governor_policy = religious_conversion 
+                        governor_policy = cultural_assimilation  
+                    } 
+                }
+            }
+        }
         on_completion = {
             trigger_event = me_cyr_libya.3
             show_as_tooltip = {
@@ -57,11 +101,30 @@
     cyrene_missions_libya_task_4 = { # The Capital at Barke
         icon = "task_economical"
         requires = { cyrene_missions_libya_task_2 cyrene_missions_libya_task_3 }
-        allow = {}
+        allow = {
+            p:3357 = {
+                is_capital = yes
+            }
+            hidden:p:3357.state = {
+                calc_true_if = {
+                    amount >= 2
+                    state_improvement_military_trigger = yes
+                    state_improvement_civic_trigger = yes
+                    state_improvement_oratory_trigger = yes
+                    state_improvement_religious_trigger = yes
+                }
+            }
+        }
         on_completion = {
             trigger_event = me_cyr_libya.4
             show_as_tooltip = {
-
+                p:3357 = {
+                    add_province_modifier = {
+                        name = capital_of_libu
+                        duration = -1
+                    }
+                }
+                add_2_free_province_investments = yes
             }
         }
     }
@@ -69,11 +132,6 @@
         icon = "task_heracles"
         requires = { cyrene_missions_libya_task_2 }
         allow = {
-            political_influence >= 25
-            any_country_culture = {
-                culture_group = hellenic
-                has_pop_type_right = citizen
-            }
         }
         on_completion = {
             trigger_event = me_cyr_libya.5
@@ -145,26 +203,32 @@
             political_influence >= 25
             treasury >= 100
             any_area_province = {
-                owner = root
                 governor_policy = civilization_effort
             }
         }
         duration = 180
+        on_start = {
+            trigger = me_cyr_libya.8
+        }
         on_completion = {
-            trigger_event = me_cyr_libya.8
-            show_as_tooltip = {
-
-            }
+            trigger_event = me_cyr_libya.805
+            custom_tooltip = libu_script_tt
         }
     }
     cyrene_missions_libya_task_9 = { # Kings of Eastern Libya
         icon = "task_political"
         requires = { cyrene_missions_libya_task_7 cyrene_missions_libya_task_8 }
-        allow = {}
+        allow = {
+            centralization >= 50
+        }
         on_completion = {
             trigger_event = me_cyr_libya.9
             show_as_tooltip = {
-
+                change_government = aristocratic_monarchy
+                add_country_modifier = {
+                    name = king_of_libu
+                    duration = -1
+                }
             }
         }
     }
