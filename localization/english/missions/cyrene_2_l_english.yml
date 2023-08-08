@@ -54,7 +54,7 @@ cyrene_missions_libya_task_15_DESC:0 ""
 
 
 #Tooltips
-cyrene_1_lybia_task_2.tt:0 "The [GetCulture('cyrenaican').GetName|Y] culture is #Y Integrated#! or has #Y Rights of Intermarriage#!."
+cyrene_1_libya_task_2.tt:0 "The [GetCulture('cyrenaican').GetName|Y] culture is #Y Integrated#! or has #Y Rights of Intermarriage#!."
 cyrene_1_libya_task_3.tt:0 "The #Y [GetCulture('cyrenaican').GetName|Y]#! culture has #Y Slave#!@slaves! or #! #Y Tribesmen#!@tribesmen! rights."
 cyrene_1_libya_task_3_B.tt:0 "Any province in the region of #Y [GetProvince('(int32)3352').GetArea.GetRegion.GetName]#! has the #Y Religious Conversion#! or #Y Cultural Assimilation#! governor policy."
 libu_script_tt:0 "Develop a proper #E writing system#! for our #Y Libyan language#!!"

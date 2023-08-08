@@ -7,6 +7,8 @@
 
     potential = {
         NOT = { has_variable = mission_cooldown_var }
+        primary_culture = libyan
+        root = c:CYR
     }
 
     abort = {}
@@ -20,7 +22,9 @@
             days = 7300
         }
     }
-    on_completion = {}
+    on_completion = {
+        trigger_event = me_cyr_libya.16
+    }
 
     cyrene_missions_libya_task_1 = { # The Spoils of Victory
         icon = "task_conquest"
@@ -50,7 +54,7 @@
         requires = { cyrene_missions_libya_task_1 }
         allow = {
             custom_tooltip = {
-                text = cyrene_1_lybia_task_2.tt
+                text = cyrene_1_libya_task_2.tt
                 any_country_culture = {
                     is_culture = cyrenaican
                     OR = {
@@ -228,6 +232,7 @@
                 }
             }
         }
+        final = yes
     }
     cyrene_missions_libya_task_10 = { # Plunder the Greek Cities
         icon = "task_artemis"
@@ -297,4 +302,5 @@
             }
         }
     }
+    final = yes
 }
