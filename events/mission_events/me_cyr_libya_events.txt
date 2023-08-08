@@ -5,7 +5,7 @@ me_cyr_libya.1 = { # The Spoils of Victory
 
     title = me_cyr_libya_1_title
     desc = me_cyr_libya_1_desc
-    picture = great_library
+    picture = looting_honor
 
     option = {
         name = "me_cyr_libya_1.a"
@@ -29,7 +29,7 @@ me_cyr_libya.2 = { # Foreign Customs
 
     title = me_cyr_libya_2_title
     desc = me_cyr_libya_2_desc
-    picture = great_library
+    picture = successors
 
     option = {
         name = "me_cyr_libya_2.a"
@@ -42,7 +42,7 @@ me_cyr_libya.3 = { # Return to Old Ways
 
     title = me_cyr_libya_3_title
     desc = me_cyr_libya_3_desc
-    picture = great_library
+    picture = revolt
 
     option = {
         name = "me_cyr_libya_3.a"
@@ -55,7 +55,7 @@ me_cyr_libya.4 = { # The Capital at Barke
 
     title = me_cyr_libya_4_title
     desc = me_cyr_libya_4_desc
-    picture = great_library
+    picture = persepolis
 
     option = {
         name = "me_cyr_libya_4.a"
@@ -68,7 +68,7 @@ me_cyr_libya.5 = { # Recruit Hellenic Advisors
 
     title = me_cyr_libya_5_title
     desc = me_cyr_libya_5_desc
-    picture = great_library
+    picture = interesting_histories_greek_city_man
 
     option = {
         name = "me_cyr_libya_5.a"
@@ -81,7 +81,7 @@ me_cyr_libya.6 = { # Seek Common Ground
 
     title = me_cyr_libya_6_title
     desc = me_cyr_libya_6_desc
-    picture = great_library
+    picture = senate_debate
 
     option = {
         name = "me_cyr_libya_6.a"
@@ -94,7 +94,7 @@ me_cyr_libya.7 = { # Hellenic Reconciliation
 
     title = me_cyr_libya_7_title
     desc = me_cyr_libya_7_desc
-    picture = great_library
+    picture = interesting_histories_greek_debate
 
     option = {
         name = "me_cyr_libya_7.a"
@@ -234,7 +234,7 @@ me_cyr_libya.803 = { # Letters for the Libyan Tongue: Capture
 
     title = me_cyr_libya_803_title
     desc = me_cyr_libya_803_desc
-    picture = looting
+    picture = hellenistic_army
     left_portrait = current_ruler
     right_portrait = scope:numidian_tifinagh_writer
 
@@ -341,7 +341,7 @@ me_cyr_libya.10 = { # Plunder the Greek Cities
 
     title = me_cyr_libya_10_title
     desc = me_cyr_libya_10_desc
-    picture = great_library
+    picture = interesting_histories_italic_hilltop
 
     option = {
         name = "me_cyr_libya_10.a"
@@ -354,7 +354,7 @@ me_cyr_libya.11 = { # Entice Libyan Settlers
 
     title = me_cyr_libya_11_title
     desc = me_cyr_libya_11_desc
-    picture = great_library
+    picture = interesting_histories_punic_town
 
     option = {
         name = "me_cyr_libya_11.a"
@@ -367,7 +367,7 @@ me_cyr_libya.12 = { # Approach for Garamantes
 
     title = me_cyr_libya_12_title
     desc = me_cyr_libya_12_desc
-    picture = great_library
+    picture = army_desert
 
     option = {
         name = "me_cyr_libya_12.a"
@@ -380,7 +380,7 @@ me_cyr_libya.13 = { # Camel War Parties
 
     title = me_cyr_libya_13_title
     desc = me_cyr_libya_13_desc
-    picture = great_library
+    picture = interesting_histories_kush_capital
 
     option = {
         name = "me_cyr_libya_13.a"
@@ -393,7 +393,7 @@ me_cyr_libya.14 = { # Raid the Cities of the West
 
     title = me_cyr_libya_14_title
     desc = me_cyr_libya_14_desc
-    picture = great_library
+    picture = interesting_histories_punic_town
 
     option = {
         name = "me_cyr_libya_14.a"
@@ -406,7 +406,7 @@ me_cyr_libya.15 = { # Terror from the Desert
 
     title = me_cyr_libya_15_title
     desc = me_cyr_libya_15_desc
-    picture = great_library
+    picture = looting_dishonor
 
     option = {
         name = "me_cyr_libya_15.a"
