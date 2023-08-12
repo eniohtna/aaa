@@ -370,4 +370,38 @@ deity_settut = { # War
 	}
 }
 
+deity_tinjis = { # Fertility
+	trigger = {
+		polytheistic_check_religion_trigger = yes
+		OR = {
+			common_deity_trigger = {
+				RELIGION = berber_religion
+			}
+			deity:omen_tinjis = {
+				holy_site_deity_check_trigger = yes
+			}
+			owns = p:3061
+			AND = {
+				religion = roman_pantheon
+				religion_pops_in_country = {
+					target = berber_religion
+					value >= common_deity_svalue
+				}
+			}
+		}
+	}
+	icon = deity_kemetic_love
+	passive_modifier = { global_population_capacity_modifier = deity_global_population_capacity_modifier_svalue }
+	omen = { happiness_for_wrong_culture_group_modifier = omen_happiness_for_wrong_culture_group_modifier_svalue } #Bonus from Omen
+	on_activate = {
+		fertility_apotheosis_capital_slaves_effect = yes
+	}
+	religion = berber_religion
+	deity_category = fertility #This Deity uses a Fertility slot.
+
+	deification_trigger = {
+		can_deify_trigger = yes
+	}
+}
+
 ### Exclusive Deity Checks ###

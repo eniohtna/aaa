@@ -67,6 +67,8 @@
         on_completion = {
             trigger_event = me_cyr_libya.2
             show_as_tooltip = {
+                change_law = coin_minting_law
+                change_law = increased_council_powers
             }
         }
     }
@@ -98,7 +100,9 @@
         on_completion = {
             trigger_event = me_cyr_libya.3
             show_as_tooltip = {
-
+                change_law = follow_the_strong_law
+                change_law = tribal_decentralized_laws_2
+                change_law = super_decentralized_law_two
             }
         }
     }
@@ -136,67 +140,105 @@
         icon = "task_heracles"
         requires = { cyrene_missions_libya_task_2 }
         allow = {
+            OR = {
+                job_holder:office_arbitrator = {
+                    has_culture_group = hellenic
+                }
+                job_holder:office_elder = {
+                    has_culture_group = hellenic
+                }
+                job_holder:office_warchief = {
+                    has_culture_group = hellenic
+                }
+                job_holder:office_bodyguard = {
+                    has_culture_group = hellenic
+                }
+                job_holder:office_high_priest = {
+                    has_culture_group = hellenic
+                }
+                job_holder:office_wise_person = {
+                    has_culture_group = hellenic
+                }
+                job_holder:office_magistrate = {
+                    has_culture_group = hellenic
+                }
+                job_holder:office_apothecary = {
+                    has_culture_group = hellenic
+                }                                              
+            }
         }
         on_completion = {
             trigger_event = me_cyr_libya.5
             show_as_tooltip = {
-
+                add_country_modifier = {
+                    name = hellenic_advisors
+                    duration = 1825
+                }
             }
         }
     }
     cyrene_missions_libya_task_6 = { # Seek Common Ground
         icon = "task_apollo"
+        duration = 180
         requires = { cyrene_missions_libya_task_5 }
         allow = {
-            OR = {
-                job_holder:office_foreign_minister = {
-                    culture_group = hellenic
+            custom_tooltip = {
+                any_pantheon_deity = {
+                    count >= 1
+                    deity_religion = roman_pantheon
                 }
-                job_holder:office_royal_tutor = {
-                    culture_group = hellenic
-                }
-                job_holder:office_marshal = {
-                    culture_group = hellenic
-                }
-                job_holder:office_master_of_the_guard = {
-                   culture_group = hellenic
-                }
-                job_holder:office_high_priest_monarchy = {
-                    culture_group = hellenic
-                }
-                job_holder:office_philosopher = {
-                    culture_group = hellenic
-                }
-                job_holder:office_steward = {
-                    culture_group = hellenic
-                }
-                job_holder:office_physician = {
-                    culture_group = hellenic
-                }                                                       
+                text = "hellenic_libu_deity_tt"
             }
+            invention = ruler_popularity_gain_inv_2
+            treasury >= 75
+            political_influence >= 25
         }
-        bypass = {
-            NOT = {
-                any_character = {
-                    culture_group = hellenic
-                }
-            }
+        on_start = {
+            trigger_event = me_cyr_libya.600
         }
         on_completion = {
             trigger_event = me_cyr_libya.6
             show_as_tooltip = {
-
+                custom_tooltip = special_event_tt
+                custom_tooltip = barce_deity_tt
             }
         }
     }
     cyrene_missions_libya_task_7 = { # Hellenic Reconciliation
         icon = "task_atlas"
         requires = { cyrene_missions_libya_task_6 }
-        allow = {}
+        allow = {
+            p:3360 = {
+                is_state_capital = yes
+                total_population >= 25
+
+            }
+            hidden:p:3360.state = {
+                calc_true_if = {
+                    amount >= 1
+                    state_improvement_military_trigger = yes
+                    state_improvement_civic_trigger = yes
+                    state_improvement_oratory_trigger = yes
+                    state_improvement_religious_trigger = yes
+                }
+            }
+            p:3344 = {
+                is_state_capital = yes
+                total_population >= 15
+            }
+            hidden:p:3344.state = {
+                calc_true_if = {
+                    amount >= 1
+                    state_improvement_military_trigger = yes
+                    state_improvement_civic_trigger = yes
+                    state_improvement_oratory_trigger = yes
+                    state_improvement_religious_trigger = yes
+                }
+            }
+        }
         on_completion = {
             trigger_event = me_cyr_libya.7
             show_as_tooltip = {
-
             }
         }
     }
@@ -301,6 +343,6 @@
 
             }
         }
+        final = yes
     }
-    final = yes
 }

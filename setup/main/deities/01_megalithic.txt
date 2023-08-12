@@ -56,5 +56,10 @@ deity_manager = {
 			key = omen_settut
 			deity = deity_settut
 		}
+		969 = {
+			key = omen_tinjis
+			deity = deity_tinjis
+		}
+		# 970 is in 01_megalithic_cyrene.txt
 	}
 }

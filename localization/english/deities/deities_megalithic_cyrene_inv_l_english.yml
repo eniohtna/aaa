@@ -15,3 +15,6 @@
  deity_cyre: "$omen_cyre$"
  omen_cyre: "Cyrene"
  omen_cyre_desc: "Cyrene is the legendary lion-slaying huntress venerated by the native Libyans of Cyrenaica. \n\nWhen the first Greek settlers arrived in Cyrenaica they chose Cyrene as protector of their new city, worshipping her alongside their other patron god, Apollo."
+ deity_barce:0 "$omen_barce$"
+ omen_barce:0 "Barce"
+ omen_barce_desc:0 "Barce, also called Alceis, is a goddess born to the union of Tinjis and Antaeus. Originally not a major goddess in any way, Barce has now become a goddess associated with the #Y Hippodrome of Barce#! held in the state of #E Libu#!. She was adopted in order to find union between the #E Greeks#! and #E Libyans#!. Much like Tinjis and Antaeus would come together to make Barce, #E Libyans and Greeks#! would come together to make #E Libu#! what it is."

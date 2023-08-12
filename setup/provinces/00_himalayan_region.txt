@@ -594,7 +594,6 @@
 	tribesmen={
 		amount=2
 	}
-	holy_site=omen_swanco
 }
 
 5666={ #Taklamakan
@@ -1382,6 +1381,7 @@
 		religion="indo_iranian_religion"
 		amount=6
 	}
+	holy_site=omen_swanco
 }
 
 8759={ #Makit

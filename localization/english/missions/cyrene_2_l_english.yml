@@ -1,8 +1,8 @@
 ﻿l_english:
 
 cyrene_missions_libya:0 "Libyan Resurgence"
-cyrene_missions_libya_DESCRIPTION:0 "Mission description"
-cyrene_missions_libya_CRITERIA_DESCRIPTION:0 "This mission will be completed when"
+cyrene_missions_libya_DESCRIPTION:0 "The #E Cyrenaican#! settlers were brutal to our people. We have risen in revolt to their unjust way and have established the resurgent state of #E Libu#!!"
+cyrene_missions_libya_CRITERIA_DESCRIPTION:0 "This mission will be completed when the #E Libyan#! people can be proud of their home in #E Libu#!."
 cyrene_missions_libya_BUTTON_TOOLTIP:0 ""
 
 #Missions
@@ -23,13 +23,13 @@ cyrene_missions_libya_task_5:0 "Recruit Hellenic Advisors"
 cyrene_missions_libya_task_5_DESC:0 ""
 
 cyrene_missions_libya_task_6:0 "Seek Common Ground"
-cyrene_missions_libya_task_6_DESC:0 ""
+cyrene_missions_libya_task_6_DESC:0 "In order to heal our relations with the #E Cyrenaicans#!, we must find common ground with them! Let us plan ways to do this by examining our culture in relation to theirs."
 
 cyrene_missions_libya_task_7:0 "Hellenic Reconciliation"
 cyrene_missions_libya_task_7_DESC:0 ""
 
 cyrene_missions_libya_task_8:0 "Letters for the Libyan Tongue"
-cyrene_missions_libya_task_8_DESC:0 "The Libyan language has been the mother tongue of the Libu since anyone can remember, but it has never been written in a script before. While we could simply keep the status quo and use the Greek alphabet which remains the dominant script right now, if we #Y recruit#!, #G befriend#!, #R capture#!, or somehow have an individual of a #Y Numidian#! culture in our nation, we could study and implement a unique variant of the #T Tifinagh#! script used by our cousins across North Africa."
+cyrene_missions_libya_task_8_DESC:0 "The Libyan language has been the mother tongue of the #W Libu#! since anyone can remember, but it has never been written in a script before. While we could simply keep the status quo and use the Greek alphabet which remains the dominant script right now, if we #Y recruit#!, #G befriend#!, #R capture#!, or somehow have an individual of a #E Numidian#! culture in our nation, we could study and implement a unique variant of the #T Tifinagh#! script used by our cousins across North Africa."
 
 cyrene_missions_libya_task_9:0 "Kings of Eastern Libya"
 cyrene_missions_libya_task_9_DESC:0 " #R started as a tribal nation, won against the greeks, took hellenic influences, built on them, and have made it to a full monarchy just now.\n\nthis is the end of a huge path in the tree, possible an end task.#! (@zorgo!)"
@@ -58,6 +58,9 @@ cyrene_1_libya_task_2.tt:0 "The [GetCulture('cyrenaican').GetName|Y] culture is 
 cyrene_1_libya_task_3.tt:0 "The #Y [GetCulture('cyrenaican').GetName|Y]#! culture has #Y Slave#!@slaves! or #! #Y Tribesmen#!@tribesmen! rights."
 cyrene_1_libya_task_3_B.tt:0 "Any province in the region of #Y [GetProvince('(int32)3352').GetArea.GetRegion.GetName]#! has the #Y Religious Conversion#! or #Y Cultural Assimilation#! governor policy."
 libu_script_tt:0 "Develop a proper #E writing system#! for our #Y Libyan language#!!"
+hellenic_libu_deity_tt:0 "Any deity from the #Y Hellenic religion#! is in our #E pantheon#!."
+special_event_tt:0 "#G Unlock#! a special event via #E decision#!."
+barce_deity_tt:0 "#G Unlock#! access to the goddess #E Barce#!."
 
 #Modifiers
 tifinagh_script:0 "Libu-Tifinagh Script"
@@ -68,6 +71,8 @@ spoils_of_war:0 "Spoils of War"
 we_be_losers:0 "Looted Land"
 capital_of_libu:0 "Emergent Capital"
 king_of_libu:0 "Kings of Eastern Libya"
+hellenic_advisors:0 "Greek Advisors"
+libu_hippodrome:0 "Hippodrome of Barce"
 
 #Decisions
 integrate_cyrenaican_navy:0 "Integrate Cyrenaican Navy"
@@ -105,9 +110,25 @@ me_cyr_libya_5_desc:0 ""
 me_cyr_libya_5.a:0 ""
 me_cyr_libya_5_tooltip:0 "The mission task '#Y $cyrene_missions_libya_task_5$#!' has now been #G Completed#!!"
 
-me_cyr_libya_6_title:0 "$cyrene_missions_libya_task_6$"
-me_cyr_libya_6_desc:0 ""
-me_cyr_libya_6.a:0 ""
+me_cyr_libya_600_desc:0 "We need to find similarities between us #E Libyans#! and the #E Cyrenaicans#!. Where should we look?"
+me_cyr_libya_600.a:0 "Let's look into culture!"
+me_cyr_libya_600.b:0 "Let's find religious inspiration!"
+
+me_cyr_libya_601_title:0 "The Quadriga"
+me_cyr_libya_601_desc:0 "Many #E Cyrenaincans#! seem to have an affinity for our four hourse drawn chariots. They call these #Y Quadrigas#!. After inquiry, there seems to be an interest in throwing a competition of sorts in which all #T Libu#! citizens, #E Greek#! or #E Libyan#!, may participate."
+me_cyr_libya_601.a:0 "Let us bond over sport."
+
+me_cyr_libya_602_title:0 "Lady Barce"
+me_cyr_libya_602_desc:0 "After conversations about religion with the #E Cyrenaicans#!, we have come to understand that the goddess #Y Tingis#! is believed by them to have bore a child with #Y Anti#! who shares a name with our grand capital city of #T Barke#!. This goddess #Y Barce#! could perhaps be celebrated somehow as a show of acceptance for #E Greek#! religion amongst the #E Libyans#!."
+me_cyr_libya_602.a:0 "Barce will be loved by all of Libu."
+
+me_cyr_libya_603_title:0 "Found Common Ground?"
+me_cyr_libya_603_desc:0 "We have gathered new insight on #E Greek#! culture and religion. Our advisors have come up with a genius solution that will combine both of these in one grand celebration of #E Greek#! and #E Libyan#! cultures. #Y The Hippodrome of Barce#!, an event where all citizens of #T Libu#! may participate in a #Y Quadrigas#! race guided by the goddess #Y Barce#! herself."
+me_cyr_libya_603.a:0 "May Lady Barce bless the riders."
+
+me_cyr_libya_6_title:0 "Hippodrome of Barce"
+me_cyr_libya_6_desc:0 "The day set out in a roaring applause as the riders arrived at the #Y Hippodrome of Barce#!. The #E Greeks#! arrived in swathes especially. The teams that filled the field were the #G Paliourosiote Pegusi#! representing #E Paliouros#!, the #G Kyrene Kings#! from #E Kyrene#!, the #G Serapeion Swords#! of #E Serapeion#!, and the hometown team of #E Barka#!, the #G Barka Basilisks#!.\n\nIn a thrilling epic, the #G Swords#! lead the way, however they were soon #R rocked off course#! by the #G Pegusi#!. The roars reached their peaks with the hometown #G Basilisks#! #R snatching the lead#! from the back, however, in the end the #G Kyrene Kings#! would #R steal the victory#! with an epic comeback!\n\nThe energy of the event was said to have been felt from #T Carthage#! to #T Alexandria#!. It's a miracle no one was hurt, likely due to the #Y protection of #E Lady Barce#!#!. The event was a success!"
+me_cyr_libya_6.a:0 "That was fun--let's do it again!"
 me_cyr_libya_6_tooltip:0 "The mission task '#Y $cyrene_missions_libya_task_6$#!' has now been #G Completed#!!"
 
 me_cyr_libya_7_title:0 "$cyrene_missions_libya_task_7$"

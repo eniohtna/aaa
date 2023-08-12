@@ -53,6 +53,7 @@
 		religion="berber_religion"
 		amount=1
 	}
+	holy_site=omen_tritonis
 }
 
 3191={ #Castra Neptitana

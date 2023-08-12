@@ -39,7 +39,7 @@
 		religion="berber_religion"
 		amount=3
 	}
-	holy_site=omen_anti
+	holy_site=omen_tinjis
 	port_building=1
 }
 
