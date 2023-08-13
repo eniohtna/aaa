@@ -3,36 +3,36 @@
 cyrene_missions_libya:0 "Libyan Resurgence"
 cyrene_missions_libya_DESCRIPTION:0 "The #E Cyrenaican#! settlers were brutal to our people. We have risen in revolt to their unjust way and have established the resurgent state of #E Libu#!!"
 cyrene_missions_libya_CRITERIA_DESCRIPTION:0 "This mission will be completed when the #E Libyan#! people can be proud of their home in #E Libu#!."
-cyrene_missions_libya_BUTTON_TOOLTIP:0 ""
+cyrene_missions_libya_BUTTON_TOOLTIP:0 "The #E Libyans#! must rise from the hot sands!"
 
 #Missions
 
 cyrene_missions_libya_task_1:0 "The Spoils of Victory"
-cyrene_missions_libya_task_1_DESC:0 ""
+cyrene_missions_libya_task_1_DESC:0 "The time has come to reap the benefits of a victorious yet costly war! Let us prosper from the defeated #E Cyrenaicans#!."
 
 cyrene_missions_libya_task_2:0 "Foreign Customs"
-cyrene_missions_libya_task_2_DESC:0 ""
+cyrene_missions_libya_task_2_DESC:0 "The times of the #E Libyans#! of old are long gone. In order to be successful, we must modernize and even adopt #E Greek#! ways wherever necessesary."
 
 cyrene_missions_libya_task_3:0 "Return to Old Ways"
-cyrene_missions_libya_task_3_DESC:0 ""
+cyrene_missions_libya_task_3_DESC:0 "With the expulsion of #E Cyrenaican#! yolk over our lands, we #E Libyans#! should return to our old ways, and finish scraping off the mud the #E Greeks#! have left on our culture."
 
 cyrene_missions_libya_task_4:0 "The Capital at Barke"
-cyrene_missions_libya_task_4_DESC:0 ""
+cyrene_missions_libya_task_4_DESC:0 "Of all our traditional land, the city of #Y Barke#! remains as a major center of #E Libyan#! culture. Let us polish the capital like a gem and wear it like a crown for our people."
 
 cyrene_missions_libya_task_5:0 "Recruit Hellenic Advisors"
-cyrene_missions_libya_task_5_DESC:0 ""
+cyrene_missions_libya_task_5_DESC:0 "We shall employ the #E Greeks#! in order to better the whole of #W Libu#!. If we #E Libyans#! want to succeed, we need #E Greek#! help."
 
 cyrene_missions_libya_task_6:0 "Seek Common Ground"
 cyrene_missions_libya_task_6_DESC:0 "In order to heal our relations with the #E Cyrenaicans#!, we must find common ground with them! Let us plan ways to do this by examining our culture in relation to theirs."
 
 cyrene_missions_libya_task_7:0 "Hellenic Reconciliation"
-cyrene_missions_libya_task_7_DESC:0 ""
+cyrene_missions_libya_task_7_DESC:0 "Since our war with the #E Cyrenaicans#!, our relations with them has healed tremendously. We are close to completely reconciling with the #E Greeks#!, making #W Libu#! a land where they can live happily amongst our own while still having #E Libyan#! self-rule."
 
 cyrene_missions_libya_task_8:0 "Letters for the Libyan Tongue"
 cyrene_missions_libya_task_8_DESC:0 "The Libyan language has been the mother tongue of the #W Libu#! since anyone can remember, but it has never been written in a script before. While we could simply keep the status quo and use the Greek alphabet which remains the dominant script right now, if we #Y recruit#!, #G befriend#!, #R capture#!, or somehow have an individual of a #E Numidian#! culture in our nation, we could study and implement a unique variant of the #T Tifinagh#! script used by our cousins across North Africa."
 
 cyrene_missions_libya_task_9:0 "Kings of Eastern Libya"
-cyrene_missions_libya_task_9_DESC:0 " #R started as a tribal nation, won against the greeks, took hellenic influences, built on them, and have made it to a full monarchy just now.\n\nthis is the end of a huge path in the tree, possible an end task.#! (@zorgo!)"
+cyrene_missions_libya_task_9_DESC:0 "Through our efforts at governing our people in the way that the #E Greeks#! do, with our own #E Libyan#! spin, we have become the de-facto #T Kings of Eastern Libya#!. With our Kingdom all but established, we should take the next step and develop our Kingdom further. The civilized people of the world welcome #E Libyans#! as equals!"
 
 cyrene_missions_libya_task_10:0 "Plunder the Greek Cities"
 cyrene_missions_libya_task_10_DESC:0 ""
@@ -61,6 +61,7 @@ libu_script_tt:0 "Develop a proper #E writing system#! for our #Y Libyan languag
 hellenic_libu_deity_tt:0 "Any deity from the #Y Hellenic religion#! is in our #E pantheon#!."
 special_event_tt:0 "#G Unlock#! a special event via #E decision#!."
 barce_deity_tt:0 "#G Unlock#! access to the goddess #E Barce#!."
+hellenic_friend_tt:0 "Any #Y friend#! of your ruler is #E Greek#!."
 
 #Modifiers
 tifinagh_script:0 "Libu-Tifinagh Script"
@@ -73,6 +74,7 @@ capital_of_libu:0 "Emergent Capital"
 king_of_libu:0 "Kings of Eastern Libya"
 hellenic_advisors:0 "Greek Advisors"
 libu_hippodrome:0 "Hippodrome of Barce"
+greek_reconciliation:0 "Libu Greeks"
 
 #Decisions
 integrate_cyrenaican_navy:0 "Integrate Cyrenaican Navy"
@@ -86,17 +88,17 @@ greek_script_kings_list_desc:0 "We have both developped a #Y Greek-Libu script#!
 
 #Events
 me_cyr_libya_1_title:0 "$cyrene_missions_libya_task_1$"
-me_cyr_libya_1_desc:0 ""
-me_cyr_libya_1.a:0 ""
+me_cyr_libya_1_desc:0 "The #R Great Libyan Revolt#! against the #E Cyrenaicans#! was successful! Now, it is fine for us to reap the benefits of being the #G victors#! of the war. Let us feast in #E Kyrene#! at the beheast of the #E Greeks#!."
+me_cyr_libya_1.a:0 "We will dine fine tonight!"
 me_cyr_libya_1_tooltip:0 "The mission task '#Y $cyrene_missions_libya_task_1$#!' has now been #G Completed#!!"
 
 me_cyr_libya_2_title:0 "$cyrene_missions_libya_task_2$"
-me_cyr_libya_2_desc:0 ""
-me_cyr_libya_2.a:0 ""
+me_cyr_libya_2_desc:0 "The #E Greek#! way of customs is foreign to us, yet effective. So, we have begun integrating the ways of the #E Cyrenaicans#!. After all, if we are to rule #E Libu#! correctly. Let us not make the same mistakes the #E Greeks#! made while ruling us #E Libyans#!..."
+me_cyr_libya_2.a:0 "The Hellenes pay taxes too."
 me_cyr_libya_2_tooltip:0 "The mission task '#Y $cyrene_missions_libya_task_2$#!' has now been #G Completed#!!"
 
 me_cyr_libya_3_title:0 "$cyrene_missions_libya_task_3$"
-me_cyr_libya_3_desc:0 ""
+me_cyr_libya_3_desc:0 "
 me_cyr_libya_3.a:0 ""
 me_cyr_libya_3_tooltip:0 "The mission task '#Y $cyrene_missions_libya_task_3$#!' has now been #G Completed#!!"
 
@@ -106,8 +108,8 @@ me_cyr_libya_4.a:0 ""
 me_cyr_libya_4_tooltip:0 "The mission task '#Y $cyrene_missions_libya_task_4$#!' has now been #G Completed#!!"
 
 me_cyr_libya_5_title:0 "$cyrene_missions_libya_task_5$"
-me_cyr_libya_5_desc:0 ""
-me_cyr_libya_5.a:0 ""
+me_cyr_libya_5_desc:0 "While it was not too long ago that the #E Hellenes#! were put to the sword, we now find ourselves hiring them to aid us in court! Perhaps it isn't the grand return to #E Libyan#! tradition that some were expecting, however, in a way this is MORE reflective of our land and people who have adopted and mixed #E Amazigh#! culture with #E Hellenic#! culture."
+me_cyr_libya_5.a:0 "We are the children of our history."
 me_cyr_libya_5_tooltip:0 "The mission task '#Y $cyrene_missions_libya_task_5$#!' has now been #G Completed#!!"
 
 me_cyr_libya_600_desc:0 "We need to find similarities between us #E Libyans#! and the #E Cyrenaicans#!. Where should we look?"
@@ -132,8 +134,8 @@ me_cyr_libya_6.a:0 "That was fun--let's do it again!"
 me_cyr_libya_6_tooltip:0 "The mission task '#Y $cyrene_missions_libya_task_6$#!' has now been #G Completed#!!"
 
 me_cyr_libya_7_title:0 "$cyrene_missions_libya_task_7$"
-me_cyr_libya_7_desc:0 ""
-me_cyr_libya_7.a:0 ""
+me_cyr_libya_7_desc:0 "We have been #G generous#! instead of #R ravenous#! to our #E Greek#! subjects. And now, we benefit from our course of action. While we could have submitted them under our iron will like some #E Libyans#! surely wanted to, we have treated them as equals. We granted them #Y citizenship#!. We gave them #Y office positions#!. And now, in return, the lend us their #Y innovations#! and #Y loyalty#!."
+me_cyr_libya_7.a:0 "Libu is a land of Libyans AND Cyrenaicans."
 me_cyr_libya_7_tooltip:0 "The mission task '#Y $cyrene_missions_libya_task_7$#!' has now been #G Completed#!!"
 
 me_cyr_libya_8_title:0 "Letters for the Libyan Tongue: Tifinagh or Greek?"
@@ -174,8 +176,8 @@ me_cyr_libya_806.a:0 "Civilized? Damn #E write#! we are!"
 me_cyr_libya_8_tooltip:0 "The mission task '#Y $cyrene_missions_libya_task_8$#!' has now been #G Completed#!!"
 
 me_cyr_libya_9_title:0 "$cyrene_missions_libya_task_9$"
-me_cyr_libya_9_desc:0 ""
-me_cyr_libya_9.a:0 ""
+me_cyr_libya_9_desc:0 "$cyrene_missions_libya_task_9_DESC$"
+me_cyr_libya_9.a:0 "From raiders to rulers!"
 me_cyr_libya_9_tooltip:0 "The mission task '#Y $cyrene_missions_libya_task_9$#!' has now been #G Completed#!!"
 
 me_cyr_libya_10_title:0 "$cyrene_missions_libya_task_10$"

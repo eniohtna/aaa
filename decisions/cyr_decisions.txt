@@ -701,5 +701,17 @@
 			}
 		}
 	}
+	hippodrome_of_barce = {
+		potential = {
+			has_variable = cyr_libya_hippodrome
+			NOT = { has_variable = hippodrome_cooldown }
+		}
+		allow = {
+			treasury >= 200
+		}
+		effect = {
+			custom_tooltip = "this is not done yet, maybe make this into an olympics style event ?"
+		}
+	}
 }
 

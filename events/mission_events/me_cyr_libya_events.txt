@@ -63,7 +63,27 @@ me_cyr_libya.4 = { # The Capital at Barke
     option = {
         name = "me_cyr_libya_4.a"
         custom_tooltip = me_cyr_libya_4_tooltip
-
+        p:3357 = {
+            add_province_modifier = {
+                name = capital_of_libu
+                duration = -1
+            }
+        }
+        add_2_free_province_investments = yes
+            while = {
+                count = 3
+                every_owned_province = {
+                limit = {
+                    province_id = 3357
+                }
+                random_pops_in_province = {
+                    limit = {
+                        NOT = {pop_culture = root.culture}
+                    }
+                    set_pop_culture = root.culture
+                }
+            }
+        }
     }
 }
 me_cyr_libya.5 = { # Recruit Hellenic Advisors
@@ -76,7 +96,12 @@ me_cyr_libya.5 = { # Recruit Hellenic Advisors
     option = {
         name = "me_cyr_libya_5.a"
         custom_tooltip = me_cyr_libya_5_tooltip
-
+        show_as_tooltip = {
+            add_country_modifier = {
+                name = hellenic_advisors
+                duration = 1825
+            }
+        }
     }
 }
 
@@ -203,6 +228,31 @@ me_cyr_libya.7 = { # Hellenic Reconciliation
     option = {
         name = "me_cyr_libya_7.a"
         custom_tooltip = me_cyr_libya_7_tooltip
+        add_4_free_province_investments = yes
+        add_innovation = 2
+        random_owned_province = {
+            limit = {
+                has_city_status = yes
+                province_dominant_culture_group = hellenic
+                is_in_area = cyrenaica_inferioris_area
+                NOT = { province_id = 3357 }
+            }
+            add_province_modifier = {
+                name = greek_reconciliation
+                duration = -1
+            }
+        }
+        random_owned_province = {
+            limit = {
+                has_city_status = yes
+                province_dominant_culture_group = hellenic
+                is_in_area = cyrenaica_superioris_area
+            }
+            add_province_modifier = {
+                name = greek_reconciliation
+                duration = -1
+            }
+        }
     }
 }
 ### Letters for the Libyan Tongue Event Chain ###

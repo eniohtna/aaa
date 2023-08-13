@@ -1,6 +1,6 @@
 ﻿cyrene_missions_libya = {
-    header = "mission_image_general"
-    icon = "general_1"
+    header = "kush_mission_header"
+    icon = "cde_greek_desert_march"
 
     repeatable = no
     chance = 1000
@@ -23,7 +23,6 @@
         }
     }
     on_completion = {
-        trigger_event = me_cyr_libya.16
     }
 
     cyrene_missions_libya_task_1 = { # The Spoils of Victory
@@ -133,6 +132,20 @@
                     }
                 }
                 add_2_free_province_investments = yes
+                while = {
+                    count = 3
+                    every_owned_province = {
+                        limit = {
+                            province_id = 3357
+                        }
+                        random_pops_in_province = {
+                            limit = {
+                                NOT = {pop_culture = root.culture}
+                            }
+                            set_pop_culture = root.culture
+                        }
+                    }
+                }
             }
         }
     }
@@ -235,10 +248,42 @@
                     state_improvement_religious_trigger = yes
                 }
             }
+            custom_tooltip = {
+                current_ruler = {
+                    any_friend = { has_culture_group = hellenic }
+                }
+                text = hellenic_friend_tt
+            }
+            # Maybe add greek pop happiness check ?
         }
         on_completion = {
             trigger_event = me_cyr_libya.7
             show_as_tooltip = {
+                add_4_free_province_investments = yes
+                add_innovation = 2
+                random_owned_province = {
+                    limit = {
+                        has_city_status = yes
+                        province_dominant_culture_group = hellenic
+                        is_in_area = cyrenaica_inferioris_area
+                        NOT = { province_id = 3357 }
+                    }
+                    add_province_modifier = {
+                        name = greek_reconciliation
+                        duration = -1
+                    }
+                }
+                random_owned_province = {
+                    limit = {
+                        has_city_status = yes
+                        province_dominant_culture_group = hellenic
+                        is_in_area = cyrenaica_superioris_area
+                    }
+                    add_province_modifier = {
+                        name = greek_reconciliation
+                        duration = -1
+                    }
+                }
             }
         }
     }
