@@ -174,13 +174,12 @@ deity_barce = { # ECONOMY
 			}
 		}
 		has_variable = deity_barce_unlocked
-
 	}
 	icon = deity_kemetic_wealth_2
 	passive_modifier = { global_commerce_modifier = omen_global_commerce_modifier_svalue }
-	omen = { ruler_popularity_gain = omen_ruler_popularity_gain_svalue   } #Bonus from Omen
+	omen = { ruler_popularity_gain = omen_ruler_popularity_gain_svalue } #Bonus from Omen
 	on_activate = {
-		culture_apotheosis_assimilate_effect = yes
+		economy_apotheosis_province_improvement_effect = yes
 	}
 	religion = berber_religion
 	deity_category = economy  #This Deity uses an Economy Slot

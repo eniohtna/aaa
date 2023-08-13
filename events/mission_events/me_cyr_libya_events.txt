@@ -70,9 +70,9 @@ me_cyr_libya.4 = { # The Capital at Barke
             }
         }
         add_2_free_province_investments = yes
-            while = {
-                count = 3
-                every_owned_province = {
+        while = {
+            count = 10
+            every_owned_province = {
                 limit = {
                     province_id = 3357
                 }
@@ -96,12 +96,11 @@ me_cyr_libya.5 = { # Recruit Hellenic Advisors
     option = {
         name = "me_cyr_libya_5.a"
         custom_tooltip = me_cyr_libya_5_tooltip
-        show_as_tooltip = {
-            add_country_modifier = {
-                name = hellenic_advisors
-                duration = 1825
-            }
+        add_country_modifier = {
+            name = hellenic_advisors
+            duration = 1825
         }
+        add_innovation = 1
     }
 }
 
@@ -115,14 +114,14 @@ me_cyr_libya.600 = { # Seek Common Ground: Where to Start?
     option = {
         name = "me_cyr_libya_600.a"
         trigger_event = {
-            id = me_cyr_libya_601 # Culture
+            id = me_cyr_libya.601 # Culture
             days = { 20 30 }
         }
     }
     option = {
         name = "me_cyr_libya_600.b"
         trigger_event = {
-            id = me_cyr_libya_602 # Religion
+            id = me_cyr_libya.602 # Religion
             days = { 20 30 }
         }
     }
@@ -141,7 +140,7 @@ me_cyr_libya.601 = { # Seek Common Ground: Quadriga
                 has_variable = already_done_religion
             }
             trigger_event = {
-                id = me_cyr_libya_603 # End
+                id = me_cyr_libya.603 # End
                 days = { 20 30 }
             }
         }
@@ -150,7 +149,7 @@ me_cyr_libya.601 = { # Seek Common Ground: Quadriga
                 NOT = { has_variable = already_done_religion }
             }
             trigger_event = {
-                id = me_cyr_libya_602 # Religion
+                id = me_cyr_libya.602 # Religion
                 days = { 20 30 }
             }
         }
@@ -172,7 +171,7 @@ me_cyr_libya.602 = { # Seek Common Ground: Barce
                 has_variable = already_done_culture
             }
             trigger_event = {
-                id = me_cyr_libya_603 # End
+                id = me_cyr_libya.603 # End
                 days = { 20 30 }
             }
         }
@@ -181,7 +180,7 @@ me_cyr_libya.602 = { # Seek Common Ground: Barce
                 NOT = { has_variable = already_done_culture }
             }
             trigger_event = {
-                id = me_cyr_libya_601 # Culture
+                id = me_cyr_libya.601 # Culture
                 days = { 20 30 }
             }
         }
@@ -294,9 +293,9 @@ me_cyr_libya.800 = { # Letters for the Libyan Tongue: Tifinagh Options
                 no_stats = yes
                 hidden_effect = {
                     bad_martial_effect = yes
-                    great_finesse_effect = yes
-                    great_charisma_effect = yes
-                    average_zeal_effect = yes
+                    good_finesse_effect = yes
+                    good_charisma_effect = yes
+                    great_zeal_effect = yes
                 }
                 save_scope_as = numidian_tifinagh_writer
             }

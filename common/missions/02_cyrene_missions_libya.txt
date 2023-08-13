@@ -50,7 +50,9 @@
     }
     cyrene_missions_libya_task_2 = { # Foreign Customs
         icon = "task_diplomatic"
+        duration = 30
         requires = { cyrene_missions_libya_task_1 }
+        bypass = { has_completed_mission_task = cyrene_missions_libya_task_3 }
         allow = {
             custom_tooltip = {
                 text = cyrene_1_libya_task_2.tt
@@ -73,7 +75,9 @@
     }
     cyrene_missions_libya_task_3 = { # Return to Old Ways
         icon = "task_happiness"
+        duration = 30
         requires = { cyrene_missions_libya_task_1 }
+        bypass = { has_completed_mission_task = cyrene_missions_libya_task_2 }
         allow = {
             custom_tooltip = {
                 text = cyrene_1_libya_task_3.tt
@@ -133,7 +137,7 @@
                 }
                 add_2_free_province_investments = yes
                 while = {
-                    count = 3
+                    count = 10
                     every_owned_province = {
                         limit = {
                             province_id = 3357
@@ -152,6 +156,7 @@
     cyrene_missions_libya_task_5 = { # Recruit Hellenic Advisors
         icon = "task_heracles"
         requires = { cyrene_missions_libya_task_2 }
+        prevented_by = { cyrene_missions_libya_task_3 }
         allow = {
             OR = {
                 job_holder:office_arbitrator = {
@@ -187,6 +192,7 @@
                     name = hellenic_advisors
                     duration = 1825
                 }
+                add_innovation = 1
             }
         }
     }
@@ -236,8 +242,9 @@
                 }
             }
             p:3344 = {
-                is_state_capital = yes
-                total_population >= 15
+                total_population >= 20
+                has_building = commerce_building
+                has_building = forum_building
             }
             hidden:p:3344.state = {
                 calc_true_if = {
@@ -254,7 +261,7 @@
                 }
                 text = hellenic_friend_tt
             }
-            # Maybe add greek pop happiness check ?
+            # Maybe add greek pop happiness check ? need help from snowlet
         }
         on_completion = {
             trigger_event = me_cyr_libya.7
@@ -324,6 +331,7 @@
     cyrene_missions_libya_task_10 = { # Plunder the Greek Cities
         icon = "task_artemis"
         requires = { cyrene_missions_libya_task_3 }
+        prevented_by = { cyrene_missions_libya_task_2 }
         allow = {
         
         }
