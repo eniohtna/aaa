@@ -182,7 +182,7 @@ deity_barce = { # ECONOMY
 		economy_apotheosis_province_improvement_effect = yes
 	}
 	religion = berber_religion
-	deity_category = economy  #This Deity uses an Economy Slot
+	deity_category = economy #This Deity uses an Economy Slot
 
 	deification_trigger = {
 		can_deify_trigger = yes
