@@ -22,6 +22,7 @@ me_cyr_libya.1 = { # The Spoils of Victory
                 duration = 365
             }
         }
+        add_stability = 30
     }
 }
 me_cyr_libya.2 = { # Foreign Customs

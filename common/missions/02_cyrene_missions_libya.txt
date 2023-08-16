@@ -29,6 +29,13 @@
         icon = "task_conquest"
         allow = {
             war = no
+            custom_tooltip = {
+                any_pantheon_deity = {
+                    count >= 4
+                    deity_religion = berber_religion
+                }
+                text = "only_amazigh_deities_tt"
+            }
         }
         on_completion = {
             trigger_event = me_cyr_libya.1
@@ -45,6 +52,7 @@
                         duration = 365
                     }
                 }
+                add_stability = 30
             }
         }
     }
@@ -382,7 +390,6 @@
         on_completion = {
             trigger_event = me_cyr_libya.14
             show_as_tooltip = {
-
             }
         }
     }
@@ -393,7 +400,15 @@
         on_completion = {
             trigger_event = me_cyr_libya.15
             show_as_tooltip = {
-
+                change_government = steppe_horde
+                add_country_modifier = {
+                    name = terror_from_the_desert
+                    duration = -1
+                }
+                add_country_modifier = {
+                    name = desert_horde
+                    duration = -1
+                }
             }
         }
         final = yes

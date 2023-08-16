@@ -63,3 +63,23 @@ greek_reconciliation = {
 	local_pop_assimilation_speed_modifier = -0.05
 	local_population_growth = 20
 }
+desert_horde = { # Will be removed upon government change
+    global_nobles_desired_pop_ratio = -0.07
+    hostile_attrition = 0.15
+    land_morale = -0.15
+    desert_combat_bonus = 0.15
+    desert_hills_combat_bonus = 0.15
+    camels_discipline = 0.15
+    camels_morale = 0.15
+    camels_movement_speed = 0.2
+}
+terror_from_the_desert = {
+	camels_cost = -0.5
+	army_weight_modifier = -0.1
+	army_movement_speed = 0.05
+	camels_desert_combat_bonus = 0.1
+	camels_flood_plain_combat_bonus = 0.1
+	oasis_combat_bonus = 0.15
+	recruit_mercenary_cost_modifier = -0.25
+	global_supply_limit_modifier = 0.05
+}
