@@ -1,0 +1,259 @@
+﻿l_english:
+
+meshwesh_missions:0 "Return of the #E Ma#!"
+meshwesh_missions_DESCRIPTION:0 "We have become a #E Terror of the Desert#!, and all in the sea of sands fear us. The scourge of 'civilized peoples,' there is only one place to go to cement our frightening rule. The #E Land of the Nile#!. There is no greater civilization to overthrow. There is no greater feat to be done. This will be the magnus opus of our people, and those a thousand years into the future will talk of us as those a thousand years ago watch on in either pleasure or horror.\n\nHalf a millenia ago, the first #E Libyan#! dynasty ruled over the children of #E Ra#!. It was a time of the #E Great Chiefs of Ma#!, or the #E Meshwesh#!. There would be a total of two dynasties ruled under the #E Meshwesh#! chiefs, the #E 22nd#! and #E 23rd#! dynasties."
+meshwesh_missions_CRITERIA_DESCRIPTION:0 "This mission will be completed when the #E Great Chief of Ma#! has returned to their throne in the Delta, returning #E Libyan#! rule to the pharonic throne for the first time since #E 22nd#! and #E 23rd#! Dynasties of Egypt."
+meshwesh_missions_BUTTON_TOOLTIP:0 "Overthrow the greeks of Egypt"
+
+#Missions
+
+meshwesh_missions_task_1:0 "Land of the Nile"
+meshwesh_missions_task_1_DESC:0 ""
+
+meshwesh_missions_task_2:0 "Mass Migrations"
+meshwesh_missions_task_2_DESC:0 ""
+
+meshwesh_missions_task_3:0 "Oasitae Way"
+meshwesh_missions_task_3_DESC:0 ""
+
+meshwesh_missions_task_4:0 "Prolific Piracy"
+meshwesh_missions_task_4_DESC:0 ""
+
+meshwesh_missions_task_5:0 "The Libyan Menace"
+meshwesh_missions_task_5_DESC:0 ""
+
+meshwesh_missions_task_6:0 "The Enemy of my Enemy"
+meshwesh_missions_task_6_DESC:0 ""
+
+meshwesh_missions_task_7:0 "Enticing Offers"
+meshwesh_missions_task_7_DESC:0 ""
+
+meshwesh_missions_task_8:0 "Sowers of Dissent"
+meshwesh_missions_task_8_DESC:0 ""
+
+meshwesh_missions_task_9:0 "A New Meshwesh Dynasty"
+meshwesh_missions_task_9_DESC:0 ""
+
+meshwesh_missions_task_10:0 ""
+meshwesh_missions_task_10_DESC:0 ""
+
+meshwesh_missions_task_11:0 ""
+meshwesh_missions_task_11_DESC:0 ""
+
+meshwesh_missions_task_12:0 ""
+meshwesh_missions_task_12_DESC:0 ""
+
+meshwesh_missions_task_13:0 ""
+meshwesh_missions_task_13_DESC:0 ""
+
+meshwesh_missions_task_14:0 ""
+meshwesh_missions_task_14_DESC:0 ""
+
+meshwesh_missions_task_15:0 ""
+meshwesh_missions_task_15_DESC:0 ""
+
+meshwesh_missions_task_16:0 ""
+meshwesh_missions_task_16_DESC:0 ""
+
+meshwesh_missions_task_17:0 ""
+meshwesh_missions_task_17_DESC:0 ""
+
+meshwesh_missions_task_18:0 ""
+meshwesh_missions_task_18_DESC:0 ""
+
+meshwesh_missions_task_19:0 ""
+meshwesh_missions_task_19_DESC:0 ""
+
+meshwesh_missions_task_20:0 ""
+meshwesh_missions_task_20_DESC:0 ""
+
+meshwesh_missions_task_21:0 ""
+meshwesh_missions_task_21_DESC:0 ""
+
+meshwesh_missions_task_22:0 ""
+meshwesh_missions_task_22_DESC:0 ""
+
+meshwesh_missions_task_23:0 ""
+meshwesh_missions_task_23_DESC:0 ""
+
+meshwesh_missions_task_24:0 ""
+meshwesh_missions_task_24_DESC:0 ""
+
+meshwesh_missions_task_25:0 ""
+meshwesh_missions_task_25_DESC:0 ""
+
+meshwesh_missions_task_26:0 ""
+meshwesh_missions_task_26_DESC:0 ""
+
+meshwesh_missions_task_27:0 ""
+meshwesh_missions_task_27_DESC:0 ""
+
+meshwesh_missions_task_28:0 ""
+meshwesh_missions_task_28_DESC:0 ""
+
+meshwesh_missions_task_29:0 ""
+meshwesh_missions_task_29_DESC:0 ""
+
+meshwesh_missions_task_30:0 ""
+meshwesh_missions_task_30_DESC:0 ""
+
+
+#Tooltips
+
+
+
+#Modifiers
+
+
+
+#Events
+me_meshwesh_1_title:0 "$meshwesh_missions_task_1$"
+me_meshwesh_1_desc:0 ""
+me_meshwesh_1.a:0 ""
+me_meshwesh_1_tooltip:0 "The mission task '#Y $meshwesh_missions_task_1$#!' has now been #G Completed#!!"
+
+me_meshwesh_2_title:0 "$meshwesh_missions_task_2$"
+me_meshwesh_2_desc:0 ""
+me_meshwesh_2.a:0 ""
+me_meshwesh_2_tooltip:0 "The mission task '#Y $meshwesh_missions_task_2$#!' has now been #G Completed#!!"
+
+me_meshwesh_3_title:0 "$meshwesh_missions_task_3$"
+me_meshwesh_3_desc:0 ""
+me_meshwesh_3.a:0 ""
+me_meshwesh_3_tooltip:0 "The mission task '#Y $meshwesh_missions_task_3$#!' has now been #G Completed#!!"
+
+me_meshwesh_4_title:0 "$meshwesh_missions_task_4$"
+me_meshwesh_4_desc:0 ""
+me_meshwesh_4.a:0 ""
+me_meshwesh_4_tooltip:0 "The mission task '#Y $meshwesh_missions_task_4$#!' has now been #G Completed#!!"
+
+me_meshwesh_5_title:0 "$meshwesh_missions_task_5$"
+me_meshwesh_5_desc:0 ""
+me_meshwesh_5.a:0 ""
+me_meshwesh_5_tooltip:0 "The mission task '#Y $meshwesh_missions_task_5$#!' has now been #G Completed#!!"
+
+me_meshwesh_6_title:0 "$meshwesh_missions_task_6$"
+me_meshwesh_6_desc:0 ""
+me_meshwesh_6.a:0 ""
+me_meshwesh_6_tooltip:0 "The mission task '#Y $meshwesh_missions_task_6$#!' has now been #G Completed#!!"
+
+me_meshwesh_7_title:0 "$meshwesh_missions_task_7$"
+me_meshwesh_7_desc:0 ""
+me_meshwesh_7.a:0 ""
+me_meshwesh_7_tooltip:0 "The mission task '#Y $meshwesh_missions_task_7$#!' has now been #G Completed#!!"
+
+me_meshwesh_8_title:0 "$meshwesh_missions_task_8$"
+me_meshwesh_8_desc:0 ""
+me_meshwesh_8.a:0 ""
+me_meshwesh_8_tooltip:0 "The mission task '#Y $meshwesh_missions_task_8$#!' has now been #G Completed#!!"
+
+me_meshwesh_9_title:0 "$meshwesh_missions_task_9$"
+me_meshwesh_9_desc:0 ""
+me_meshwesh_9.a:0 ""
+me_meshwesh_9_tooltip:0 "The mission task '#Y $meshwesh_missions_task_9$#!' has now been #G Completed#!!"
+
+me_meshwesh_10_title:0 "$meshwesh_missions_task_10$"
+me_meshwesh_10_desc:0 ""
+me_meshwesh_10.a:0 ""
+me_meshwesh_10_tooltip:0 "The mission task '#Y $meshwesh_missions_task_10$#!' has now been #G Completed#!!"
+
+me_meshwesh_11_title:0 "$meshwesh_missions_task_11$"
+me_meshwesh_11_desc:0 ""
+me_meshwesh_11.a:0 ""
+me_meshwesh_11_tooltip:0 "The mission task '#Y $meshwesh_missions_task_11$#!' has now been #G Completed#!!"
+
+me_meshwesh_12_title:0 "$meshwesh_missions_task_12$"
+me_meshwesh_12_desc:0 ""
+me_meshwesh_12.a:0 ""
+me_meshwesh_12_tooltip:0 "The mission task '#Y $meshwesh_missions_task_12$#!' has now been #G Completed#!!"
+
+me_meshwesh_13_title:0 "$meshwesh_missions_task_13$"
+me_meshwesh_13_desc:0 ""
+me_meshwesh_13.a:0 ""
+me_meshwesh_13_tooltip:0 "The mission task '#Y $meshwesh_missions_task_13$#!' has now been #G Completed#!!"
+
+me_meshwesh_14_title:0 "$meshwesh_missions_task_14$"
+me_meshwesh_14_desc:0 ""
+me_meshwesh_14.a:0 ""
+me_meshwesh_14_tooltip:0 "The mission task '#Y $meshwesh_missions_task_14$#!' has now been #G Completed#!!"
+
+me_meshwesh_15_title:0 "$meshwesh_missions_task_15$"
+me_meshwesh_15_desc:0 ""
+me_meshwesh_15.a:0 ""
+me_meshwesh_15_tooltip:0 "The mission task '#Y $meshwesh_missions_task_15$#!' has now been #G Completed#!!"
+
+me_meshwesh_16_title:0 "$meshwesh_missions_task_16$"
+me_meshwesh_16_desc:0 ""
+me_meshwesh_16.a:0 ""
+me_meshwesh_16_tooltip:0 "The mission task '#Y $meshwesh_missions_task_16$#!' has now been #G Completed#!!"
+
+me_meshwesh_17_title:0 "$meshwesh_missions_task_17$"
+me_meshwesh_17_desc:0 ""
+me_meshwesh_17.a:0 ""
+me_meshwesh_17_tooltip:0 "The mission task '#Y $meshwesh_missions_task_17$#!' has now been #G Completed#!!"
+
+me_meshwesh_18_title:0 "$meshwesh_missions_task_18$"
+me_meshwesh_18_desc:0 ""
+me_meshwesh_18.a:0 ""
+me_meshwesh_18_tooltip:0 "The mission task '#Y $meshwesh_missions_task_18$#!' has now been #G Completed#!!"
+
+me_meshwesh_19_title:0 "$meshwesh_missions_task_19$"
+me_meshwesh_19_desc:0 ""
+me_meshwesh_19.a:0 ""
+me_meshwesh_19_tooltip:0 "The mission task '#Y $meshwesh_missions_task_19$#!' has now been #G Completed#!!"
+
+me_meshwesh_20_title:0 "$meshwesh_missions_task_20$"
+me_meshwesh_20_desc:0 ""
+me_meshwesh_20.a:0 ""
+me_meshwesh_20_tooltip:0 "The mission task '#Y $meshwesh_missions_task_20$#!' has now been #G Completed#!!"
+
+me_meshwesh_21_title:0 "$meshwesh_missions_task_21$"
+me_meshwesh_21_desc:0 ""
+me_meshwesh_21.a:0 ""
+me_meshwesh_21_tooltip:0 "The mission task '#Y $meshwesh_missions_task_21$#!' has now been #G Completed#!!"
+
+me_meshwesh_22_title:0 "$meshwesh_missions_task_22$"
+me_meshwesh_22_desc:0 ""
+me_meshwesh_22.a:0 ""
+me_meshwesh_22_tooltip:0 "The mission task '#Y $meshwesh_missions_task_22$#!' has now been #G Completed#!!"
+
+me_meshwesh_23_title:0 "$meshwesh_missions_task_23$"
+me_meshwesh_23_desc:0 ""
+me_meshwesh_23.a:0 ""
+me_meshwesh_23_tooltip:0 "The mission task '#Y $meshwesh_missions_task_23$#!' has now been #G Completed#!!"
+
+me_meshwesh_24_title:0 "$meshwesh_missions_task_24$"
+me_meshwesh_24_desc:0 ""
+me_meshwesh_24.a:0 ""
+me_meshwesh_24_tooltip:0 "The mission task '#Y $meshwesh_missions_task_24$#!' has now been #G Completed#!!"
+
+me_meshwesh_25_title:0 "$meshwesh_missions_task_25$"
+me_meshwesh_25_desc:0 ""
+me_meshwesh_25.a:0 ""
+me_meshwesh_25_tooltip:0 "The mission task '#Y $meshwesh_missions_task_25$#!' has now been #G Completed#!!"
+
+me_meshwesh_26_title:0 "$meshwesh_missions_task_26$"
+me_meshwesh_26_desc:0 ""
+me_meshwesh_26.a:0 ""
+me_meshwesh_26_tooltip:0 "The mission task '#Y $meshwesh_missions_task_26$#!' has now been #G Completed#!!"
+
+me_meshwesh_27_title:0 "$meshwesh_missions_task_27$"
+me_meshwesh_27_desc:0 ""
+me_meshwesh_27.a:0 ""
+me_meshwesh_27_tooltip:0 "The mission task '#Y $meshwesh_missions_task_27$#!' has now been #G Completed#!!"
+
+me_meshwesh_28_title:0 "$meshwesh_missions_task_28$"
+me_meshwesh_28_desc:0 ""
+me_meshwesh_28.a:0 ""
+me_meshwesh_28_tooltip:0 "The mission task '#Y $meshwesh_missions_task_28$#!' has now been #G Completed#!!"
+
+me_meshwesh_29_title:0 "$meshwesh_missions_task_29$"
+me_meshwesh_29_desc:0 ""
+me_meshwesh_29.a:0 ""
+me_meshwesh_29_tooltip:0 "The mission task '#Y $meshwesh_missions_task_29$#!' has now been #G Completed#!!"
+
+me_meshwesh_30_title:0 "$meshwesh_missions_task_30$"
+me_meshwesh_30_desc:0 ""
+me_meshwesh_30.a:0 ""
+me_meshwesh_30_tooltip:0 "The mission task '#Y $meshwesh_missions_task_30$#!' has now been #G Completed#!!"
+

@@ -1,0 +1,392 @@
+﻿namespace = me_meshwesh
+
+me_meshwesh.1 = {
+    type = country_event
+
+    title = me_meshwesh_1_title
+    desc = me_meshwesh_1_desc
+    picture = great_library
+
+    option = {
+        name = "me_meshwesh_1.a"
+        custom_tooltip = me_meshwesh_1_tooltip
+
+    }
+}
+me_meshwesh.2 = {
+    type = country_event
+
+    title = me_meshwesh_2_title
+    desc = me_meshwesh_2_desc
+    picture = great_library
+
+    option = {
+        name = "me_meshwesh_2.a"
+        custom_tooltip = me_meshwesh_2_tooltip
+
+    }
+}
+me_meshwesh.3 = {
+    type = country_event
+
+    title = me_meshwesh_3_title
+    desc = me_meshwesh_3_desc
+    picture = great_library
+
+    option = {
+        name = "me_meshwesh_3.a"
+        custom_tooltip = me_meshwesh_3_tooltip
+
+    }
+}
+me_meshwesh.4 = {
+    type = country_event
+
+    title = me_meshwesh_4_title
+    desc = me_meshwesh_4_desc
+    picture = great_library
+
+    option = {
+        name = "me_meshwesh_4.a"
+        custom_tooltip = me_meshwesh_4_tooltip
+
+    }
+}
+me_meshwesh.5 = {
+    type = country_event
+
+    title = me_meshwesh_5_title
+    desc = me_meshwesh_5_desc
+    picture = great_library
+
+    option = {
+        name = "me_meshwesh_5.a"
+        custom_tooltip = me_meshwesh_5_tooltip
+
+    }
+}
+me_meshwesh.6 = {
+    type = country_event
+
+    title = me_meshwesh_6_title
+    desc = me_meshwesh_6_desc
+    picture = great_library
+
+    option = {
+        name = "me_meshwesh_6.a"
+        custom_tooltip = me_meshwesh_6_tooltip
+
+    }
+}
+me_meshwesh.7 = {
+    type = country_event
+
+    title = me_meshwesh_7_title
+    desc = me_meshwesh_7_desc
+    picture = great_library
+
+    option = {
+        name = "me_meshwesh_7.a"
+        custom_tooltip = me_meshwesh_7_tooltip
+
+    }
+}
+me_meshwesh.8 = {
+    type = country_event
+
+    title = me_meshwesh_8_title
+    desc = me_meshwesh_8_desc
+    picture = great_library
+
+    option = {
+        name = "me_meshwesh_8.a"
+        custom_tooltip = me_meshwesh_8_tooltip
+
+    }
+}
+me_meshwesh.9 = {
+    type = country_event
+
+    title = me_meshwesh_9_title
+    desc = me_meshwesh_9_desc
+    picture = great_library
+
+    option = {
+        name = "me_meshwesh_9.a"
+        custom_tooltip = me_meshwesh_9_tooltip
+
+    }
+}
+me_meshwesh.10 = {
+    type = country_event
+
+    title = me_meshwesh_10_title
+    desc = me_meshwesh_10_desc
+    picture = great_library
+
+    option = {
+        name = "me_meshwesh_10.a"
+        custom_tooltip = me_meshwesh_10_tooltip
+
+    }
+}
+me_meshwesh.11 = {
+    type = country_event
+
+    title = me_meshwesh_11_title
+    desc = me_meshwesh_11_desc
+    picture = great_library
+
+    option = {
+        name = "me_meshwesh_11.a"
+        custom_tooltip = me_meshwesh_11_tooltip
+
+    }
+}
+me_meshwesh.12 = {
+    type = country_event
+
+    title = me_meshwesh_12_title
+    desc = me_meshwesh_12_desc
+    picture = great_library
+
+    option = {
+        name = "me_meshwesh_12.a"
+        custom_tooltip = me_meshwesh_12_tooltip
+
+    }
+}
+me_meshwesh.13 = {
+    type = country_event
+
+    title = me_meshwesh_13_title
+    desc = me_meshwesh_13_desc
+    picture = great_library
+
+    option = {
+        name = "me_meshwesh_13.a"
+        custom_tooltip = me_meshwesh_13_tooltip
+
+    }
+}
+me_meshwesh.14 = {
+    type = country_event
+
+    title = me_meshwesh_14_title
+    desc = me_meshwesh_14_desc
+    picture = great_library
+
+    option = {
+        name = "me_meshwesh_14.a"
+        custom_tooltip = me_meshwesh_14_tooltip
+
+    }
+}
+me_meshwesh.15 = {
+    type = country_event
+
+    title = me_meshwesh_15_title
+    desc = me_meshwesh_15_desc
+    picture = great_library
+
+    option = {
+        name = "me_meshwesh_15.a"
+        custom_tooltip = me_meshwesh_15_tooltip
+
+    }
+}
+me_meshwesh.16 = {
+    type = country_event
+
+    title = me_meshwesh_16_title
+    desc = me_meshwesh_16_desc
+    picture = great_library
+
+    option = {
+        name = "me_meshwesh_16.a"
+        custom_tooltip = me_meshwesh_16_tooltip
+
+    }
+}
+me_meshwesh.17 = {
+    type = country_event
+
+    title = me_meshwesh_17_title
+    desc = me_meshwesh_17_desc
+    picture = great_library
+
+    option = {
+        name = "me_meshwesh_17.a"
+        custom_tooltip = me_meshwesh_17_tooltip
+
+    }
+}
+me_meshwesh.18 = {
+    type = country_event
+
+    title = me_meshwesh_18_title
+    desc = me_meshwesh_18_desc
+    picture = great_library
+
+    option = {
+        name = "me_meshwesh_18.a"
+        custom_tooltip = me_meshwesh_18_tooltip
+
+    }
+}
+me_meshwesh.19 = {
+    type = country_event
+
+    title = me_meshwesh_19_title
+    desc = me_meshwesh_19_desc
+    picture = great_library
+
+    option = {
+        name = "me_meshwesh_19.a"
+        custom_tooltip = me_meshwesh_19_tooltip
+
+    }
+}
+me_meshwesh.20 = {
+    type = country_event
+
+    title = me_meshwesh_20_title
+    desc = me_meshwesh_20_desc
+    picture = great_library
+
+    option = {
+        name = "me_meshwesh_20.a"
+        custom_tooltip = me_meshwesh_20_tooltip
+
+    }
+}
+me_meshwesh.21 = {
+    type = country_event
+
+    title = me_meshwesh_21_title
+    desc = me_meshwesh_21_desc
+    picture = great_library
+
+    option = {
+        name = "me_meshwesh_21.a"
+        custom_tooltip = me_meshwesh_21_tooltip
+
+    }
+}
+me_meshwesh.22 = {
+    type = country_event
+
+    title = me_meshwesh_22_title
+    desc = me_meshwesh_22_desc
+    picture = great_library
+
+    option = {
+        name = "me_meshwesh_22.a"
+        custom_tooltip = me_meshwesh_22_tooltip
+
+    }
+}
+me_meshwesh.23 = {
+    type = country_event
+
+    title = me_meshwesh_23_title
+    desc = me_meshwesh_23_desc
+    picture = great_library
+
+    option = {
+        name = "me_meshwesh_23.a"
+        custom_tooltip = me_meshwesh_23_tooltip
+
+    }
+}
+me_meshwesh.24 = {
+    type = country_event
+
+    title = me_meshwesh_24_title
+    desc = me_meshwesh_24_desc
+    picture = great_library
+
+    option = {
+        name = "me_meshwesh_24.a"
+        custom_tooltip = me_meshwesh_24_tooltip
+
+    }
+}
+me_meshwesh.25 = {
+    type = country_event
+
+    title = me_meshwesh_25_title
+    desc = me_meshwesh_25_desc
+    picture = great_library
+
+    option = {
+        name = "me_meshwesh_25.a"
+        custom_tooltip = me_meshwesh_25_tooltip
+
+    }
+}
+me_meshwesh.26 = {
+    type = country_event
+
+    title = me_meshwesh_26_title
+    desc = me_meshwesh_26_desc
+    picture = great_library
+
+    option = {
+        name = "me_meshwesh_26.a"
+        custom_tooltip = me_meshwesh_26_tooltip
+
+    }
+}
+me_meshwesh.27 = {
+    type = country_event
+
+    title = me_meshwesh_27_title
+    desc = me_meshwesh_27_desc
+    picture = great_library
+
+    option = {
+        name = "me_meshwesh_27.a"
+        custom_tooltip = me_meshwesh_27_tooltip
+
+    }
+}
+me_meshwesh.28 = {
+    type = country_event
+
+    title = me_meshwesh_28_title
+    desc = me_meshwesh_28_desc
+    picture = great_library
+
+    option = {
+        name = "me_meshwesh_28.a"
+        custom_tooltip = me_meshwesh_28_tooltip
+
+    }
+}
+me_meshwesh.29 = {
+    type = country_event
+
+    title = me_meshwesh_29_title
+    desc = me_meshwesh_29_desc
+    picture = great_library
+
+    option = {
+        name = "me_meshwesh_29.a"
+        custom_tooltip = me_meshwesh_29_tooltip
+
+    }
+}
+me_meshwesh.30 = {
+    type = country_event
+
+    title = me_meshwesh_30_title
+    desc = me_meshwesh_30_desc
+    picture = great_library
+
+    option = {
+        name = "me_meshwesh_30.a"
+        custom_tooltip = me_meshwesh_30_tooltip
+
+    }
+}
