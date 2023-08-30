@@ -62,6 +62,10 @@ hellenic_libu_deity_tt:0 "Any deity from the #Y Hellenic religion#! is in our #E
 special_event_tt:0 "#G Unlock#! a special event via #E decision#!."
 barce_deity_tt:0 "#G Unlock#! access to the goddess #E Barce#!."
 hellenic_friend_tt:0 "Any #Y friend#! of your ruler is #E Greek#!."
+only_amazigh_deities_tt:0 "Have #Y 4 Amazigh deities#! in pantheon."
+slave_raiding_enabled_tt:0 "#G Unlock#! the ability to #Y Slave Raid#!."
+occupation_kill_tt:0 "#R Kill 10 pops#! in every #E occupied city#!."
+camel_breeding_program_tt:0 "#G Unlock#! decision to create a #Y Camel Breeding Program#!."
 
 #Modifiers
 tifinagh_script:0 "Libu-Tifinagh Script"
@@ -75,6 +79,11 @@ king_of_libu:0 "Kings of Eastern Libya"
 hellenic_advisors:0 "Greek Advisors"
 libu_hippodrome:0 "Hippodrome of Barce"
 greek_reconciliation:0 "Libu Greeks"
+desert_horde:0 "Desert Horde"
+camels_flood_plain_combat_bonus:0 "Camel Floodplain Combat Bonus"
+
+#Others
+the_terrible_libu:0 "The Greek Slayer"
 
 #Decisions
 integrate_cyrenaican_navy:0 "Integrate Cyrenaican Navy"

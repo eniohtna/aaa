@@ -124,6 +124,24 @@
             p:3357 = {
                 is_capital = yes
             }
+            hidden:p:3357 = {
+                calc_true_if = {
+                    amount >= 2
+                    has_building = population_building
+                    has_building = commerce_building
+                    has_building = town_hall_building
+                    has_building = military_building
+                }
+            }
+            hidden:p:3357 = {
+                calc_true_if = {
+                    amount >= 1
+                    has_building = fortress_building
+                    has_building = forum_building
+                    has_building = aqueduct_building
+                    has_building = foundry_building
+                }
+            }
             hidden:p:3357.state = {
                 calc_true_if = {
                     amount >= 2
@@ -341,23 +359,85 @@
         requires = { cyrene_missions_libya_task_3 }
         prevented_by = { cyrene_missions_libya_task_2 }
         allow = {
-        
+            any_country = {
+                country_culture_group = hellenic
+                war_with = root
+                any_owned_province = {
+                    controller = root
+                    has_city_status = yes
+                }
+            }
         }
         on_completion = {
             trigger_event = me_cyr_libya.10
+            set_variable = unlocked_slave_raiding
             show_as_tooltip = {
-
+                custom_tooltip = slave_raiding_enabled_tt
+                add_treasury = 500
+                add_political_influence = 200
+                add_legitimacy = legitimacy_huge
+                current_ruler = {
+                    add_popularity = 20
+                    add_trait = cruel
+                    add_martial = 2
+                    add_zeal = 2
+                    add_nickname = "the_terrible_libu"
+                }
+                custom_tooltip = "occupation_kill_tt"
+                every_province = {
+                    limit = {
+                        controller = root
+                        NOT = { owner = root }
+                        has_city_status = yes
+                    }
+                    while = {
+                        count = 10
+                        random_pops_in_province = {
+                            kill_pop = yes
+                        }
+                    }
+                    destroy_building_effect = yes
+                }
             }
         }
     }
     cyrene_missions_libya_task_11 = { # Entice Libyan Settlers
         icon = "task_calm"
+        duration = 365
         requires = { cyrene_missions_libya_task_10 }
-        allow = {}
+        allow = {
+            area:cyrenaica_superioris_area = {
+                governor_policy = cultural_assimilation
+            }
+            area:cyrenaica_inferioris_area = {
+                governor_policy = decentralize_pops
+            }
+            any_country_culture = {
+                is_culture = cyrenaican
+                has_country_culture_modifier = colonia_founded
+            }
+        }
         on_completion = {
             trigger_event = me_cyr_libya.11
             show_as_tooltip = {
-
+                every_province = {
+                    limit = {
+                        dominant_province_culture = cyrenaican
+                        has_city_status = yes
+                    }
+                    while = {
+                        count = 10
+                        limit = {
+                            is_culture = cyrenaican
+                        }
+                        random_pops_in_province = {
+                            limit = {
+                                NOT = { pop_culture = libyan }
+                            }
+                            set_pop_culture = libyan
+                        }
+                    }
+                }
             }
         }
     }
@@ -375,11 +455,28 @@
     cyrene_missions_libya_task_13 = { # Camel War Parties
         icon = "task_battle"
         requires = { cyrene_missions_libya_task_10 }
-        allow = {}
+        allow = {
+            OR = {
+                hidden:capital_scope.state = {
+                    trade_good_surplus = {
+                        target = camel
+                        value >= 2
+                    }
+                }
+                any_owned_province = {
+                    trade_goods = camel
+                    num_goods_produced = 2
+                }
+            }
+        }
         on_completion = {
             trigger_event = me_cyr_libya.13
             show_as_tooltip = {
-
+                custom_tooltip = camel_breeding_program_tt
+                add_country_modifier = {
+                    name = war_camels
+                    duration = -1
+                }
             }
         }
     }
