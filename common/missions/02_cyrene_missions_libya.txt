@@ -367,6 +367,7 @@
                     has_city_status = yes
                 }
             }
+            num_of_ships >= 15
         }
         on_completion = {
             trigger_event = me_cyr_libya.10
