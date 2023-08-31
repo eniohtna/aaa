@@ -1159,7 +1159,7 @@ dhe_hippodrome_barce.12 = {
         }
     }
 }
-dhe_hippodrome_barce.21 = {       # Task 11 on conclusion
+dhe_hippodrome_barce.21 = {       # Below copy pasted from ptolemeia festival
     type = country_event
     title = "dhe_hippodrome_barce.21.t"
     desc = "dhe_hippodrome_barce.21.desc"
@@ -1174,7 +1174,6 @@ dhe_hippodrome_barce.21 = {       # Task 11 on conclusion
         current_ruler = {
             add_popularity = 10
         }
-        c:ROOT.fam:Ahmid = { add_prestige = 100 }
         add_legitimacy = 10
         hidden_effect = {
             every_country = {
@@ -1197,7 +1196,7 @@ dhe_hippodrome_barce.21 = {       # Task 11 on conclusion
                     }
                 }
                 add_opinion = {
-                    modifier = ptolemaia_held
+                    modifier = barce_games_held
                     target = root
                 }
             }
@@ -1209,21 +1208,35 @@ dhe_hippodrome_barce.21 = {       # Task 11 on conclusion
     option = {
         name = "dhe_hippodrome_barce.21.b"
         add_country_modifier = {
-            name = egypt_oneoff_ptolemaia_bonus
+            name = libu_oneoff_barce_games_bonus
             duration = 1460
         }
         current_ruler = {
             add_popularity = 10
         }
-        c:EGY.fam:Lagid = { add_prestige = 100 }
         add_legitimacy = 10
         hidden_effect = {
             every_country = {
                 limit = {
-                    country_culture_group = hellenic
+                    OR = {
+                        capital_scope = { is_in_region = lower_egypt_region }
+                        capital_scope = { is_in_region = upper_egypt_region }
+                        capital_scope = { is_in_region = lower_nubia_region }
+                        capital_scope = { is_in_region = nubia_region }
+                        capital_scope = { is_in_region = punt_region }
+                        capital_scope = { is_in_region = cyrenaica_region }
+                        capital_scope = { is_in_region = fezzan_region }
+                        capital_scope = { is_in_region = africa_region }
+                        capital_scope = { is_in_region = numidia_region }
+                        capital_scope = { is_in_region = atlas_region }
+                        capital_scope = { is_in_region = mauretainia_region }
+                        primary_culture = cyrenaican
+                        country_culture_group = fezzani
+                        country_culture_group = numidian
+                    }
                 }
                 add_opinion = {
-                    modifier = ptolemaia_held
+                    modifier = barce_games_held
                     target = root
                 }
             }
@@ -1249,7 +1262,7 @@ dhe_hippodrome_barce.22 = {       # Beginning regular Ptolemaia
             days = 1370
         }
         set_global_variable = {
-            name = egypt_ptolemaia_festival_counter_var
+            name = barce_games_counter_var
             value = 1
         }
     }
@@ -1261,12 +1274,6 @@ dhe_hippodrome_barce.23 = {       # Recurrent Ptolemaia - preparation
     desc = "dhe_hippodrome_barce.23.desc"
     picture = greek_court
 
-    trigger = {
-        current_ruler = {
-            family = c:EGY.fam:Lagid
-        }
-    }
-
     option = {                            
         name = "dhe_hippodrome_barce.23.a"
         custom_tooltip = dhe_hippodrome_barce.23.a.tt
@@ -1277,7 +1284,7 @@ dhe_hippodrome_barce.23 = {       # Recurrent Ptolemaia - preparation
         add_treasury = -150
         add_political_influence = -25
         change_global_variable = {
-            name = egypt_ptolemaia_festival_counter_var
+            name = barce_games_counter_var
             add = 1
         }
     }
@@ -1309,27 +1316,35 @@ dhe_hippodrome_barce.24 = {       # numbered Ptolemaia
     picture = religious_rite
     left_portrait = current_ruler
 
-    trigger = {
-        current_ruler = {
-            family = c:EGY.fam:Lagid
-        }
-    }
-
     option = {                            
         name = "dhe_hippodrome_barce.24.a"
-        c:EGY.fam:Lagid = { add_prestige = 50 }
         add_legitimacy = 5
         add_country_modifier = {
-            name = egypt_regular_ptolemaia_mod
+            name = libu_regular_barce_games_mod
             duration = 365
         }
         hidden_effect = {
             every_country = {
                 limit = {
-                    country_culture_group = hellenic
+                    OR = {
+                        capital_scope = { is_in_region = lower_egypt_region }
+                        capital_scope = { is_in_region = upper_egypt_region }
+                        capital_scope = { is_in_region = lower_nubia_region }
+                        capital_scope = { is_in_region = nubia_region }
+                        capital_scope = { is_in_region = punt_region }
+                        capital_scope = { is_in_region = cyrenaica_region }
+                        capital_scope = { is_in_region = fezzan_region }
+                        capital_scope = { is_in_region = africa_region }
+                        capital_scope = { is_in_region = numidia_region }
+                        capital_scope = { is_in_region = atlas_region }
+                        capital_scope = { is_in_region = mauretainia_region }
+                        primary_culture = cyrenaican
+                        country_culture_group = fezzani
+                        country_culture_group = numidian
+                    }
                 }
                 add_opinion = {
-                    modifier = ptolemaia_held
+                    modifier = barce_games_held
                     target = root
                 }
             }

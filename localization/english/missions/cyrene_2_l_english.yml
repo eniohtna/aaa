@@ -78,6 +78,7 @@ cyrenaican_colonia_tt:0 "#E Libu#! has enacted the #Y Found Colony#! cultural de
 camel_need_2_tt:0 "  Any province produces #Y 2#! or more #E Camels#!."
 camel_need_2_2_tt:0 "  #Y Barka#! has a surplus of greater or equal to 2 #E Camels#!."
 owns_cities_greek_tt:0 "#E Libu#! is at #R war#! with a #Y Hellenic#! country and #E Libu#! occupies at least #Y 1#! city of #Y Hellenic#! culture."
+libu_oneoff_barce_games_bonus:0 "Sponsered Barce Games Event"
 
 #Modifiers
 tifinagh_script:0 "Libu-Tifinagh Script"
@@ -94,6 +95,7 @@ greek_reconciliation:0 "Libu Greeks"
 desert_horde:0 "Desert Horde"
 camels_flood_plain_combat_bonus:0 "Camel Floodplain Combat Bonus"
 raided_punic_city:0 "Raided Punic City"
+egypt_regular_ptolemaia_mod:0 "Recent Barce Games"
 
 #Others
 the_terrible_libu:0 "The Greek Slayer"
