@@ -718,11 +718,11 @@ me_cyr_libya.15 = { # Terror from the Desert
         custom_tooltip = me_cyr_libya_15_tooltip
         change_government = steppe_horde
         add_country_modifier = {
-            name = terror_from_the_desert
+            name = desert_horde
             duration = -1
         }
         add_country_modifier = {
-            name = desert_horde
+            name = terror_from_the_desert
             duration = -1
         }
     }

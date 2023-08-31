@@ -413,7 +413,8 @@
             p:3357 = {
                 governor_policy = decentralize_pops
             }
-            any_country_culture = {
+            custom_tooltip = cyrenaican_colonia_tt
+            hidden:any_country_culture = {
                 is_culture = cyrenaican
                 has_country_culture_modifier = colonia_founded
             }
@@ -421,21 +422,24 @@
         on_completion = {
             trigger_event = me_cyr_libya.11
             show_as_tooltip = {
-                every_province = {
-                    limit = {
-                        dominant_province_culture = cyrenaican
-                        has_city_status = yes
-                    }
-                    while = {
-                        count = 10
+                custom_tooltip = 10_pops_culture_convert_tt
+                hidden_effect = {
+                    every_province = {
                         limit = {
-                            is_culture = cyrenaican
+                            dominant_province_culture = cyrenaican
+                            has_city_status = yes
                         }
-                        random_pops_in_province = {
+                        while = {
+                            count = 10
                             limit = {
-                                NOT = { pop_culture = libyan }
+                                is_culture = cyrenaican
                             }
-                            set_pop_culture = libyan
+                            random_pops_in_province = {
+                                limit = {
+                                    NOT = { pop_culture = libyan }
+                                }
+                                set_pop_culture = libyan
+                            }
                         }
                     }
                 }
@@ -478,15 +482,21 @@
         requires = { cyrene_missions_libya_task_10 }
         allow = {
             OR = {
-                hidden:capital_scope.state = {
-                    trade_good_surplus = {
-                        target = camel
-                        value >= 2
+                custom_tooltip = {
+                    text = camel_need_2_2_tt
+                    hidden:capital_scope.state = {
+                        trade_good_surplus = {
+                            target = camel
+                            value >= 2
+                        }
                     }
                 }
-                any_owned_province = {
-                    trade_goods = camel
-                    num_goods_produced = 2
+                custom_tooltip = {
+                    text = camel_need_2_tt
+                    any_owned_province = {
+                        trade_goods = camel
+                        num_goods_produced >= 2
+                    }
                 }
             }
         }
@@ -543,11 +553,11 @@
             show_as_tooltip = {
                 change_government = steppe_horde
                 add_country_modifier = {
-                    name = terror_from_the_desert
+                    name = desert_horde
                     duration = -1
                 }
                 add_country_modifier = {
-                    name = desert_horde
+                    name = terror_from_the_desert
                     duration = -1
                 }
             }

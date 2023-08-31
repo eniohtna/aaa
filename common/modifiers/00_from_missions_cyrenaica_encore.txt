@@ -69,8 +69,8 @@ raided_punic_city = {
 }
 desert_horde = { # Will be removed upon government change
     global_nobles_desired_pop_ratio = -0.07
-    hostile_attrition = 0.15
-    land_morale = -0.15
+    hostile_attrition = 15
+    land_morale_modifier = -0.15
     desert_combat_bonus = 0.15
     desert_hills_combat_bonus = 0.15
     camels_discipline = 0.15
