@@ -414,9 +414,10 @@ sakala_academy = {
 		}
 	}
 }
-great_hippodrome_of_barce = {
+hippodrome_of_barce_work = {
 	can_build = no
 	localization_key = "hippodrome_of_barce_work"
+	icon = "gw_building_template"
 	great_work_category = "building"
 	great_work_components={
 		{

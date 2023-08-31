@@ -422,10 +422,12 @@
             p:3357 = {
                 governor_policy = decentralize_pops
             }
-            custom_tooltip = cyrenaican_colonia_tt
-            hidden:any_country_culture = {
-                is_culture = cyrenaican
-                has_country_culture_modifier = colonia_founded
+            custom_tooltip = {
+                text = "cyrenaican_colonia_tt"
+                any_country_culture = {
+                    is_culture = cyrenaican
+                    has_country_culture_modifier = colonia_founded
+                }
             }
         }
         on_completion = {

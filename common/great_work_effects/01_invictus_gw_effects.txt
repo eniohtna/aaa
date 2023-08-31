@@ -1384,7 +1384,7 @@ gw_effect_stonehenge_event = {
 }
 # Cyrenaica Missions "Libu" - Hippodrome of Barce
 gw_effect_hippodrome_barce = {
-	icon = "gw_effect_religious_science_doctrine"
+	icon = "gw_effect_army_logistics"
 	flags = {
 		"religious"
 	}
@@ -1397,7 +1397,7 @@ gw_effect_hippodrome_barce = {
 			country_modifier = {
 				happiness_for_wrong_culture_group_modifier = 0.01
 				happiness_for_same_religion_modifier = 0.01
-				light_cavalry_morale = 0.05
+				heavy_cavalry_morale = 0.05
 			}
 		}
 		gw_effect_hippodrome_barce_tier_2 = {
@@ -1405,8 +1405,7 @@ gw_effect_hippodrome_barce = {
 			country_modifier = {
 				happiness_for_wrong_culture_group_modifier = 0.02
 				happiness_for_same_religion_modifier = 0.02
-				light_cavalry_morale = 0.05
-				heavy_cavalry_morale = 0.05
+				heavy_cavalry_morale = 0.10
 			}
 		} 
 		gw_effect_hippodrome_barce_tier_3 = {
@@ -1414,8 +1413,7 @@ gw_effect_hippodrome_barce = {
 			country_modifier = {
 				happiness_for_wrong_culture_group_modifier = 0.03
 				happiness_for_same_religion_modifier = 0.03
-				light_cavalry_morale = 0.05
-				heavy_cavalry_morale = 0.05
+				heavy_cavalry_morale = 0.10
 				army_movement_speed = 0.05
 			}
 		} 
@@ -1424,7 +1422,6 @@ gw_effect_hippodrome_barce = {
 			country_modifier = {
 				happiness_for_wrong_culture_group_modifier = 0.05
 				happiness_for_same_religion_modifier = 0.05
-				light_cavalry_morale = 0.1
 				heavy_cavalry_morale = 0.1
 				army_movement_speed = 0.1
 			}

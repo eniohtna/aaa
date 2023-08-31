@@ -1,4 +1,5 @@
 ﻿namespace = me_cyr_libya
+namespace = dhe_hippodrome_barce
 
 me_cyr_libya.1 = { # The Spoils of Victory
     type = country_event
@@ -809,6 +810,535 @@ me_cyr_libya.15 = { # Terror from the Desert
                 modifier = fear_of_sand
                 target = ROOT
             }
+        }
+    }
+}
+# Decision Events
+dhe_hippodrome_barce.10 = {
+    type = country_event
+
+    title = dhe_hippodrome_barce.10.t
+    desc = dhe_hippodrome_barce.10.desc
+    picture = quarry
+    
+    left_portrait = current_ruler
+
+    goto_location = p:3357
+    
+    trigger = {
+        owns = 3357
+    }
+
+    option = {
+        name = "dhe_hippodrome_barce.10.a"
+        custom_tooltip = "dhe_hippodrome_barce_tooltip"
+    }
+}
+dhe_hippodrome_barce.1 = {
+    type = country_event 
+    hidden = yes
+
+    immediate = {
+        if = { # Building Progresses
+            limit = {
+                var:hippodrome_barce_progress < 3
+                owns = 3357
+            }
+            random_list = {
+                1 = { # Building progresses without any event
+                    change_variable = {
+                        name = hippodrome_barce_quality
+                        add = 1
+                    }
+                }
+                2 = { # Complication event - sunk ship with materials
+                    trigger_event = {
+                        id = "dhe_hippodrome_barce.2"
+                    }
+                }
+                2 = { # Complication event - Uninspired workers
+                    trigger_event = {
+                        id = "dhe_hippodrome_barce.3"
+                    }
+                }
+                2 = { # Complication event - 
+                    trigger_event = {
+                        id = "dhe_hippodrome_barce.4"
+                    }
+                }
+            }
+            change_variable = {
+                name = hippodrome_barce_progress
+                add = 1
+            }
+            trigger_event = { # Trigger next event
+                id = "dhe_hippodrome_barce.1"
+                days = { 150 300 }
+            }
+        } 
+        else_if = { # Building Finished
+            limit = {
+                var:hippodrome_barce_progress >= 3
+                owns = 3357
+            }
+            if = { # Mediocre Hippodrome
+                limit = {
+                    var:hippodrome_barce_quality < 3
+                }
+                trigger_event = {
+                    id = "dhe_hippodrome_barce.11"
+                }
+            }
+            else_if = {
+                limit = {
+                    var:hippodrome_barce_quality >= 3
+                }
+                trigger_event = {
+                    id = "dhe_hippodrome_barce.12"
+                }
+            }
+        }
+        else = { # Fallback cleanup
+            hidden_effect = {
+                remove_variable = hippodrome_barce_progress
+                remove_variable = hippodrome_barce_quality
+            }
+        }
+    }
+}
+# Complication Event - Ship with materials sunk
+dhe_hippodrome_barce.2 = {
+    type = country_event
+    title = "dhe_hippodrome_barce.2.t"
+    desc = "dhe_hippodrome_barce.2.desc"
+    picture = ship_in_storm
+    
+    left_portrait = current_ruler
+
+    goto_location = p:3357
+    
+    trigger = {
+        owns = 3357
+        any_owned_province = {
+            is_coastal = yes
+        }
+    }
+
+    immediate = {
+        random_owned_province = {
+            limit = {
+                is_coastal = yes
+            }
+            save_scope_as = randomized_country_province
+        }
+    }
+
+    option = {
+        name = "dhe_hippodrome_barce.2.a"
+        custom_tooltip = "dhe_hippodrome_barce.2.a.tt"
+        add_treasury = {
+            subtract = root.has_monthly_income
+            multiply = 6
+            min = -500
+            max = -50
+        }
+        hidden_effect = {
+            change_variable = {
+                name = hippodrome_barce_quality
+                add = 1
+            }
+        }
+    }
+
+    option = {
+        name = "dhe_hippodrome_barce.2.b"
+        custom_tooltip = "dhe_hippodrome_barce.2.b.tt"
+    }
+}
+# Complication Event - Uninspired Workers
+dhe_hippodrome_barce.3 = {
+    type = country_event
+    title = "dhe_hippodrome_barce.3.t"
+    desc = "dhe_hippodrome_barce.3.desc"
+    picture = quarry
+    
+    left_portrait = current_ruler
+
+    goto_location = p:3357
+    
+    trigger = {
+        owns = 3357
+    }
+
+    immediate = {
+
+    }
+
+    option = {
+        name = "dhe_hippodrome_barce.3.a"
+        custom_tooltip = "dhe_hippodrome_barce.2.a.tt"
+        add_treasury = {
+            subtract = root.has_monthly_income
+            multiply = 4
+            min = -400
+            max = -40
+        }
+        hidden_effect = {
+            change_variable = {
+                name = hippodrome_barce_quality
+                add = 1
+            }
+        }
+    }
+
+    option = {
+        name = "dhe_hippodrome_barce.3.b"
+        custom_tooltip = "dhe_hippodrome_barce.2.a.tt"
+        add_political_influence = subtract_influence_medium
+        hidden_effect = {
+            change_variable = {
+                name = hippodrome_barce_quality
+                add = 1
+            }
+        }
+    }
+
+    option = {
+        name = "dhe_hippodrome_barce.3.c"
+        custom_tooltip = "dhe_hippodrome_barce.3.c.tt"
+    }
+}
+# Complication Event - Theft and sabotage
+dhe_hippodrome_barce.4 = {
+    type = country_event
+    title = "dhe_hippodrome_barce.4.t"
+    desc = "dhe_hippodrome_barce.4.desc"
+    picture = revolt
+    
+    left_portrait = current_ruler
+    right_portrait = scope:random_advisor
+
+    goto_location = p:3357
+    
+    trigger = {
+        owns = 3357
+        any_character = {
+            has_any_office = yes
+            is_ruler = no
+        }
+    }
+
+    immediate = {
+        random_character = {
+            limit = {
+                has_any_office = yes
+                is_ruler = no
+            }
+            save_scope_as = random_advisor
+        }
+    }
+
+    option = {
+        name = "dhe_hippodrome_barce.4.a"
+        custom_tooltip = "dhe_hippodrome_barce.2.a.tt"
+        add_treasury = {
+            subtract = root.has_monthly_income
+            multiply = 3
+            min = -300
+            max = -30
+        }
+        hidden_effect = {
+            change_variable = {
+                name = hippodrome_barce_quality
+                add = 1
+            }
+        }
+    }
+
+    option = {
+        name = "dhe_hippodrome_barce.4.b"
+        custom_tooltip = "dhe_hippodrome_barce.2.a.tt"
+        add_manpower = -5
+        hidden_effect = {
+            change_variable = {
+                name = hippodrome_barce_quality
+                add = 1
+            }
+        }
+    }
+
+    option = {
+        name = "dhe_hippodrome_barce.4.c"
+        custom_tooltip = "dhe_hippodrome_barce.4.c.tt"
+    }
+}
+# Building Finished - Mediocre Hippodrome of Barce
+dhe_hippodrome_barce.11 = {
+    type = country_event
+    title = "dhe_hippodrome_barce.11.t"
+    desc = "dhe_hippodrome_barce.11.desc"
+    picture = great_city
+    
+    left_portrait = current_ruler
+    
+    goto_location = p:3357
+    
+    trigger = {
+        owns = 3357
+    }
+
+    immediate = {
+        trigger_event = {
+            id = dhe_hippodrome_barce.20
+            days { 180 365 }
+        }
+    }
+
+    option = {
+        name = "dhe_hippodrome_barce.11.a"
+        p:3357 = {
+            #build_great_work = {
+            #   great_work = "colossus_of_rhodes"
+            #   locator = secondary_great_work
+            #}
+            finish_great_work_construction = {
+                great_work = "hippodrome_of_barce_work"
+                locator = great_work
+            }
+            set_variable = {
+                name = built_hippodrome
+            }
+        }
+        hidden_effect = {
+            remove_variable = hippodrome_barce_progress
+            remove_variable = hippodrome_barce_quality
+        }
+    }
+}
+
+# Building Finished - Great Hippodrome of Barce
+dhe_hippodrome_barce.12 = {
+    type = country_event
+    title = "dhe_hippodrome_barce.12.t"
+    desc = "dhe_hippodrome_barce.12.desc"
+    picture = great_city
+    
+    left_portrait = current_ruler
+    
+    goto_location = p:3357
+    
+    trigger = {
+        owns = 3357
+    }
+
+    immediate = {
+        trigger_event = {
+            id = dhe_hippodrome_barce.20
+            days { 180 365 }
+        }
+    }
+
+    option = {
+        name = "dhe_hippodrome_barce.12.a"
+        p:3357 = {
+            #build_great_work = {
+            #   great_work = "colossus_of_rhodes"
+            #   locator = secondary_great_work
+            #}
+            finish_great_work_construction = {
+                great_work = "hippodrome_of_barce_work"
+                locator = great_work
+            }
+            set_variable = {
+                name = built_hippodrome
+            }
+        }
+        hidden_effect = {
+            remove_variable = hippodrome_barce_progress
+            remove_variable = hippodrome_barce_quality
+        }
+    }
+}
+dhe_hippodrome_barce.21 = {       # Task 11 on conclusion
+    type = country_event
+    title = "dhe_hippodrome_barce.21.t"
+    desc = "dhe_hippodrome_barce.21.desc"
+    picture = religious_rite
+
+    option = {                            
+        name = "dhe_hippodrome_barce.21.a"
+        add_country_modifier = {
+            name = libu_oneoff_barce_games_bonus
+            duration = 1460
+        }
+        current_ruler = {
+            add_popularity = 10
+        }
+        c:ROOT.fam:Ahmid = { add_prestige = 100 }
+        add_legitimacy = 10
+        hidden_effect = {
+            every_country = {
+                limit = {
+                    OR = {
+                        capital_scope = { is_in_region = lower_egypt_region }
+                        capital_scope = { is_in_region = upper_egypt_region }
+                        capital_scope = { is_in_region = lower_nubia_region }
+                        capital_scope = { is_in_region = nubia_region }
+                        capital_scope = { is_in_region = punt_region }
+                        capital_scope = { is_in_region = cyrenaica_region }
+                        capital_scope = { is_in_region = fezzan_region }
+                        capital_scope = { is_in_region = africa_region }
+                        capital_scope = { is_in_region = numidia_region }
+                        capital_scope = { is_in_region = atlas_region }
+                        capital_scope = { is_in_region = mauretainia_region }
+                        primary_culture = cyrenaican
+                        country_culture_group = fezzani
+                        country_culture_group = numidian
+                    }
+                }
+                add_opinion = {
+                    modifier = ptolemaia_held
+                    target = root
+                }
+            }
+        }
+        custom_tooltip = dhe_hippodrome_barce.21.a.tt
+        custom_tooltip = dhe_hippodrome_barce.21.tt.end
+    }
+
+    option = {
+        name = "dhe_hippodrome_barce.21.b"
+        add_country_modifier = {
+            name = egypt_oneoff_ptolemaia_bonus
+            duration = 1460
+        }
+        current_ruler = {
+            add_popularity = 10
+        }
+        c:EGY.fam:Lagid = { add_prestige = 100 }
+        add_legitimacy = 10
+        hidden_effect = {
+            every_country = {
+                limit = {
+                    country_culture_group = hellenic
+                }
+                add_opinion = {
+                    modifier = ptolemaia_held
+                    target = root
+                }
+            }
+        }
+        custom_tooltip = dhe_hippodrome_barce.21.a.tt
+        custom_tooltip = dhe_hippodrome_barce.21.b.tt
+        trigger_event = { id = dhe_hippodrome_barce.22 }
+        custom_tooltip = dhe_hippodrome_barce.21.tt.end
+    }
+}
+
+dhe_hippodrome_barce.22 = {       # Beginning regular Ptolemaia
+    type = country_event
+    title = "dhe_hippodrome_barce.22.t"
+    desc = "dhe_hippodrome_barce.22.desc"
+    picture = religious_rite
+
+    option = {                            
+        name = "dhe_hippodrome_barce.22.a"
+        custom_tooltip = dhe_hippodrome_barce.22.a.tt
+        trigger_event = {
+            id = dhe_hippodrome_barce.23
+            days = 1370
+        }
+        set_global_variable = {
+            name = egypt_ptolemaia_festival_counter_var
+            value = 1
+        }
+    }
+}
+
+dhe_hippodrome_barce.23 = {       # Recurrent Ptolemaia - preparation
+    type = country_event
+    title = "dhe_hippodrome_barce.23.t"
+    desc = "dhe_hippodrome_barce.23.desc"
+    picture = greek_court
+
+    trigger = {
+        current_ruler = {
+            family = c:EGY.fam:Lagid
+        }
+    }
+
+    option = {                            
+        name = "dhe_hippodrome_barce.23.a"
+        custom_tooltip = dhe_hippodrome_barce.23.a.tt
+        trigger_event = {
+            id = dhe_hippodrome_barce.24
+            days = 90
+        }
+        add_treasury = -150
+        add_political_influence = -25
+        change_global_variable = {
+            name = egypt_ptolemaia_festival_counter_var
+            add = 1
+        }
+    }
+    option = {
+        name = "dhe_hippodrome_barce.23.b"
+        custom_tooltip = dhe_hippodrome_barce.23.b.tt
+        trigger_event = {
+            id = dhe_hippodrome_barce.23
+            days = 1460
+        }
+        current_ruler = {
+            add_popularity = -10
+        }
+    }
+    option = {
+        name = "dhe_hippodrome_barce.23.d"
+        current_ruler = {
+            add_popularity = -15
+        }
+        c:EGY.fam:Lagid = { add_prestige = -100 }
+        custom_tooltip = dhe_hippodrome_barce.23.d.tt
+    }
+}
+
+dhe_hippodrome_barce.24 = {       # numbered Ptolemaia
+    type = country_event
+    title = "dhe_hippodrome_barce.24.t"
+    desc = "dhe_hippodrome_barce.24.desc"
+    picture = religious_rite
+    left_portrait = current_ruler
+
+    trigger = {
+        current_ruler = {
+            family = c:EGY.fam:Lagid
+        }
+    }
+
+    option = {                            
+        name = "dhe_hippodrome_barce.24.a"
+        c:EGY.fam:Lagid = { add_prestige = 50 }
+        add_legitimacy = 5
+        add_country_modifier = {
+            name = egypt_regular_ptolemaia_mod
+            duration = 365
+        }
+        hidden_effect = {
+            every_country = {
+                limit = {
+                    country_culture_group = hellenic
+                }
+                add_opinion = {
+                    modifier = ptolemaia_held
+                    target = root
+                }
+            }
+        }
+        custom_tooltip = dhe_hippodrome_barce.21.a.tt
+        custom_tooltip = dhe_hippodrome_barce.22.a.tt
+        trigger_event = {
+            id = dhe_hippodrome_barce.23
+            days = 1370
         }
     }
 }
