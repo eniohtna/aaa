@@ -706,11 +706,24 @@
 			has_variable = cyr_libya_hippodrome
 			NOT = { has_variable = hippodrome_cooldown }
 		}
+		highlight = {
+			scope:province = {
+				province_id = 3357
+			}
+		}
 		allow = {
-			treasury >= 200
+			treasury >= 600
+			p:3357 = {
+				great_work_locator_is_free = primary_great_work
+			}
 		}
 		effect = {
-			custom_tooltip = "this is not done yet, maybe make this into an olympics style event ?"
+			3357 = {
+				begin_great_work_construction = {
+					great_work = "hippodrome_of_barce_work"
+					locator = primary_great_work
+				}
+			}
 		}
 	}
 

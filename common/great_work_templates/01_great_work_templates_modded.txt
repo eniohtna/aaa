@@ -396,6 +396,7 @@ persepolis_gw_template = {
 		}
 	}
 }
+###### Izn's Stuff ######
 ### Sakala Great Wonder ###
 sakala_academy = {
 	can_build = no
@@ -409,6 +410,31 @@ sakala_academy = {
 	great_work_effect_selections={
 		{
 			great_work_effect="gw_effect_taxila"
+			great_work_effect_tier = "gw_effect_tier_4"
+		}
+	}
+}
+great_hippodrome_of_barce = {
+	can_build = no
+	localization_key = "hippodrome_of_barce_work"
+	great_work_category = "building"
+	great_work_components={
+		{
+			great_work_module="gw_building_12_base_JULIANOS"
+			great_work_material="copper"
+		}
+				{
+			great_work_module="gw_building_02_pillar"
+			great_work_material="marble"
+		}
+		{
+			great_work_module="gw_building_07_roof_JULIANOS"
+			great_work_material="ivory"
+		}
+	}
+	great_work_effect_selections={
+		{
+			great_work_effect = "gw_effect_hippodrome_barce"
 			great_work_effect_tier = "gw_effect_tier_4"
 		}
 	}
