@@ -423,7 +423,7 @@ great_hippodrome_of_barce = {
 			great_work_module="gw_building_12_base_JULIANOS"
 			great_work_material="copper"
 		}
-				{
+		{
 			great_work_module="gw_building_02_pillar"
 			great_work_material="marble"
 		}

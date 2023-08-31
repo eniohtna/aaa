@@ -724,9 +724,9 @@
 					locator = primary_great_work
 				}
 			}
+			add_treasury = -600 # make into event
 		}
 	}
-
 	camel_breeding_libu = {
 		potential = {
 			has_variable = libu_camel_program
@@ -756,6 +756,7 @@
 					duration = -1
 				}
 			}
+			add_treasury = -100
 			set_variable = did_program_libu
 		}
 	}

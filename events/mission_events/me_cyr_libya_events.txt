@@ -645,7 +645,7 @@ me_cyr_libya.121 = { # Success
 
     title = me_cyr_libya_121_title
     desc = me_cyr_libya_121_desc
-    picture = throneroom
+    picture = trial_govtype
     left_portrait = current_ruler
     right_portrait = c:GAR.current_ruler
 
@@ -679,7 +679,7 @@ me_cyr_libya.122 = { # Golden Success
 
     title = me_cyr_libya_122_title
     desc = me_cyr_libya_122_desc
-    picture = throneroom
+    picture = celtic_diplomacy
     left_portrait = current_ruler
     right_portrait = c:GAR.current_ruler
 
@@ -697,7 +697,7 @@ me_cyr_libya.123 = { # Failure
 
     title = me_cyr_libya_123_title
     desc = me_cyr_libya_123_desc
-    picture = throneroom
+    picture = roman_trial
     left_portrait = current_ruler
     right_portrait = c:GAR.current_ruler
 
@@ -711,7 +711,7 @@ me_cyr_libya.124 = { # Critical Failure
 
     title = me_cyr_libya_124_title
     desc = me_cyr_libya_124_desc
-    picture = throneroom
+    picture = dagger_behind_back
     left_portrait = current_ruler
     right_portrait = c:GAR.current_ruler
 
