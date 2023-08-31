@@ -359,12 +359,15 @@
         requires = { cyrene_missions_libya_task_3 }
         prevented_by = { cyrene_missions_libya_task_2 }
         allow = {
-            any_country = {
-                country_culture_group = hellenic
-                war_with = root
-                any_owned_province = {
-                    controller = root
-                    has_city_status = yes
+            custom_tooltip = {
+                text = owns_cities_greek_tt
+                any_country = {
+                    country_culture_group = hellenic
+                    war_with = root
+                    any_owned_province = {
+                        controller = root
+                        has_city_status = yes
+                    }
                 }
             }
             num_of_ships >= 15
@@ -383,6 +386,12 @@
                     add_martial = 2
                     add_zeal = 2
                     add_nickname = "the_terrible_libu"
+                }
+                create_unit = {
+                    location = 2574
+                    navy = yes
+                    add_subunit = octere
+                    add_subunit = hexere
                 }
                 custom_tooltip = "occupation_kill_tt"
                 every_province = {
@@ -518,14 +527,26 @@
         allow = {
             custom_tooltip = {
                 text = libu_raiders_tt
-                region:africa_region = {
-                    any_region_province = {
-                        count >= 1
-                        OR = {
-                            has_province_modifier = province_razed_ua
-                            has_province_modifier = province_pillaged
+                OR = {
+                    region:africa_region = {
+                        any_region_province = {
+                            count >= 1
+                            OR = {
+                                has_province_modifier = province_razed_ua
+                                has_province_modifier = province_pillaged
+                            }
+                            dominant_province_culture = carthaginian
                         }
-                        dominant_province_culture = carthaginian
+                    }
+                region:cyrenaica_region = {
+                        any_region_province = {
+                            count >= 1
+                            OR = {
+                                has_province_modifier = province_razed_ua
+                                has_province_modifier = province_pillaged
+                            }
+                            dominant_province_culture = carthaginian
+                        }
                     }
                 }
             }
@@ -540,14 +561,31 @@
                 add_treasury = 200
                 add_political_influence = 50
                 add_innovation = 2
-                custom_tooltip = carthage_angry_tt
+                custom_tooltip = punic_death_tt
+                hidden_effect = {
+                    every_province = {
+                        limit = {
+                            controller = root
+                            NOT = { owner = root }
+                        }
+                        while = {
+                            count = 3
+                            random_pops_in_province = {
+                                kill_pop = yes
+                            }
+                        }
+                        destroy_building_effect = yes
+                    }
+                }
             }
         }
     }
     cyrene_missions_libya_task_15 = { # Terror from the Desert
         icon = "task_expansion"
         requires = { cyrene_missions_libya_task_14 }
-        allow = {}
+        allow = {
+            centralization <= -50
+        }
         on_completion = {
             trigger_event = me_cyr_libya.15
             show_as_tooltip = {

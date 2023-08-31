@@ -467,6 +467,7 @@ me_cyr_libya.806 = { # Letters for the Libyan Tongue: Final
 
     option = {
         name = "me_cyr_libya_806.a"
+        add_centralization = 25
         custom_tooltip = me_cyr_libya_8_tooltip
     }
 }
@@ -500,7 +501,39 @@ me_cyr_libya.10 = { # Plunder the Greek Cities
     option = {
         name = "me_cyr_libya_10.a"
         custom_tooltip = me_cyr_libya_10_tooltip
-
+        custom_tooltip = slave_raiding_enabled_tt
+        set_variable = unlocked_slave_raiding
+        add_treasury = 500
+        add_political_influence = 200
+        add_legitimacy = legitimacy_huge
+        current_ruler = {
+            add_popularity = 20
+            add_trait = cruel
+            add_martial = 2
+            add_zeal = 2
+            add_nickname = "the_terrible_libu"
+        }
+        create_unit = {
+            location = 2574
+            navy = yes
+            add_subunit = octere
+            add_subunit = hexere
+        }
+        custom_tooltip = "occupation_kill_tt"
+        every_province = {
+            limit = {
+                controller = root
+                NOT = { owner = root }
+                has_city_status = yes
+            }
+            while = {
+                count = 10
+                random_pops_in_province = {
+                    kill_pop = yes
+                }
+            }
+            destroy_building_effect = yes
+        }
     }
 }
 me_cyr_libya.11 = { # Entice Libyan Settlers
@@ -513,7 +546,27 @@ me_cyr_libya.11 = { # Entice Libyan Settlers
     option = {
         name = "me_cyr_libya_11.a"
         custom_tooltip = me_cyr_libya_11_tooltip
-
+        custom_tooltip = 10_pops_culture_convert_tt
+        hidden_effect = {
+            every_province = {
+                limit = {
+                    dominant_province_culture = cyrenaican
+                    has_city_status = yes
+                }
+                while = {
+                    count = 10
+                    limit = {
+                        is_culture = cyrenaican
+                    }
+                    random_pops_in_province = {
+                        limit = {
+                            NOT = { pop_culture = libyan }
+                        }
+                        set_pop_culture = libyan
+                    }
+                }
+            }
+        }
     }
 }
 
@@ -703,7 +756,29 @@ me_cyr_libya.14 = { # Raid the Cities of the West
     option = {
         name = "me_cyr_libya_14.a"
         custom_tooltip = me_cyr_libya_14_tooltip
-
+        add_country_modifier = {
+            name = raided_punic_city
+            duration = 1825
+        }
+        add_treasury = 200
+        add_political_influence = 50
+        add_innovation = 2
+        custom_tooltip = punic_death_tt
+        hidden_effect = {
+            every_province = {
+                limit = {
+                    controller = root
+                    NOT = { owner = root }
+                }
+                while = {
+                    count = 3
+                    random_pops_in_province = {
+                        kill_pop = yes
+                    }
+                }
+                destroy_building_effect = yes
+            }
+        }
     }
 }
 me_cyr_libya.15 = { # Terror from the Desert
@@ -724,6 +799,16 @@ me_cyr_libya.15 = { # Terror from the Desert
         add_country_modifier = {
             name = terror_from_the_desert
             duration = -1
+        }
+        every_country = {
+            limit = {
+                in_diplomatic_range = ROOT
+                is_tribal = no
+            }
+            add_opinion = {
+                modifier = fear_of_sand
+                target = ROOT
+            }
         }
     }
 }

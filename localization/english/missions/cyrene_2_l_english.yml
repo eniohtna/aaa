@@ -64,10 +64,10 @@ barce_deity_tt:0 "#G Unlock#! access to the goddess #E Barce#!."
 hellenic_friend_tt:0 "Any #Y friend#! of your ruler is #E Greek#!."
 only_amazigh_deities_tt:0 "Have #Y 4 Amazigh deities#! in pantheon."
 slave_raiding_enabled_tt:0 "#G Unlock#! the ability to #Y Slave Raid#!."
-occupation_kill_tt:0 "#R Kill 10 pops#! in every #E occupied city#!."
+occupation_kill_tt:0 "#R Kills 10 pops#! in every #E occupied city#!."
+punic_death_tt:0 "#R Kills 3 pops#! in every #E occupied territory#!."
 camel_breeding_program_tt:0 "#G Unlock#! decision to create a #Y Camel Breeding Program#!."
-libu_raiders_tt:0 "Raze any city in #Y Africa#! with majority #Y Punic#! culture."
-carthage_angry_tt:0 "#E Carthage#! may grow upset with #E Libu#!."
+libu_raiders_tt:0 "Raze any city in #Y Africa#! or #Y Cyrenaica#! with #Y Punic#! culture."
 meet_with_garamntes_tt:0 "Hold a #Y meeting#! between the ruler of #E Garamantes#! and the ruler of #E Libu#! to discuss our relationship."
 success_chance_tt:0 "The #E Garamantes#! may agree to an #E #G alliance#!#! with us."
 success_golden_tt:0 "The #E Garamantes#! may pursue #E #T closer relations#!#! with us."
@@ -77,6 +77,7 @@ cyrenaican_colonia_tt:0 "#E Libu#! has enacted the #Y Found Colony#! cultural de
 10_pops_culture_convert_tt:0 "Every city with majority #E Cyrenaican#! culture gains #Y 10#! pops of #E Libyan#! culture."
 camel_need_2_tt:0 "  Any province produces #Y 2#! or more #E Camels#!."
 camel_need_2_2_tt:0 "  #Y Barka#! has a surplus of greater or equal to 2 #E Camels#!."
+owns_cities_greek_tt:0 "#E Libu#! is at #R war#! with a #Y Hellenic#! country and #E Libu#! occupies at least #Y 1#! city of #Y Hellenic#! culture."
 
 #Modifiers
 tifinagh_script:0 "Libu-Tifinagh Script"
@@ -96,6 +97,8 @@ raided_punic_city:0 "Raided Punic City"
 
 #Others
 the_terrible_libu:0 "The Greek Slayer"
+fear_of_sand:0 "Terror of the Desert"
+hippodrome_of_barce_work:0 "Hippodrome of Barce"
 
 #Decisions
 integrate_cyrenaican_navy:0 "Integrate Cyrenaican Navy"
@@ -230,7 +233,7 @@ me_cyr_libya_122_desc: "[GetCountry('GAR').GetRuler.GetName] stares [ROOT.GetCou
 me_cyr_libya_122.a:0 "We'll take great care of you."
 
 me_cyr_libya_123_title:0 "$cyrene_missions_libya_task_12$: Failure"
-me_cyr_libya_123_desc:0 "The air is heavy with unsaid words, and it is beginning to make [ROOT.GetCountry.GetRuler.GetName] uncomfortable. After what seems like an eternity, [GetCountry('GAR').GetRuler.GetName] whispers to the soldiers standing at guard, who then whisper something back in the same tongue before stiffening and standing up as tall as they can.\n\n'We are better off by ourselves, [ROOT.GetCountry.GetRuler.GetFirstName], and unfortunately, we must ask you to leave immediately - tonight.' [GetCountry('GAR').GetRuler.GetSheHe] says in a quiet voice.'Forgive me...o [ROOT.GetCountry.GetRulerTitle].' There is loud snickering in the room, and [ROOT.GetCountry.GetRuler.GetFirstName]'s cheeks are flushed.\n\nSensing that the atmosphere in the room had somehow changed dramatically for the worse, [ROOT.GetCountry.GetRuler.GetFirstName] gathered [ROOT.GetCountry.GetRuler.GetHerHis] men and belongings and left the city that same night."
+me_cyr_libya_123_desc:0 "The air is heavy with unsaid words, and it is beginning to make [ROOT.GetCountry.GetRuler.GetName] uncomfortable. After what seems like an eternity, [GetCountry('GAR').GetRuler.GetName] whispers to the soldiers standing at guard, who then whisper something back in the same tongue before stiffening and standing up as tall as they can.\n\n'We are better off by ourselves, [ROOT.GetCountry.GetRuler.GetFirstName], and unfortunately, we must ask you to leave immediately - tonight,' [GetCountry('GAR').GetRuler.GetSheHe] says in a quiet voice. 'Forgive me...o [ROOT.GetCountry.GetRulerTitle].' There is loud snickering in the room, and [ROOT.GetCountry.GetRuler.GetFirstName]'s cheeks are flushed.\n\nSensing that the atmosphere in the room had somehow changed dramatically for the worse, [ROOT.GetCountry.GetRuler.GetFirstName] gathered [ROOT.GetCountry.GetRuler.GetHerHis] men and belongings and left the city that same night."
 me_cyr_libya_123.a:0 "What a waste of time!"
 
 me_cyr_libya_124_title:0 "$cyrene_missions_libya_task_12$: Critical Failure"
@@ -243,8 +246,8 @@ me_cyr_libya_13.a:0 "Prepare the camels for war!"
 me_cyr_libya_13_tooltip:0 "The mission task '#Y $cyrene_missions_libya_task_13$#!' has now been #G Completed#!!"
 
 me_cyr_libya_14_title:0 "$cyrene_missions_libya_task_14$"
-me_cyr_libya_14_desc:0 ""
-me_cyr_libya_14.a:0 ""
+me_cyr_libya_14_desc:0 "First we humbled the #E Greeks#!. Now we humble the #E Canaanites#!. Who can stop us now? They can call us barbarians as much as they'd like, but it is we who kill them, not the other way around. Now, let us commence the #R #E blood-letting#!#! of the colonizers."
+me_cyr_libya_14.a:0 "Qart Hadasht watches in horror."
 me_cyr_libya_14_tooltip:0 "The mission task '#Y $cyrene_missions_libya_task_14$#!' has now been #G Completed#!!"
 
 me_cyr_libya_15_title:0 "$cyrene_missions_libya_task_15$"
