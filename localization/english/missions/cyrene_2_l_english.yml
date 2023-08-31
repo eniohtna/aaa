@@ -41,16 +41,16 @@ cyrene_missions_libya_task_11:0 "Entice Libyan Settlers"
 cyrene_missions_libya_task_11_DESC:0 "Our country, despite being a country for #E Libyans#! still is left with an alarmingly large presence of #E Greeks#!. In order to combat this, we need to #Y entice#! settlers to move to the #E Cyrenaican#! cities, lest we risk our identity as #E Libyans#!."
 
 cyrene_missions_libya_task_12:0 "Approach for Garamantes"
-cyrene_missions_libya_task_12_DESC:0 ""
+cyrene_missions_libya_task_12_DESC:0 "Our brothers in the south, the #E Garamantes#!, are much like us and certainly worthy of a mutual relationship. Let us approach them and see if we can work out a mutual relationship. And if not, then we simply need to 'convince' them its for their own good."
 
 cyrene_missions_libya_task_13:0 "Camel War Parties"
 cyrene_missions_libya_task_13_DESC:0 "The desert is a place where sand and desperation are the only things in abundance. And #Y camels#! are the only beings that can help make it more tolerable a place to travel. They help our trade, they help in war, and they provide refuge in an otherwise barren wasteland. We need to secure our supply of #Y camels#! by any means necessary. Our survival depends on it."
 
 cyrene_missions_libya_task_14:0 "Raid the Cities of the West"
-cyrene_missions_libya_task_14_DESC:0 ""
+cyrene_missions_libya_task_14_DESC:0 "The #E Greeks#! are not the only ones who call us barbarous. The western #E Amazigh#! people are colonized by the sons of #E Dido#!, the #E Punic#! people under #E Qart Hadasht#!. Let's teach them a lesson."
 
 cyrene_missions_libya_task_15:0 "Terror from the Desert"
-cyrene_missions_libya_task_15_DESC:0 ""
+cyrene_missions_libya_task_15_DESC:0 "#R Hark all those who call themselves civilized. Your time of reckoning has come. We are the #E Libyans#! of #E Libu#!. You enslaved us, took our homes, took our ancestral lands. And now you will come to know the #E Terror from the Desert#!."
 
 
 #Tooltips
@@ -66,6 +66,13 @@ only_amazigh_deities_tt:0 "Have #Y 4 Amazigh deities#! in pantheon."
 slave_raiding_enabled_tt:0 "#G Unlock#! the ability to #Y Slave Raid#!."
 occupation_kill_tt:0 "#R Kill 10 pops#! in every #E occupied city#!."
 camel_breeding_program_tt:0 "#G Unlock#! decision to create a #Y Camel Breeding Program#!."
+libu_raiders_tt:0 "Raze any city in #Y Africa#! with majority #Y Punic#! culture."
+carthage_angry_tt:0 "#E Carthage#! may grow upset with #E Libu#!."
+meet_with_garamntes_tt:0 "Hold a #Y meeting#! between the ruler of #E Garamantes#! and the ruler of #E Libu#! to discuss our relationship."
+success_chance_tt:0 "The #E Garamantes#! may agree to an #E #G alliance#!#! with us."
+success_golden_tt:0 "The #E Garamantes#! may pursue #E #T closer relations#!#! with us."
+failure_chance_tt:0 "The #E Garamantes#! may #E #Y end diplomatic proceedings#!#!."
+failure_critical_tt:0 "The #E Garamantes#! may #E #R declare war#!#! on us."
 
 #Modifiers
 tifinagh_script:0 "Libu-Tifinagh Script"
@@ -81,6 +88,7 @@ libu_hippodrome:0 "Hippodrome of Barce"
 greek_reconciliation:0 "Libu Greeks"
 desert_horde:0 "Desert Horde"
 camels_flood_plain_combat_bonus:0 "Camel Floodplain Combat Bonus"
+raided_punic_city:0 "Raided Punic City"
 
 #Others
 the_terrible_libu:0 "The Greek Slayer"
@@ -94,6 +102,8 @@ tifinagh_script_kings_list_desc:0 "We have both developped a #Y Tifinagh-Libu sc
 greek_libu_kings_list:0 "Libu Kings List"
 greek_script_kings_list:0 "Create a Kings List"
 greek_script_kings_list_desc:0 "We have both developped a #Y Greek-Libu script#! as well as a #Y Libu monarchy#!. It's only natural to record our new royal lineage!"
+camel_breeding_libu:0 "Camel Breeding Program"
+camel_breeding_libu_desc:0 "Start a breeding program for #Y camels#! to be produced over a #Y horse#! producing province."
 
 #Events
 me_cyr_libya_1_title:0 "$cyrene_missions_libya_task_1$"
@@ -190,23 +200,42 @@ me_cyr_libya_9.a:0 "From raiders to rulers!"
 me_cyr_libya_9_tooltip:0 "The mission task '#Y $cyrene_missions_libya_task_9$#!' has now been #G Completed#!!"
 
 me_cyr_libya_10_title:0 "$cyrene_missions_libya_task_10$"
-me_cyr_libya_10_desc:0 ""
-me_cyr_libya_10.a:0 ""
+me_cyr_libya_10_desc:0 "We have #E #R plundered#!#! the #E Greeks#! and profited greatly! Not only have we managed to liberate gold from their grasps, but a #E #Y Heavy Ship#!#! as well. This will allow us to #E #Y Slave Raid#!#! effectively. Furthermore, we've managed to take #E Greek#! technologies that we can use against them."
+me_cyr_libya_10.a:0 "A pirate's life for me!"
 me_cyr_libya_10_tooltip:0 "The mission task '#Y $cyrene_missions_libya_task_10$#!' has now been #G Completed#!!"
 
 me_cyr_libya_11_title:0 "$cyrene_missions_libya_task_11$"
-me_cyr_libya_11_desc:0 ""
-me_cyr_libya_11.a:0 ""
+me_cyr_libya_11_desc:0 "Our efforts to recolonize the #E Libu#! coast with #E Libyans#! has been successful! Our people flock from from the deserts to the coasts. This will help us keep our influence strong over the potentially rebellious #E Cyrenaicans#!. The irony, once we were the ones colonized by the #E Greeks#! and now we do the same to them."
+me_cyr_libya_11.a:0 "Ah, how the turntables."
 me_cyr_libya_11_tooltip:0 "The mission task '#Y $cyrene_missions_libya_task_11$#!' has now been #G Completed#!!"
 
 me_cyr_libya_12_title:0 "$cyrene_missions_libya_task_12$"
-me_cyr_libya_12_desc:0 ""
-me_cyr_libya_12.a:0 ""
+me_cyr_libya_12_desc:0 "The meeting between the #E Libyans#! and #E Garmantics#! is finally upon us. The march to the #E Garmanates#! capital was rather long, but the #E Garamantics#! treated us with water and feast. But, it is now time to discuss matters of the future.\n\nThe #E Garamantes#! ruler opens his ear to you, ready to hear your proposal."
+me_cyr_libya_12.a:0 "The Libyans and Garamantics should stand united together."
+me_cyr_libya_12.b:0 "Should you show cooperation, Libu will show gratitude."
+me_cyr_libya_12.c:0 "The way I see it, the Garmantics are lost Libyans."
 me_cyr_libya_12_tooltip:0 "The mission task '#Y $cyrene_missions_libya_task_12$#!' has now been #G Completed#!!"
 
+me_cyr_libya_121_title:0 "$cyrene_missions_libya_task_12$: Success"
+me_cyr_libya_121_desc:0 "The ruler of the #E Garamantes#! thinks for a moment. He then stands up and says something in his native dialect. The #E Garamantics#! seem to all agree with his words. He approaches you and says, 'The #E Libyans#! of #E Libu#! are a good people. We accept the gesture of friendship and agree to an #E #G alliance#!#!.'"
+me_cyr_libya_121.a:0 "A start to a beautiful new relationship."
+me_cyr_libya_121.b:0 "But wouldn't you prefer 'protected' by us?"
+
+me_cyr_libya_122_title:0 "$cyrene_missions_libya_task_12$: Golden Success"
+me_cyr_libya_122_desc:0 "The ruler of the #E Garamantes#! looks you in the eyes. Almost as if he was testing you, to see if you can hold his stare back. It's clear he does not make this decision lightly. Finally, he stands up. 'You, ruler of the #E Libu#!, you are the light of the #E Amazigh#! people. We lend you our servitude, do not fail our trust, lest the light be extinguished by we, the #E Garamantes#!.'"
+me_cyr_libya_122.a:0 "We'll take great care of you."
+
+me_cyr_libya_123_title:0 "$cyrene_missions_libya_task_12$: Failure"
+me_cyr_libya_123_desc:0 "The #E Garamantic#! chief across from you whispers to his men. They whisper something back. They seem in agreement. 'We are better off by ourselves,' he says simply. Nothing more could be said to convince him otherwise. Your men seem quite dissapointed."
+me_cyr_libya_123.a:0 "What a waste of time!"
+
+me_cyr_libya_124_title:0 "$cyrene_missions_libya_task_12$: Critical Failure"
+me_cyr_libya_124_desc:0 "The chief of the #E Garamantes#! immediately slams the table with his fists and then grabs the nearest spear to point at you. Your men get up and point their spears right back at him. 'You come here, take our food, our hospitality, call me your brother, and then make a mockery of us?! The #E Libyans#! and #E Garamantics#! are equal, you will get no servitude from us! This insult means #E #R war#!#!.'"
+me_cyr_libya_124.a:0 "You will kneel before the might of Libu."
+
 me_cyr_libya_13_title:0 "$cyrene_missions_libya_task_13$"
-me_cyr_libya_13_desc:0 ""
-me_cyr_libya_13.a:0 ""
+me_cyr_libya_13_desc:0 "The desert is a place where sand and desperation are the only things in abundance. And #E camels#! are the only beings that can help make it more tolerable a place to travel. They help our trade, they help in war, and they provide refuge in an otherwise barren wasteland.\n\nWe have secured our supply of #E camels#! and we may even be able to breed them, giving us a permanent supply of #E camels#!. Unlike water, we need not run dry of #E camels#!."
+me_cyr_libya_13.a:0 "Prepare the camels for war!"
 me_cyr_libya_13_tooltip:0 "The mission task '#Y $cyrene_missions_libya_task_13$#!' has now been #G Completed#!!"
 
 me_cyr_libya_14_title:0 "$cyrene_missions_libya_task_14$"
@@ -215,8 +244,8 @@ me_cyr_libya_14.a:0 ""
 me_cyr_libya_14_tooltip:0 "The mission task '#Y $cyrene_missions_libya_task_14$#!' has now been #G Completed#!!"
 
 me_cyr_libya_15_title:0 "$cyrene_missions_libya_task_15$"
-me_cyr_libya_15_desc:0 ""
-me_cyr_libya_15.a:0 ""
+me_cyr_libya_15_desc:0 " Hark all those who call themselves civilized. Your time of reckoning has come. We are the #E Libyans#! of #E Libu#!. You enslaved us, took our homes, took our ancestral lands. Now the #E #R blood#!#! of our oppressors #E #R tints the sands red#!#!. We are the #R #E Terror from the Desert#!#!."
+me_cyr_libya_15.a:0 "The winds of the desert carry the scent of blood."
 me_cyr_libya_15_tooltip:0 "The mission task '#Y $cyrene_missions_libya_task_15$#!' has now been #G Completed#!!"
 
 #Encore Edits

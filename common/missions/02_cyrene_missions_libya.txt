@@ -407,10 +407,10 @@
         duration = 365
         requires = { cyrene_missions_libya_task_10 }
         allow = {
-            area:cyrenaica_superioris_area = {
+            p:3360 = {
                 governor_policy = cultural_assimilation
             }
-            area:cyrenaica_inferioris_area = {
+            p:3357 = {
                 governor_policy = decentralize_pops
             }
             any_country_culture = {
@@ -444,12 +444,32 @@
     }
     cyrene_missions_libya_task_12 = { # Approach for Garamantes
         icon = "task_diplomatic"
+        duration = 180
         requires = { cyrene_missions_libya_task_11 }
-        allow = {}
+        highlight = {
+            scope:province = {
+                exists = c:GAR
+                owner = c:GAR
+            }
+        }
+        bypass = {
+            c:GAR = { has_land = no }
+        }
+        allow = {
+            war = no
+            c:GAR = { war = no }
+            c:GAR = {
+                opinion = {
+                    target = root 
+                    value >= 100                
+                }
+            }
+            political_influence >= 50
+        }
         on_completion = {
             trigger_event = me_cyr_libya.12
             show_as_tooltip = {
-
+                custom_tooltip = meet_with_garamntes_tt
             }
         }
     }
@@ -478,16 +498,39 @@
                     name = war_camels
                     duration = -1
                 }
+                set_variable = libu_camel_program
             }
         }
     }
     cyrene_missions_libya_task_14 = { # Raid the Cities of the West
         icon = "task_conquest"
         requires = { cyrene_missions_libya_task_13 }
-        allow = {}
+        allow = {
+            custom_tooltip = {
+                text = libu_raiders_tt
+                region:africa_region = {
+                    any_region_province = {
+                        count >= 1
+                        OR = {
+                            has_province_modifier = province_razed_ua
+                            has_province_modifier = province_pillaged
+                        }
+                        dominant_province_culture = carthaginian
+                    }
+                }
+            }
+        }
         on_completion = {
             trigger_event = me_cyr_libya.14
             show_as_tooltip = {
+                add_country_modifier = {
+                    name = raided_punic_city
+                    duration = 1825
+                }
+                add_treasury = 200
+                add_political_influence = 50
+                add_innovation = 2
+                custom_tooltip = carthage_angry_tt
             }
         }
     }

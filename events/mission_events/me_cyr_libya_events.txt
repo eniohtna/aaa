@@ -516,19 +516,165 @@ me_cyr_libya.11 = { # Entice Libyan Settlers
 
     }
 }
+
+# Garamantes Meeting Event Chain
 me_cyr_libya.12 = { # Approach for Garamantes
     type = country_event
 
     title = me_cyr_libya_12_title
     desc = me_cyr_libya_12_desc
     picture = army_desert
+    left_portrait = current_ruler
+    right_portrait = c:GAR.current_ruler
 
     option = {
         name = "me_cyr_libya_12.a"
-        custom_tooltip = me_cyr_libya_12_tooltip
-
+        #Initial Request 1: Neutral
+        random_list = {
+            95 = {
+                trigger_event = me_cyr_libya.121 # Success
+                custom_tooltip = success_chance_tt
+            }
+            5 = {
+                trigger_event = me_cyr_libya.122 # Golden Success
+                custom_tooltip = success_golden_tt
+            }
+        }
+    }
+    option = {
+        name = "me_cyr_libya_12.b"
+        add_treasury = -50
+        current_ruler = {
+            add_gold = -100
+        }
+        reverse_add_opinion = {
+            target = c:GAR
+            modifier = opinion_gift
+        }
+        #Initial Request 2: Good
+        random_list = {
+            8 = {
+                trigger_event = me_cyr_libya.121 # Success
+                custom_tooltip = success_chance_tt
+            }
+            2 = {
+                trigger_event = me_cyr_libya.122 # Golden Success
+                custom_tooltip = success_golden_tt
+            }
+        }
+    }
+    option = {
+        name = "me_cyr_libya_12.c"
+        add_tyranny = 5
+        add_aggressive_expansion = 5
+        reverse_add_opinion = {
+            target = c:GAR
+            modifier = opinion_insult
+        }
+        random_list = {
+            45 = {
+                trigger_event = me_cyr_libya.123 # Failure
+                custom_tooltip = failure_chance_tt
+            }
+            40 = {
+                trigger_event = me_cyr_libya.124 # Critical Failure
+                custom_tooltip = failure_critical_tt
+            }
+            15 = {
+                trigger_event = me_cyr_libya.122 # Golden Success
+                custom_tooltip = success_golden_tt
+            }
+        }
     }
 }
+me_cyr_libya.121 = { # Success
+    type = country_event
+
+    title = me_cyr_libya_121_title
+    desc = me_cyr_libya_121_desc
+    picture = throneroom
+    left_portrait = current_ruler
+    right_portrait = c:GAR.current_ruler
+
+    option = {
+        name = "me_cyr_libya_121.a"
+        c:GAR = {
+            add_alliance = root
+        }
+        custom_tooltip = me_cyr_libya_12_tooltip
+    }
+    option = {
+        name = "me_cyr_libya_121.b"
+        random_list = {
+            10 = {
+                trigger_event = me_cyr_libya.122 # Golden Success
+                custom_tooltip = success_golden_tt
+            }
+            10 = {
+                trigger_event = me_cyr_libya.123 # Failure
+                custom_tooltip = failure_chance_tt
+            }
+            10 = {
+                trigger_event = me_cyr_libya.124 # Critical Failure
+                custom_tooltip = failure_critical_tt
+            }
+        }
+    }
+}
+me_cyr_libya.122 = { # Golden Success
+    type = country_event
+
+    title = me_cyr_libya_122_title
+    desc = me_cyr_libya_122_desc
+    picture = throneroom
+    left_portrait = current_ruler
+    right_portrait = c:GAR.current_ruler
+
+    option = {
+        name = "me_cyr_libya_122.a"
+        make_subject = {
+            target = c:GAR
+            type = vassal_tribe
+        }
+        custom_tooltip = me_cyr_libya_12_tooltip
+    }
+}
+me_cyr_libya.123 = { # Failure
+    type = country_event
+
+    title = me_cyr_libya_123_title
+    desc = me_cyr_libya_123_desc
+    picture = throneroom
+    left_portrait = current_ruler
+    right_portrait = c:GAR.current_ruler
+
+    option = {
+        name = "me_cyr_libya_123.a"
+        custom_tooltip = me_cyr_libya_12_tooltip
+    }
+}
+me_cyr_libya.124 = { # Critical Failure
+    type = country_event
+
+    title = me_cyr_libya_124_title
+    desc = me_cyr_libya_124_desc
+    picture = throneroom
+    left_portrait = current_ruler
+    right_portrait = c:GAR.current_ruler
+
+    option = {
+        name = "me_cyr_libya_124.a"
+        c:GAR = {
+            declare_war_with_wargoal = {
+                war_goal = conquer_wargoal
+                target = ROOT
+                province = ROOT.capital_scope
+            }
+        }
+        custom_tooltip = me_cyr_libya_12_tooltip
+    }
+}
+
 me_cyr_libya.13 = { # Camel War Parties
     type = country_event
 
@@ -539,7 +685,12 @@ me_cyr_libya.13 = { # Camel War Parties
     option = {
         name = "me_cyr_libya_13.a"
         custom_tooltip = me_cyr_libya_13_tooltip
-
+        custom_tooltip = camel_breeding_program_tt
+        add_country_modifier = {
+            name = war_camels
+            duration = -1
+        }
+        set_variable = libu_camel_program
     }
 }
 me_cyr_libya.14 = { # Raid the Cities of the West
@@ -565,8 +716,13 @@ me_cyr_libya.15 = { # Terror from the Desert
     option = {
         name = "me_cyr_libya_15.a"
         custom_tooltip = me_cyr_libya_15_tooltip
+        change_government = steppe_horde
         add_country_modifier = {
             name = terror_from_the_desert
+            duration = -1
+        }
+        add_country_modifier = {
+            name = desert_horde
             duration = -1
         }
     }

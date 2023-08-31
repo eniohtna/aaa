@@ -63,6 +63,10 @@ greek_reconciliation = {
 	local_pop_assimilation_speed_modifier = -0.05
 	local_population_growth = 20
 }
+raided_punic_city = {
+	monthly_military_experience_modifier = 0.5
+	enslavement_efficiency = 0.1
+}
 desert_horde = { # Will be removed upon government change
     global_nobles_desired_pop_ratio = -0.07
     hostile_attrition = 0.15

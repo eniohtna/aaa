@@ -713,5 +713,38 @@
 			custom_tooltip = "this is not done yet, maybe make this into an olympics style event ?"
 		}
 	}
+
+	camel_breeding_libu = {
+		potential = {
+			has_variable = libu_camel_program
+			NOT = { has_variable = did_program_libu }
+		}
+		highlight = {
+            scope:province = { 
+            	any_owned_province = {
+                	trade_goods = horses
+            	}
+            }
+		}
+		allow = {
+			treasury >= 100
+			any_owned_province = {
+				trade_goods = horses
+			}
+		}
+		effect = {
+			random_owned_province = {
+				limit = {
+					trade_goods = horses
+				}
+				set_trade_goods = camel
+				add_province_modifier = {
+					name = camel_farms
+					duration = -1
+				}
+			}
+			set_variable = did_program_libu
+		}
+	}
 }
 
