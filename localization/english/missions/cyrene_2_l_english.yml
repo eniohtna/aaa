@@ -78,7 +78,7 @@ cyrenaican_colonia_tt:0 "#E Libu#! has enacted the #Y Found Colony#! cultural de
 camel_need_2_tt:0 "  Any province produces #Y 2#! or more #E Camels#!."
 camel_need_2_2_tt:0 "  #Y Barka#! has a surplus of greater or equal to 2 #E Camels#!."
 owns_cities_greek_tt:0 "#E Libu#! is at #R war#! with a #Y Hellenic#! country and #E Libu#! occupies at least #Y 1#! city of #Y Hellenic#! culture."
-libu_oneoff_barce_games_bonus:0 "Sponsered Barce Games Event"
+anti_olympics_yay:0 "Every country of #Y Amazigh#!, #Y Egyptian#!, or #Y Kushitic#! heritage will gain #G 20#! opinion of [THIS.GetCountry.GetName].\nEvery country with their capital in #Y North Africa#! or on the #Y Nile#! till #Y Lower Nubia#! will gain #G 20#! opinion of [THIS.GetCountry.GetName]."
 
 #Modifiers
 tifinagh_script:0 "Libu-Tifinagh Script"
@@ -101,7 +101,7 @@ egypt_regular_ptolemaia_mod:0 "Recent Barce Games"
 the_terrible_libu:0 "The Greek Slayer"
 fear_of_sand:0 "Terror of the Desert"
 hippodrome_of_barce_work:0 "Hippodrome of Barce"
-barce_games_held:0 "Barce Games Held"
+barce_games_held:0 "Sponsor of the Antaeus Games"
 
 #Decisions
 integrate_cyrenaican_navy:0 "Integrate Cyrenaican Navy"
@@ -290,6 +290,26 @@ me_cyr_libya_15_tooltip:0 "The mission task '#Y $cyrene_missions_libya_task_15$#
  dhe_hippodrome_barce.12.t:0 "The Hippodrome of Barce"
  dhe_hippodrome_barce.12.desc:0 "The great Hippodrome of Barce has been completed, a testament to Cyrenaican-Libyan unity in Libu and the greatness of Libyan culture. A grand hippodrome for all peoples of Africa to compete in legendary events, it is truly a magnificent honor to Barce, the patron goddess of Barke.\n\nThe result of our hard work is greater than our architects had ever imagined, the hippodrome larger and more adorned than our plans originally stated. We are certain Barce will look to Libu with pride, forever holding her protecting hand over the city."
  dhe_hippodrome_barce.12.a:0 "An achievement worthy of gods."
+
+ dhe_hippodrome_barce.41.t:0 "The Antaeus Games"
+ dhe_hippodrome_barce.41.desc:0 "In our fine capital city of Barke, preparations are being made in our great Hippodrome of Barce. The games are soon to begin.\n\nCamel caravans carry drinks, food, and water into the stadium. Tents and torches are brought so that the night may be lit up.\n\nThe wrestling grounds are cleared, and the discuses are polished. The statue of Antaeus, on of the patron gods of Libu, is hoisted high above, facing the great Hippodrome, while the Hippodrome of Barce is being thoroughly prepared for the greatest of the events.\n\nCome all of those who call Africa their home, for the Antaeus Games are to soon begin."
+ dhe_hippodrome_barce.41.a:0 "Invite every state in Africa to this great event to send us their athletes."
+
+ dhe_hippodrome_barce.43.t:0 "The Antaeus Games"
+ dhe_hippodrome_barce.43.desc:0 "The Libyans of the coast of Cyrenaica have invited us to participate in a series of games named after their Helleno-Amazigh god, Antaeus.\n\nIt is said that they have become a state of both Cyrenaicans and Libyans living together in harmony, and these games represent the union of the two peoples. If we are to attend, we should send the proudest, most able young [ROOT.GetCountry.GetAdjective] athletes, to compete on our behalf. We believe we have found two ideal candidates; a [SCOPE.sChar('antaeus_games_champion').Custom('get_godly_description')], by the name of [SCOPE.sChar('antaeus_games_champion').GetPraenomen], and a [SCOPE.sChar('antaeus_games_champion_2').Custom('get_godly_description')], who calls [SCOPE.sChar('antaeus_games_champion_2').GetHerselfHimself] [SCOPE.sChar('antaeus_games_champion_2').GetPraenomen]. Which of these fine athletes should we send to compete in the games?"
+ dhe_hippodrome_barce.43.a:0 "Send [SCOPE.sChar('antaeus_games_champion').GetPraenomen]!"
+ dhe_hippodrome_barce.43.b:0 "Let's send [SCOPE.sChar('antaeus_games_champion_2').GetPraenomen]."
+ dhe_hippodrome_barce.43.c:0 "And go all the way to Barke? No thanks."
+
+ dhe_hippodrome_barce.45.t:0 "The Antaeus Games Conclude"
+ dhe_hippodrome_barce.45.desc:0 "The glorious Antaeus Games have come to an end, with much rejoicing and celebration.\n\nThe highlight of this year's games was during the [SCOPE.Custom('get_olympic_highlight')]\n\nHowever, the victor of the great Quadriga race in the #E Hippodrome of Barce#! was declared to be [SCOPE.sChar('victorious_competitor').GetName] of [SCOPE.sC('victor_origin_country').GetName], [SCOPE.sChar('victorious_competitor').Custom('get_number_of_wins')], whose power sparked comparison to Antaeus, and grace clearly blessed by Lady Barce. He will go down in the annals of history as a champion of the Antaeus Games premier event!"
+ dhe_hippodrome_barce.45.desc_2:0 "The glorious Antaeus Games have come to an end, with much rejoicing and celebration. This year's event, however, was tinged with sadness due to the death of the posthumous victor, [SCOPE.sChar('victorious_competitor').GetName]. Unwilling to give up in the face of death, [SCOPE.sChar('victorious_competitor').GetSheHe] fought to the bitter end against [SCOPE.sChar('victorious_competitor').GetHerHis] opponent in one of the martial events, and was honorably declared as victor, due to these extenuating circumstances.\n\nDespite this, many other events drew fine crowds, with one particularly memorable event being the [SCOPE.Custom('get_olympic_highlight')]"
+ dhe_hippodrome_barce.45.a:0 "Praise be to [SCOPE.sChar('victorious_competitor').GetPraenomen]!"
+ dhe_hippodrome_barce.45.b:0 "Ah well, better luck next time."
+ dhe_hippodrome_barce.45.c:0 "A splendid event!"
+ dhe_hippodrome_barce.46.t:0 "Stadium Deserted"
+ dhe_hippodrome_barce.46.desc:0 "It would appear that hardly anyone turned up to the Antaeus Games, and the event had to be canceled.\n\nThis disappointment is a devastating blow the civilized peoples of Libu, and especially to the racers in Barke."
+ dhe_hippodrome_barce.46.a:0 "Is it lord Antaeus who is upset, or lady Barce?"
 
 #Encore Edits
 cyr_magas_encore.2.title:0 "Consolidate Hold over Kyrene"
