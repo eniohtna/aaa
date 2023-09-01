@@ -120,6 +120,9 @@
     cyrene_missions_libya_task_4 = { # The Capital at Barke
         icon = "task_economical"
         requires = { cyrene_missions_libya_task_2 cyrene_missions_libya_task_3 }
+        highlight = {
+            scope:province = capital_scope
+        }
         allow = {
             p:3357 = {
                 is_capital = yes
@@ -184,31 +187,85 @@
         requires = { cyrene_missions_libya_task_2 }
         prevented_by = { cyrene_missions_libya_task_3 }
         allow = {
-            OR = {
-                job_holder:office_arbitrator = {
-                    has_culture_group = hellenic
+            custom_tooltip = {
+                text = "one_job_tt"
+                exists = job_holder:office_arbitrator
+                exists = job_holder:office_elder
+                exists = job_holder:office_warchief
+                exists = job_holder:office_bodyguard
+                exists = job_holder:office_high_priest
+                exists = job_holder:office_wise_person
+                exists = job_holder:office_magistrate
+                exists = job_holder:office_apothecary
+            }
+            custom_tooltip = {
+                text = "one_job_tt_2"
+                OR = {
+                    trigger_if = {
+                        limit = {
+                            exists = job_holder:office_arbitrator
+                        }
+                        job_holder:office_arbitrator = {
+                            has_culture_group = hellenic
+                        }
+                    }
+                    trigger_if = {
+                        limit = {
+                            exists = job_holder:office_elder
+                        }
+                        job_holder:office_elder = {
+                            has_culture_group = hellenic
+                        }
+                    }
+                    trigger_if = {
+                        limit = {
+                            exists = job_holder:office_warchief
+                        }
+                        job_holder:office_warchief = {
+                            has_culture_group = hellenic
+                        }
+                    }
+                    trigger_if = {
+                        limit = {
+                            exists = job_holder:office_bodyguard
+                        }
+                        job_holder:office_bodyguard = {
+                            has_culture_group = hellenic
+                        }
+                    }
+                    trigger_if = {
+                        limit = {
+                            exists = job_holder:office_high_priest
+                        }
+                        job_holder:office_high_priest = {
+                            has_culture_group = hellenic
+                        }
+                    }
+                    trigger_if = {
+                        limit = {
+                            exists = job_holder:office_wise_person
+                        }
+                        job_holder:office_wise_person = {
+                            has_culture_group = hellenic
+                        }
+                    }
+                    trigger_if = {
+                        limit = {
+                            exists = job_holder:office_magistrate
+                        }
+                        job_holder:office_magistrate = {
+                            has_culture_group = hellenic
+                        }
+                    }
+                    trigger_if = {
+                        limit = {
+                            exists = job_holder:office_apothecary
+                        }
+                        job_holder:office_apothecary = {
+                            has_culture_group = hellenic
+                        }
+                    }                                          
                 }
-                job_holder:office_elder = {
-                    has_culture_group = hellenic
-                }
-                job_holder:office_warchief = {
-                    has_culture_group = hellenic
-                }
-                job_holder:office_bodyguard = {
-                    has_culture_group = hellenic
-                }
-                job_holder:office_high_priest = {
-                    has_culture_group = hellenic
-                }
-                job_holder:office_wise_person = {
-                    has_culture_group = hellenic
-                }
-                job_holder:office_magistrate = {
-                    has_culture_group = hellenic
-                }
-                job_holder:office_apothecary = {
-                    has_culture_group = hellenic
-                }                                              
             }
         }
         on_completion = {
@@ -252,6 +309,14 @@
     cyrene_missions_libya_task_7 = { # Hellenic Reconciliation
         icon = "task_atlas"
         requires = { cyrene_missions_libya_task_6 }
+        highlight = {
+            scope:province = {
+                OR = {
+                    province_id = 3360
+                    province_id = 3344
+                }
+            }
+        }
         allow = {
             p:3360 = {
                 is_state_capital = yes
@@ -322,12 +387,12 @@
     }
     cyrene_missions_libya_task_8 = { # Letters for the Libyan Tongue
         icon = "task_diplomatic"
+        duration = 180
         requires = { cyrene_missions_libya_task_5 }
         allow = {
             political_influence >= 50
             treasury >= 100
         }
-        duration = 180
         on_start = {
             trigger_event = me_cyr_libya.8
         }
@@ -339,6 +404,11 @@
     cyrene_missions_libya_task_9 = { # Kings of Eastern Libya
         icon = "task_political"
         requires = { cyrene_missions_libya_task_7 cyrene_missions_libya_task_8 }
+        highlight = {
+            scope:province = {
+                any_pops_in_province = { pop_culture = libyan }
+            }
+        }
         allow = {
             centralization >= 50
         }
@@ -350,6 +420,7 @@
                     name = king_of_libu
                     duration = -1
                 }
+                custom_tooltip = add_claims_east_libya
             }
         }
         final = yes
@@ -443,7 +514,7 @@
                         while = {
                             count = 10
                             limit = {
-                                is_culture = cyrenaican
+                                any_pops_in_province = { pop_culture = cyrenaican }
                             }
                             random_pops_in_province = {
                                 limit = {
@@ -491,6 +562,11 @@
     cyrene_missions_libya_task_13 = { # Camel War Parties
         icon = "task_battle"
         requires = { cyrene_missions_libya_task_10 }
+        highlight = {
+            scope:province = {
+                trade_goods = camel
+            }
+        }
         allow = {
             OR = {
                 custom_tooltip = {
@@ -585,6 +661,18 @@
     cyrene_missions_libya_task_15 = { # Terror from the Desert
         icon = "task_expansion"
         requires = { cyrene_missions_libya_task_14 }
+        highlight = {
+            scope:province = {
+                OR = {
+                    province_id = 5350
+                    province_id = 8153
+                    province_id = 8158
+                    province_id = 5351
+                    province_id = 6499
+                    province_id = 5993
+                }
+            }
+        }
         allow = {
             centralization <= -50
         }
@@ -601,6 +689,7 @@
                     duration = -1
                 }
             }
+            set_variable = terror_of_desert_path
         }
         final = yes
     }

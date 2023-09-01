@@ -79,6 +79,9 @@ camel_need_2_tt:0 "  Any province produces #Y 2#! or more #E Camels#!."
 camel_need_2_2_tt:0 "  #Y Barka#! has a surplus of greater or equal to 2 #E Camels#!."
 owns_cities_greek_tt:0 "#E Libu#! is at #R war#! with a #Y Hellenic#! country and #E Libu#! occupies at least #Y 1#! city of #Y Hellenic#! culture."
 anti_olympics_yay:0 "Every country of #Y Amazigh#!, #Y Egyptian#!, or #Y Kushitic#! heritage will gain #G 20#! opinion of [THIS.GetCountry.GetName].\nEvery country with their capital in #Y North Africa#! or on the #Y Nile#! till #Y Lower Nubia#! will gain #G 20#! opinion of [THIS.GetCountry.GetName]."
+one_job_tt:0 "Every #E Government Office#! is filled by a character."
+one_job_tt_2:0 "Any #E Government Office#! is held by a character with #Y Hellenic#! culture."
+add_claims_east_libya:0 "#E Libu#! gains claims over the #Y Cyrenaica#! region."
 
 #Modifiers
 tifinagh_script:0 "Libu-Tifinagh Script"

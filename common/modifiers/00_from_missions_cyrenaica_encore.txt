@@ -87,13 +87,3 @@ terror_from_the_desert = {
 	recruit_mercenary_cost_modifier = -0.25
 	global_supply_limit_modifier = 0.05
 }
-libu_oneoff_barce_games_bonus = {
-	global_population_happiness = 0.05
-	omen_power = 0.1
-	monthly_legitimacy = 0.1
-}
-libu_regular_barce_games_mod = {
-	monthly_legitimacy = 0.1
-	happiness_for_same_religion_modifier = 0.05
-	stability_monthly_change = 0.1
-}

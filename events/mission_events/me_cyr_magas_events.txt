@@ -935,7 +935,7 @@ cyr_magas_01.1599 = {
             }
         }
         c:EGY = {
-            release_subject = c:LBU
+            #release_subject = c:LBU
             release_subject = c:CYR
         }
         p:3360.owner = {

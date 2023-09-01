@@ -489,6 +489,15 @@ me_cyr_libya.9 = { # Kings of Eastern Libya
             name = king_of_libu
             duration = -1
         }
+        #set_variable = eastern_kings_libya
+        hidden_effect = {
+                region:cyrenaica_region = {
+                every_region_province = {
+                    add_claim = root
+                }
+            }
+        }
+        custom_tooltip = "add_claims_east_libya"
     }
 }
 
