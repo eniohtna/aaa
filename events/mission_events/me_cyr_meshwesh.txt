@@ -65,6 +65,37 @@ me_meshwesh.5 = {
 
     }
 }
+me_meshwesh.50 = {
+    type = country_event
+    hidden = yes
+    immediate = {
+        set_variable = libyan_menace
+    }
+}
+me_meshwesh.501 = {
+    type = country_event
+
+    title = me_meshwesh_501_title
+    desc = me_meshwesh_501_desc
+    picture = epirote_phalanx
+    right_portrait = c:EGY.current_ruler
+    left_portrait = scope:current_warchief
+
+    immediate = {
+        set_variable = libyan_menace
+        random_character = {
+            limit = {
+                has_office = office_warchief
+            }
+            save_scope_as = current_warchief
+        }
+    }
+
+    option = {
+        name = "me_meshwesh_501.a"
+        custom_tooltip = me_meshwesh_501_tooltip
+    }
+}
 me_meshwesh.6 = {
     type = country_event
 
@@ -122,7 +153,7 @@ me_meshwesh.10 = {
 
     title = me_meshwesh_10_title
     desc = me_meshwesh_10_desc
-    picture = great_library
+    picture = interesting_histories_purple_soldier
 
     option = {
         name = "me_meshwesh_10.a"

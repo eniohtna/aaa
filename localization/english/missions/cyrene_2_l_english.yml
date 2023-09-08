@@ -215,7 +215,7 @@ me_cyr_libya_9.a:0 "From raiders to rulers!"
 me_cyr_libya_9_tooltip:0 "The mission task '#Y $cyrene_missions_libya_task_9$#!' has now been #G Completed#!!"
 
 me_cyr_libya_10_title:0 "$cyrene_missions_libya_task_10$"
-me_cyr_libya_10_desc:0 "We have #E #R plundered#!#! the #E Greeks#! and profited greatly! Not only have we managed to liberate gold from their grasps, but a #E #Y Heavy Ship#!#! as well. This will allow us to #E #Y Slave Raid#!#! effectively. Furthermore, we've managed to take #E Greek#! technologies that we can use against them."
+me_cyr_libya_10_desc:0 "We have #E #R plundered#!#! the #E Greeks#! and profited greatly! Not only have we managed to liberate #E #T gold#!#! from their grasps, but a #E #Y Heavy Ship#!#! as well. This will allow us to #E #Y Slave Raid#!#! effectively. The #E Greeks#! now fear us, and call our ruler by the moniker #E #R The Greek Slayer#!#!."
 me_cyr_libya_10.a:0 "A pirate's life for me!"
 me_cyr_libya_10_tooltip:0 "The mission task '#Y $cyrene_missions_libya_task_10$#!' has now been #G Completed#!!"
 

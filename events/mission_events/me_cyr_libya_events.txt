@@ -697,7 +697,7 @@ me_cyr_libya.122 = { # Golden Success
         name = "me_cyr_libya_122.a"
         make_subject = {
             target = c:GAR
-            type = vassal_tribe
+            type = client_state
         }
         custom_tooltip = me_cyr_libya_12_tooltip
     }
@@ -814,6 +814,7 @@ me_cyr_libya.15 = { # Terror from the Desert
             limit = {
                 in_diplomatic_range = ROOT
                 is_tribal = no
+                NOT = { alliance_with = root }
             }
             add_opinion = {
                 modifier = fear_of_sand

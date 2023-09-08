@@ -22,7 +22,7 @@
         }
     }
     on_completion = {}
-    meshwesh_missions_task_1 = {
+    meshwesh_missions_task_1 = { # The Lands of the Nile
         icon = "task_happiness"
         duration = 180
         allow = {
@@ -36,7 +36,7 @@
             }
         }
     }
-    meshwesh_missions_task_2 = {
+    meshwesh_missions_task_2 = { # Mass Migrations
         icon = "task_diplomatic"
         requires = { meshwesh_missions_task_1 }
         allow = {
@@ -50,7 +50,7 @@
             }
         }
     }
-    meshwesh_missions_task_3 = {
+    meshwesh_missions_task_3 = { # Oasitae Way
         icon = "task_religion"
         requires = { meshwesh_missions_task_1 }
         allow = {}
@@ -61,11 +61,16 @@
             }
         }
     }
-    meshwesh_missions_task_4 = {
+    meshwesh_missions_task_4 = { # Prolific Piracy
         icon = "task_expansion"
         requires = { meshwesh_missions_task_1 }
         allow = {
             num_of_ships >= 30
+            c:EGY = {
+                any_owned_province = {
+                    has_province_modifier = port_province_raided
+                }
+            }
         }
         on_completion = {
             trigger_event = me_meshwesh.4
@@ -74,21 +79,46 @@
             }
         }
     }
-    meshwesh_missions_task_5 = {
+    meshwesh_missions_task_5 = { # The Libyan Menace
         icon = "task_battle"
+        duration = 180
         requires = { meshwesh_missions_task_2 meshwesh_missions_task_3 meshwesh_missions_task_4 }
         allow = {}
+        on_start = {
+            trigger_event = me_meshwesh.50
+            trigger_event = {
+                id = me_meshwesh.501
+                days = { 20 30 }
+            }
+        }
         on_completion = {
             trigger_event = me_meshwesh.5
             show_as_tooltip = {
 
             }
+            set_variable = libyan_menace
         }
     }
-    meshwesh_missions_task_6 = {
+    meshwesh_missions_task_6 = { # Enemy of my Enemy
         icon = "task_political"
+        duration = 180
+        potential = { has_variable = libyan_menace }
         requires = { meshwesh_missions_task_5 }
-        allow = {}
+        allow = {
+            diplomatic_stance = appeasement_stance
+        }
+        highlight = {
+            scope:province = {
+                OR = {
+                    owner = c:SEL
+                    owner = c:KSH
+                    owner = c:GAR
+                }
+            }
+        }
+        bypass = {
+            war_with = c:EGY
+        }
         on_completion = {
             trigger_event = me_meshwesh.6
             show_as_tooltip = {
@@ -96,10 +126,26 @@
             }
         }
     }
-    meshwesh_missions_task_7 = {
+    meshwesh_missions_task_7 = { # Offers for Officers
         icon = "task_economical"
+        duration = 30
+        potential = { has_variable = libyan_menace }
         requires = { meshwesh_missions_task_5 }
-        allow = {}
+        allow = {
+            treasury >= 150
+            custom_tooltip = {
+                text = any_friends_tt
+                c:EGY = {
+                    any_character = {
+                        is_female = no
+                        is_adult = yes
+                        is_ruler = no
+                        is_governor = yes
+                        is_friend = root.current_ruler
+                    }
+                }
+            }
+        }
         on_completion = {
             trigger_event = me_meshwesh.7
             show_as_tooltip = {
@@ -109,8 +155,13 @@
     }
     meshwesh_missions_task_8 = {
         icon = "task_conquest"
+        duration = 90
+        potential = { has_variable = libyan_menace }
         requires = { meshwesh_missions_task_5 }
-        allow = {}
+        allow = {
+            political_influence >= 50
+            manpower >= 1.5
+        }
         on_completion = {
             trigger_event = me_meshwesh.8
             show_as_tooltip = {
@@ -120,6 +171,7 @@
     }
     meshwesh_missions_task_9 = {
         icon = "task_heracles"
+        potential = { has_variable = libyan_menace }
         requires = { meshwesh_missions_task_6 meshwesh_missions_task_7 meshwesh_missions_task_8 }
         allow = {}
         on_completion = {
@@ -128,18 +180,26 @@
 
             }
         }
-        final = yes #temporary
+        final = yes
     }
-#    meshwesh_missions_task_10 = {
-#       icon = "task_political"
-#       allow = {}
-#       on_completion = {
-#           trigger_event = me_meshwesh.10
-#           show_as_tooltip = {
-#
-#            }
-#        }
-#    }
+    meshwesh_missions_task_10 = { # Fake Task
+        icon = "task_political"
+        potential = { NOT = { has_variable = libyan_menace } }
+        requires = { meshwesh_missions_task_5 }
+        allow = {
+            custom_tooltip = {
+                text = fake_task_tt
+                always = no
+            }
+        }
+        on_completion = {
+            trigger_event = me_meshwesh.10
+            show_as_tooltip = {
+
+            }
+        }
+        final = yes
+    }
 #    meshwesh_missions_task_11 = {
 #        icon = "task_political"
 #        allow = {}

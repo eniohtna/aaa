@@ -8,34 +8,34 @@ meshwesh_missions_BUTTON_TOOLTIP:0 "Overthrow the greeks of Egypt"
 #Missions
 
 meshwesh_missions_task_1:0 "Land of the Nile"
-meshwesh_missions_task_1_DESC:0 ""
+meshwesh_missions_task_1_DESC:0 "There is no civilization more storied and more prestigious than the #Y Egyptians#!. We have had a complex history with the land, having brought it to its knees once during the #E 22nd and 23rd Dynasties of Egypt#!. Let's #R remind#! all the history of the #Y Libyans#! of the #E Nile#!."
 
 meshwesh_missions_task_2:0 "Mass Migrations"
-meshwesh_missions_task_2_DESC:0 ""
+meshwesh_missions_task_2_DESC:0 "We should entice the #Y Libyans#! of #E Egypt#! to migrate into the settled lands in the oases, coasts, and lower delta."
 
 meshwesh_missions_task_3:0 "Oasitae Way"
-meshwesh_missions_task_3_DESC:0 ""
+meshwesh_missions_task_3_DESC:0 "Of all the #Y Egyptians#!, the ones who understand the harsh life of the #T desert#! are the #Y Oasitae#!. So let us speak with them and learn more the ins-and-outs of #E Egypt#!."
 
 meshwesh_missions_task_4:0 "Prolific Piracy"
-meshwesh_missions_task_4_DESC:0 ""
+meshwesh_missions_task_4_DESC:0 "The #Y Libyans#! of old were infamous for their piracy, as we will be. We should #G build a fleet#! and #R slave raid#! the #Y Egyptian#! coast."
 
 meshwesh_missions_task_5:0 "The Libyan Menace"
-meshwesh_missions_task_5_DESC:0 ""
+meshwesh_missions_task_5_DESC:0 "The #Y Ptolemeic Kingdom#! has labled us #R The Libyan Menace#!... while this only should inflate our prestige, we have #E heard rumors#! that this could be troublesome for us. Let's send a scout to figure out what they intend to do to us."
 
-meshwesh_missions_task_6:0 "The Enemy of my Enemy"
-meshwesh_missions_task_6_DESC:0 ""
+meshwesh_missions_task_6:0 "Enemy of my Enemy"
+meshwesh_missions_task_6_DESC:0 "We need to find ourselves #Y allies#! who could harbor hate towards the #Y Ptolemies#!. Shall we look for #E a rival #G Diadoch?#!#! Or perhaps #E a rival in the #G Nile?#!#! Maybe even #E our brothers in #G Fezzan?#!#!"
 
-meshwesh_missions_task_7:0 "Enticing Offers"
+meshwesh_missions_task_7:0 "Coins for Corruption"
 meshwesh_missions_task_7_DESC:0 ""
 
-meshwesh_missions_task_8:0 "Sowers of Dissent"
+meshwesh_missions_task_8:0 "Dissenters and Disasters"
 meshwesh_missions_task_8_DESC:0 ""
 
 meshwesh_missions_task_9:0 "A New Meshwesh Dynasty"
 meshwesh_missions_task_9_DESC:0 ""
 
-meshwesh_missions_task_10:0 ""
-meshwesh_missions_task_10_DESC:0 ""
+meshwesh_missions_task_10:0 "Not all it Seems"
+meshwesh_missions_task_10_DESC:0 "Until we have #E figured out#! the #Y Ptolemeic Kingdom's#! plans, we will not be able to continue the #G Mission Tree#!."
 
 meshwesh_missions_task_11:0 ""
 meshwesh_missions_task_11_DESC:0 ""
@@ -99,7 +99,8 @@ meshwesh_missions_task_30_DESC:0 ""
 
 
 #Tooltips
-
+fake_task_tt:0 "#E Libu#! has discovered the #Y Ptolemeic Kingdom's#! plans."
+any_friends_tt:0 "Any governor in #Y [GetCountry('EGY').GetName]#!@[GetCountry('EGY').GetFlag]! is a friend of #Y [SCOPE.GetRootScope.GetCountry.GetRuler.GetName]#!."
 
 
 #Modifiers
@@ -132,6 +133,11 @@ me_meshwesh_5_desc:0 ""
 me_meshwesh_5.a:0 ""
 me_meshwesh_5_tooltip:0 "The mission task '#Y $meshwesh_missions_task_5$#!' has now been #G Completed#!!"
 
+me_meshwesh_501_title:0 "Ptolemeic Terror!"
+me_meshwesh_501_desc:0 "We have discovered that the #E Ptolemies#! have decided that #E we must perish#!#!! We have #E #R 5 years to do all we can before they declare war#!#! on us. While they make preparations, we have to respond.\n\nOur #E warchief#! has put together a #E 3-point-plan#! to survive this attack, and even thrive in the face of it. Additionally, we will have access to #E more decisions#! that can help us destabalize the kingdom.\n\nBy the end of the 5 years, we will see if #E Ptolemeic Terror#! means a terror for us, or a terror for them."
+me_meshwesh_501.a:0 "Let's see those plans immediately."
+me_meshwesh_501_tooltip:0 "The rest of the '#Y Return of the Ma#!' mission tree will now be #G Unlocked#!!"
+
 me_meshwesh_6_title:0 "$meshwesh_missions_task_6$"
 me_meshwesh_6_desc:0 ""
 me_meshwesh_6.a:0 ""
@@ -153,9 +159,9 @@ me_meshwesh_9.a:0 ""
 me_meshwesh_9_tooltip:0 "The mission task '#Y $meshwesh_missions_task_9$#!' has now been #G Completed#!!"
 
 me_meshwesh_10_title:0 "$meshwesh_missions_task_10$"
-me_meshwesh_10_desc:0 ""
-me_meshwesh_10.a:0 ""
-me_meshwesh_10_tooltip:0 "The mission task '#Y $meshwesh_missions_task_10$#!' has now been #G Completed#!!"
+me_meshwesh_10_desc:0 "Cheater! Yes, I'm talking about #E YOU#!. You're a #R #E CHEAT!#!#! You should be #E #R ASHAMED!#!#! This task isn't even #E REAL#!. So how'd you fire it, huh?!? I know you used console commands you #E FRICK!#!"
+me_meshwesh_10.a:0 "Complete #E 'The Libyan Menace'#! and wait a month for the rest of the missions."
+me_meshwesh_10_tooltip:0 "The mission task '#Y $meshwesh_missions_task_10$#!' has now been #G Completed#!?"
 
 me_meshwesh_11_title:0 "$meshwesh_missions_task_11$"
 me_meshwesh_11_desc:0 ""

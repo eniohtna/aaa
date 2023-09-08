@@ -547,8 +547,11 @@
             c:GAR = {
                 opinion = {
                     target = root 
-                    value >= 100                
+                    value >= 50                
                 }
+            }
+            c:GAR = {
+                NOT = { alliance_with = root }
             }
             political_influence >= 50
         }
