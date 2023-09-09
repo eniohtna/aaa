@@ -87,3 +87,9 @@ terror_from_the_desert = {
 	recruit_mercenary_cost_modifier = -0.25
 	global_supply_limit_modifier = 0.05
 }
+# Meshwesh
+oasitae_way = {
+	oasis_combat_bonus = 0.1
+	attrition = -1
+	hostile_attrition = 1
+}

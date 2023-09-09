@@ -5,12 +5,26 @@ me_meshwesh.1 = {
 
     title = me_meshwesh_1_title
     desc = me_meshwesh_1_desc
-    picture = great_library
+    picture = diadochi_ptolemy_city
 
     option = {
         name = "me_meshwesh_1.a"
         custom_tooltip = me_meshwesh_1_tooltip
-
+        area:marmarica_occidentalis_area = {
+            every_area_province = {
+                add_claim = root
+            }
+        }
+        area:ammon_area = {
+            every_area_province = {
+                add_claim = root
+            }
+        }
+        area:marmarica_orientalis_area = {
+            every_area_province = {
+                add_claim = root
+            }
+        }
     }
 }
 me_meshwesh.2 = {
@@ -23,7 +37,7 @@ me_meshwesh.2 = {
     option = {
         name = "me_meshwesh_2.a"
         custom_tooltip = me_meshwesh_2_tooltip
-
+        
     }
 }
 me_meshwesh.3 = {
@@ -44,12 +58,18 @@ me_meshwesh.4 = {
 
     title = me_meshwesh_4_title
     desc = me_meshwesh_4_desc
-    picture = great_library
+    picture = interesting_histories_kush_capital
 
     option = {
         name = "me_meshwesh_4.a"
         custom_tooltip = me_meshwesh_4_tooltip
-
+        create_country_treasure = {
+            key = stolen_ptolemy_treasure
+            icon = treasure_chest
+            modifier = {
+                local_tax_modifier = 0.15
+            }
+        }
     }
 }
 me_meshwesh.5 = {

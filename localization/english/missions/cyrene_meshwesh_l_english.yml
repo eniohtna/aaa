@@ -14,7 +14,7 @@ meshwesh_missions_task_2:0 "Mass Migrations"
 meshwesh_missions_task_2_DESC:0 "We should entice the #Y Libyans#! of #E Egypt#! to migrate into the settled lands in the oases, coasts, and lower delta."
 
 meshwesh_missions_task_3:0 "Oasitae Way"
-meshwesh_missions_task_3_DESC:0 "Of all the #Y Egyptians#!, the ones who understand the harsh life of the #T desert#! are the #Y Oasitae#!. So let us speak with them and learn more the ins-and-outs of #E Egypt#!."
+meshwesh_missions_task_3_DESC:0 "Of all the #Y Egyptians#!, the ones who understand the harsh life of the #T desert#! are the #Y Oasitae#!. So let us speak with them and learn more the ways of the #E oasis#! dwellers."
 
 meshwesh_missions_task_4:0 "Prolific Piracy"
 meshwesh_missions_task_4_DESC:0 "The #Y Libyans#! of old were infamous for their piracy, as we will be. We should #G build a fleet#! and #R slave raid#! the #Y Egyptian#! coast."
@@ -34,7 +34,7 @@ meshwesh_missions_task_8_DESC:0 ""
 meshwesh_missions_task_9:0 "A New Meshwesh Dynasty"
 meshwesh_missions_task_9_DESC:0 ""
 
-meshwesh_missions_task_10:0 "Not all it Seems"
+meshwesh_missions_task_10:0 "Not all that it Seems"
 meshwesh_missions_task_10_DESC:0 "Until we have #E figured out#! the #Y Ptolemeic Kingdom's#! plans, we will not be able to continue the #G Mission Tree#!."
 
 meshwesh_missions_task_11:0 ""
@@ -101,10 +101,13 @@ meshwesh_missions_task_30_DESC:0 ""
 #Tooltips
 fake_task_tt:0 "#E Libu#! has discovered the #Y Ptolemeic Kingdom's#! plans."
 any_friends_tt:0 "Any governor in #Y [GetCountry('EGY').GetName]#!@[GetCountry('EGY').GetFlag]! is a friend of #Y [SCOPE.GetRootScope.GetCountry.GetRuler.GetName]#!."
+raid_ptolemy_tt:0 "Any #Y territory#! in the #Y [GetCountry('EGY').GetName]#!@[GetCountry('EGY').GetFlag]! has been #Y Slave Raided#!."
 
 
 #Modifiers
-
+stolen_ptolemy_treasure:0 "Egyptian Treasure Haul"
+stolen_ptolemy_treasure_desc:0 "Stolen from the the coasts Egypt, the treasure is a testament to both the wealth of Egypt and the piratical brilliance of the on-seas-heist."
+oasitae_way:0 "Oasitae Way"
 
 
 #Events

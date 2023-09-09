@@ -566,7 +566,9 @@ me_cyr_libya.11 = { # Entice Libyan Settlers
                 while = {
                     count = 10
                     limit = {
-                        is_culture = cyrenaican
+                        any_pops_in_province = {
+                            pop_culture = cyrenaican
+                        }
                     }
                     random_pops_in_province = {
                         limit = {

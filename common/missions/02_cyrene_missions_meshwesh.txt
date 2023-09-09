@@ -25,57 +25,253 @@
     meshwesh_missions_task_1 = { # The Lands of the Nile
         icon = "task_happiness"
         duration = 180
+        highlight = {
+            scope:province = {
+                OR = {
+                    is_in_area = marmarica_occidentalis_area
+                    is_in_area = ammon_area
+                    is_in_area = marmarica_orientalis_area
+                }
+            }
+        }
         allow = {
             war = no
             stability >= 45
+            has_country_modifier = assemble_raiding_party_button_modifier
         }
         on_completion = {
             trigger_event = me_meshwesh.1
             show_as_tooltip = {
-
+                area:marmarica_occidentalis_area = {
+                    every_area_province = {
+                        add_claim = root
+                    }
+                }
+                area:ammon_area = {
+                    every_area_province = {
+                        add_claim = root
+                    }
+                }
+                area:marmarica_orientalis_area = {
+                    every_area_province = {
+                        add_claim = root
+                    }
+                }
             }
         }
     }
     meshwesh_missions_task_2 = { # Mass Migrations
         icon = "task_diplomatic"
         requires = { meshwesh_missions_task_1 }
+        highlight = {
+            scope:province = {
+                OR = {
+                    province_id = 6499
+                    province_id = 5350
+                    province_id = 6498
+                    province_id = 5995
+                    province_id = 5994
+                    province_id = 5339
+                    province_id = 5340
+                }
+            }
+        }
         allow = {
-            treasury >= 300
+            treasury >= 100
             political_influence >= 50
         }
         on_completion = {
             trigger_event = me_meshwesh.2
             show_as_tooltip = {
-
+                c:BAR = {
+                    create_unit = {
+                        navy = no
+                        name = "Libyan Migration I"
+                        set_as_commander = scope:libyan_rebel_scope
+                        location = p:5552
+                        hidden_effect = {
+                            add_subunit = light_infantry
+                            add_subunit = camels
+                            add_subunit = camels
+                            add_subunit = camels
+                            add_subunit = light_infantry
+                            add_subunit = light_infantry 
+                            add_subunit = light_infantry    
+                            add_subunit = camels
+                            add_subunit = light_infantry
+                            add_subunit = archers 
+                            add_subunit = archers                                   
+                            add_food = 100
+                            add_morale = 2
+                        }
+                    }
+                    create_unit = {
+                        navy = no
+                        name = "Libyan Migration II"
+                        location = p:5555
+                        hidden_effect = {
+                            add_subunit = light_infantry
+                            add_subunit = camels
+                            add_subunit = camels
+                            add_subunit = camels
+                            add_subunit = light_infantry
+                            add_subunit = light_infantry 
+                            add_subunit = light_infantry    
+                            add_subunit = camels
+                            add_subunit = light_infantry
+                            add_subunit = archers 
+                            add_subunit = archers                                   
+                            add_food = 100
+                            add_morale = 2
+                        }
+                    }
+                    create_unit = {
+                        navy = no
+                        name = "Libyan Migration III"
+                        location = p:3373
+                        hidden_effect = {
+                            add_subunit = light_infantry
+                            add_subunit = camels
+                            add_subunit = camels
+                            add_subunit = camels
+                            add_subunit = light_infantry
+                            add_subunit = light_infantry 
+                            add_subunit = light_infantry                               
+                            add_food = 100
+                            add_morale = 2
+                        }
+                    }
+                    create_unit = {
+                        navy = no
+                        name = "Libyan Migration IV"
+                        location = p:5555
+                        hidden_effect = {
+                            add_subunit = light_infantry
+                            add_subunit = camels
+                            add_subunit = camels
+                            add_subunit = camels
+                            add_subunit = light_infantry
+                            add_subunit = light_infantry 
+                            add_subunit = light_infantry    
+                            add_subunit = camels
+                            add_subunit = light_infantry
+                            add_subunit = archers 
+                            add_subunit = archers                                   
+                            add_food = 100
+                            add_morale = 2
+                        }
+                    }
+                    create_unit = {
+                        navy = no
+                        name = "Libyan Migration V"
+                        location = p:5547
+                        hidden_effect = {
+                            add_subunit = light_infantry
+                            add_subunit = camels
+                            add_subunit = camels
+                            add_subunit = camels
+                            add_subunit = light_infantry
+                            add_subunit = light_infantry 
+                            add_subunit = light_infantry    
+                            add_subunit = camels
+                            add_subunit = light_infantry
+                            add_subunit = archers 
+                            add_subunit = archers                                   
+                            add_food = 100
+                            add_morale = 2
+                        }
+                    }
+                    create_unit = {
+                        navy = no
+                        name = "Libyan Migration VI"
+                        location = p:5527
+                        hidden_effect = {
+                            add_subunit = light_infantry
+                            add_subunit = camels
+                            add_subunit = camels
+                            add_subunit = camels
+                            add_subunit = light_infantry
+                            add_subunit = light_infantry 
+                            add_subunit = light_infantry                               
+                            add_food = 100
+                            add_morale = 2
+                        }
+                    }
+                }
+                p:6499 = {
+                    add_province_modifier = {
+                        name = major_barbarian_spawn_place
+                        duration = -1
+                    }
+                }
             }
         }
     }
     meshwesh_missions_task_3 = { # Oasitae Way
         icon = "task_religion"
         requires = { meshwesh_missions_task_1 }
-        allow = {}
+        highlight = {
+            scope:province = {
+                province_id = 5537
+            }
+        }
+        allow = {
+            OR = {
+                has_deity_in_pantheon = deity:omen_ammon
+                has_deity_in_pantheon = deity:omen_amun
+            }
+        }
         on_completion = {
             trigger_event = me_meshwesh.3
             show_as_tooltip = {
-
+                add_country_modifier = {
+                    name = oasitae_way
+                    duration = -1
+                }
             }
         }
     }
     meshwesh_missions_task_4 = { # Prolific Piracy
         icon = "task_expansion"
         requires = { meshwesh_missions_task_1 }
+        highlight = {
+            scope:province = {
+                OR = {
+                    is_in_area = marmarica_orientalis_area
+                    is_in_area = western_delta_area
+                    province_id = 3373
+                    province_id = 3373
+                    province_id = 3372
+                    province_id = 3371
+                    province_id = 3370
+                    province_id = 3369
+                    province_id = 3368
+                }
+            }
+        }
         allow = {
             num_of_ships >= 30
-            c:EGY = {
-                any_owned_province = {
-                    has_province_modifier = port_province_raided
+            custom_tooltip = {
+                c:EGY = {
+                    any_owned_province = {
+                        has_province_modifier = port_province_raided
+                    }
                 }
+                text = raid_ptolemy_tt
             }
         }
         on_completion = {
             trigger_event = me_meshwesh.4
             show_as_tooltip = {
-
+                add_treasury = 250
+                add_manpower = 2
+                create_country_treasure = {
+                    key = stolen_ptolemy_treasure
+                    icon = treasure_chest
+                    modifier = {
+                        local_tax_modifier = 0.15
+                    }
+                }
             }
         }
     }
